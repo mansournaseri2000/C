@@ -1,0 +1,37 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/IRANSansXFaNum-Bold.ttf",
+      "sha1": "39a35a57dda7818ee4eab38a1dea3de2c0b5f0b8"
+    },
+    {
+      "path": "assets/fonts/IRANSansXFaNum-Regular.ttf",
+      "sha1": "998aeb4107ee5d992e8f84006f86d17651755408"
+    },
+    {
+      "path": "assets/fonts/Poppins-Black.ttf",
+      "sha1": "4e91803235bc44c8db587b8e3d98105ecb611c9d"
+    },
+    {
+      "path": "assets/fonts/Poppins-Bold.ttf",
+      "sha1": "875cf0cecd647bcf22e79d633d868c1b1ec98dfa"
+    },
+    {
+      "path": "assets/fonts/Poppins-Italic.ttf",
+      "sha1": "8853c7193c21b71acb6054a2d8243147fb283360"
+    },
+    {
+      "path": "assets/fonts/Poppins-Light.ttf",
+      "sha1": "e247a92158e112f8bf7b638c8d95381d66b00dbb"
+    },
+    {
+      "path": "assets/fonts/Poppins-Medium.ttf",
+      "sha1": "cf83e7582e60ed83f67c7d68b4f7482ac9fc6958"
+    },
+    {
+      "path": "assets/fonts/Poppins-Regular.ttf",
+      "sha1": "fdd3002e7d814ee47c1c1b8487c72c6bbb3a2d00"
+    }
+  ]
+}
