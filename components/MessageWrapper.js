@@ -1,12 +1,12 @@
 import * as React from "react";
 import { StyleProp, ViewStyle, Image, StyleSheet } from "react-native";
 
-const MessageWrapperIcon = ({ style }) => {
+const MessageWrapper = ({ style }) => {
   return (
     <Image
       style={[styles.messagewrapperIcon, style]}
       resizeMode="contain"
-      source={require("../assets/messagewrapper.png")}
+      source={require("../assets/icons/message-circle.png")}
     />
   );
 };
@@ -18,4 +18,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default MessageWrapperIcon;
+export default MessageWrapper;

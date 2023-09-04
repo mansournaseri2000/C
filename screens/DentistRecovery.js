@@ -1,204 +1,109 @@
-import * as React from "react";
+import * as React from 'react';
 import {
   Image,
   StyleSheet,
-  Text,
   View,
-  TextInput,
-  Pressable,
+  StatusBar,
   TouchableOpacity,
-  StatusBar
-} from "react-native";
-import { useNavigation } from "@react-navigation/native";
-import { Color, FontFamily, FontSize, Padding, Border } from "../GlobalStyles";
+  Text
+} from 'react-native';
+import InputGroup from '../components/InputGroup';
+import {useNavigation} from '@react-navigation/native';
+import UnderBtnText from '../components/UnderBtnText';
+import {Color, FontFamily, FontSize, Padding, Border} from '../GlobalStyles';
+import {ScrollView} from 'react-native-gesture-handler';
+import EntryPagesTitle from '../components/EntryPagesTitle';
+import PrimaryBtn from '../components/PrimaryBtn'
+import Container from '../components/Container';
 
-const DentistRecovery = () => {
+const DentistLogin = () => {
   const navigation = useNavigation();
 
   return (
-    <View style={styles.dentistrecovery}>
-              <StatusBar backgroundColor={Color.bgBlack} />
+    <Container>
+    <View style={styles.dentistregister}>
+      <StatusBar backgroundColor={Color.bgBlack} />
 
       <View style={styles.topsection}>
         <Image
           style={styles.jplignlogoIcon}
           resizeMode="cover"
-          source={require("../assets/jplignlogo1.png")}
+          source={require('../assets/JplignLogo.png')}
         />
-        <View style={styles.formsectionSpaceBlock}>
-          <Text style={[styles.brandname, styles.labelFlexBox]}>
-            Health Teeth Operation GmbH / JPLign
-          </Text>
-          <Text style={[styles.pagename, styles.pagenameTypo]}>
-            Dentist Recovery Account
-          </Text>
-        </View>
-        <View style={[styles.formsection1, styles.formsectionSpaceBlock]}>
-          <View style={[styles.inputgroup, styles.inputgroupSpaceBlock]}>
-            <View style={[styles.inputiconwrapper, styles.buttontextFlexBox]}>
-              <Image
-                style={styles.packagePlusIcon}
-                resizeMode="contain"
-                source={require("../assets/packageplus2.png")}
-              />
-            </View>
-            <View style={styles.fieldinput}>
-              <Text style={[styles.label, styles.labelTypo]}>Email</Text>
-              <TextInput
-                style={styles.labelTypo}
-                placeholder="Placeholder"
-                placeholderTextColor="#e6e6e6"
-              />
-            </View>
-          </View>
+        <EntryPagesTitle pageTitle={'Dentist Recovery'} />
+        <View style={styles.formsection}>
+          <InputGroup
+            iconSrc={require('../assets/icons/mail.png')}
+            label="Email"
+            placeholder="Enter your email"
+            hasIcon
+          />     
         </View>
       </View>
       <View style={styles.bottomsection}>
-        <TouchableOpacity
-          style={[styles.growtextbutton, styles.underbtntextFlexBox]}
-          activeOpacity={0.8}
-          onPress={() => navigation.navigate("DentistReset")}
-        >
-          <Text style={[styles.buttontext, styles.buttontextFlexBox]}>
-            Recovery
-          </Text>
-        </TouchableOpacity>
-        <View style={[styles.underbtntext, styles.underbtntextFlexBox]}>
-          <Text style={styles.pagenameTypo}>Remember your password?</Text>
-          <TouchableOpacity
-            style={styles.actiontext}
-            activeOpacity={0.8}
-            onPress={() => navigation.navigate("DentistReset")}
-          >
-            <Text style={[styles.login, styles.labelFlexBox]}>Login</Text>
-          </TouchableOpacity>
-        </View>
+        <PrimaryBtn buttonText="Recovery" goTo={'DentistReset'} />
+        <UnderBtnText inofText="Remember your password?" pageName="Login" goTo={'DentistLogin'} />
       </View>
     </View>
+  </Container>
   );
 };
 
 const styles = StyleSheet.create({
-  labelFlexBox: {
-    textAlign: "left",
-    color: Color.colorPrimary,
-  },
-  pagenameTypo: {
-    color: Color.colorWhite,
-    textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
-  },
-  formsectionSpaceBlock: {
-    marginTop: 32,
-    alignItems: "center",
-  },
-  inputgroupSpaceBlock: {
-    padding: Padding.p_5xs,
-    flexDirection: "row",
-  },
-  buttontextFlexBox: {
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  labelTypo: {
-    fontSize: FontSize.bodyMedium_size,
-    fontFamily: FontFamily.bodySmall,
-    alignSelf: "stretch",
-  },
-  underbtntextFlexBox: {
-    paddingHorizontal: Padding.p_base,
-    justifyContent: "center",
-    flexDirection: "row",
-    alignSelf: "stretch",
-    alignItems: "center",
-  },
+
   jplignlogoIcon: {
     width: 96,
     height: 75,
   },
-  brandname: {
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+  formsection: {
+    paddingVertical: 0,
+    marginTop: 32,
+    alignItems: 'center',
+    alignSelf: 'stretch',
   },
-  pagename: {
-    marginTop: 8,
-  },
-  packagePlusIcon: {
-    width: 24,
-    height: 24,
-    overflow: "hidden",
-  },
-  inputiconwrapper: {
-    width: 40,
-    height: 40,
-    backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
-    padding: Padding.p_5xs,
-    flexDirection: "row",
-  },
-  label: {
+  forgetYourPassword: {
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
     textAlign: "left",
     color: Color.colorPrimary,
   },
-  fieldinput: {
-    marginLeft: 8,
-    height: 40,
-    flex: 1,
-  },
-  inputgroup: {
-    borderRadius: Border.br_xs,
-    backgroundColor: Color.bgBrown,
-    alignSelf: "stretch",
-  },
-  formsection1: {
+  forgetwrapper: {
+    marginTop: 8,
+    alignItems: "center",
+    flexDirection: "row",
     alignSelf: "stretch",
   },
   topsection: {
-    paddingTop: Padding.p_13xl,
-    alignSelf: "stretch",
-    alignItems: "center",
+    paddingTop: 32,
+    alignSelf: 'stretch',
+    alignItems: 'center',
   },
   buttontext: {
     color: Color.gray,
-    textAlign: "center",
-    display: "flex",
+    textAlign: 'center',
+    display: 'flex',
     width: 304,
     height: 28,
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
-  },
-  growtextbutton: {
-    paddingVertical: Padding.p_5xs,
-    height: 40,
-    backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
-  },
-  login: {
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
-  },
-  actiontext: {
-    marginLeft: 8,
-  },
-  underbtntext: {
-    paddingVertical: 0,
-    marginTop: 8,
+    fontFamily: 'Poppins-Regular',
+    fontSize: 18,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   bottomsection: {
-    padding: Padding.p_base,
-    alignSelf: "stretch",
-    alignItems: "center",
+    paddingVertical:16,
+    alignSelf: 'stretch',
+    alignItems: 'center',
   },
-  dentistrecovery: {
+  dentistregister: {
     backgroundColor: Color.bgBlack,
-    width: "100%",
+    width: '100%',
     height: 898,
-    justifyContent: "space-between",
-    alignItems: "center",
-    overflow: "hidden",
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    overflow: 'hidden',
     flex: 1,
   },
 });
 
-export default DentistRecovery;
+
+export default DentistLogin;

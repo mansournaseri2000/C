@@ -33,7 +33,7 @@ const CaseIdentity = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-11.png")}
+              source={require("../assets/JplignLogo.png")}
             />
           </View>
           <View style={styles.headerFlexBox}>
@@ -54,7 +54,7 @@ const CaseIdentity = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="cover"
-                  source={require("../assets/defaultimage1.png")}
+                  source={require("../assets/ProfileImg.png")}
                 />
               </View>
             </View>
@@ -68,7 +68,7 @@ const CaseIdentity = () => {
                   <Image
                     style={styles.packagePlusIcon}
                     resizeMode="contain"
-                    source={require("../assets/identification1.png")}
+                    source={require("../assets/icons/Identification.png")}
                   />
                 </View>
                 <Text style={[styles.label, styles.labelTypo]}>
@@ -79,21 +79,21 @@ const CaseIdentity = () => {
               <ImageBackground
                 style={styles.identificationimageIcon}
                 resizeMode="contain"
-                source={require("../assets/identificationimage.png")}
+                source={require("../assets/IdentificationImg.png")}
               />
               <View style={styles.uploadwrapper}>
                 <View style={styles.camerabtnLayout}>
                   <Image
                     style={styles.packagePlusIcon}
                     resizeMode="contain"
-                    source={require("../assets/image1.png")}
+                    source={require("../assets/icons/image.png")}
                   />
                 </View>
                 <View style={[styles.camerabtn, styles.camerabtnLayout]}>
                   <Image
                     style={styles.packagePlusIcon}
                     resizeMode="contain"
-                    source={require("../assets/camera1.png")}
+                    source={require("../assets/icons/camera.png")}
                   />
                 </View>
               </View>
@@ -106,7 +106,7 @@ const CaseIdentity = () => {
                   <Image
                     style={styles.packagePlusIcon}
                     resizeMode="contain"
-                    source={require("../assets/identification1.png")}
+                    source={require("../assets/icons/Identification.png")}
                   />
                 </View>
                 <Text style={[styles.label, styles.labelTypo]}>
@@ -117,21 +117,21 @@ const CaseIdentity = () => {
               <ImageBackground
                 style={styles.identificationimageIcon}
                 resizeMode="contain"
-                source={require("../assets/isuranceimage.png")}
+                source={require("../assets/InsuranceImg.png")}
               />
               <View style={styles.uploadwrapper}>
                 <View style={styles.camerabtnLayout}>
                   <Image
                     style={styles.packagePlusIcon}
                     resizeMode="contain"
-                    source={require("../assets/camera2.png")}
+                    source={require("../assets/icons/camera.png")}
                   />
                 </View>
                 <View style={[styles.camerabtn, styles.camerabtnLayout]}>
                   <Image
                     style={styles.packagePlusIcon}
                     resizeMode="contain"
-                    source={require("../assets/camera2.png")}
+                    source={require("../assets/icons/camera.png")}
                   />
                 </View>
               </View>
@@ -154,27 +154,27 @@ const CaseIdentity = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -183,20 +183,20 @@ const CaseIdentity = () => {
 
 const styles = StyleSheet.create({
   headerFlexBox: {
-    padding: Padding.p_base,
+    padding: 16,
     alignSelf: "stretch",
     alignItems: "center",
   },
   growtextbuttonSpaceBlock: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
   },
   buttontextTypo: {
     color: Color.gray,
     textAlign: "center",
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   header1SpaceBlock: {
     paddingVertical: 0,
@@ -211,20 +211,20 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     alignItems: "center",
   },
   labelTypo: {
     marginLeft: 8,
     color: Color.colorPrimary,
-    fontSize: FontSize.bodyMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 18,
+    fontFamily: "Poppins-Regular",
   },
   camerabtnLayout: {
-    paddingVertical: Padding.p_21xl,
+    paddingVertical: 40,
     backgroundColor: Color.gray,
-    paddingHorizontal: Padding.p_5xs,
-    borderRadius: Border.br_31xl,
+    paddingHorizontal: 8,
+    borderRadius: 50,
     justifyContent: "center",
     height: 40,
     width: 40,
@@ -243,19 +243,19 @@ const styles = StyleSheet.create({
     height: 40,
     width: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     alignItems: "center",
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
     textAlign: "center",
   },
   header1: {
     height: 30,
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     justifyContent: "center",
     flexDirection: "row",
   },
@@ -270,8 +270,8 @@ const styles = StyleSheet.create({
   nametext: {
     textAlign: "left",
     color: Color.colorWhite,
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   namewrapper: {
     justifyContent: "center",
@@ -283,9 +283,9 @@ const styles = StyleSheet.create({
   },
   greeting: {
     color: Color.colorDarkgray,
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   greetingwrapper: {
     marginTop: 8,
@@ -308,15 +308,15 @@ const styles = StyleSheet.create({
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     justifyContent: "center",
-    padding: Padding.p_base,
+    padding: 16,
     alignItems: "center",
     overflow: "hidden",
   },
   profilecard: {
-    padding: Padding.p_5xs,
-    borderRadius: Border.br_xs,
+    padding: 8,
+    borderRadius: 12,
     flexDirection: "row",
     justifyContent: "space-between",
   },
@@ -326,7 +326,7 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   inputiconwrapper: {
-    padding: Padding.p_5xs,
+    padding: 8,
     justifyContent: "center",
     height: 40,
     flexDirection: "row",
@@ -339,7 +339,7 @@ const styles = StyleSheet.create({
     textAlign: "right",
   },
   inputgroup: {
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     flexDirection: "row",
     alignSelf: "stretch",
   },
@@ -352,7 +352,7 @@ const styles = StyleSheet.create({
     marginLeft: 16,
   },
   uploadwrapper: {
-    paddingHorizontal: Padding.p_5xs,
+    paddingHorizontal: 8,
     marginTop: 8,
     paddingVertical: 0,
     justifyContent: "center",
@@ -363,22 +363,22 @@ const styles = StyleSheet.create({
   },
   indentifycard: {
     height: 262,
-    padding: Padding.p_5xs,
-    borderRadius: Border.br_xs,
+    padding: 8,
+    borderRadius: 12,
     justifyContent: "center",
     alignItems: "center",
     overflow: "hidden",
   },
   indentifycard1: {
     marginTop: 16,
-    padding: Padding.p_5xs,
-    borderRadius: Border.br_xs,
+    padding: 8,
+    borderRadius: 12,
     justifyContent: "center",
     alignItems: "center",
     overflow: "hidden",
   },
   uploadcontainer: {
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     paddingVertical: 0,
     alignSelf: "stretch",
   },
@@ -398,8 +398,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
-    paddingVertical: Padding.p_5xs,
+    borderRadius: 15,
+    paddingVertical: 8,
     alignSelf: "stretch",
     alignItems: "center",
   },
@@ -416,8 +416,8 @@ const styles = StyleSheet.create({
     borderStyle: "solid",
     borderColor: "#000",
     borderTopWidth: 5,
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
     justifyContent: "space-between",
   },

@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 import {
   Pressable,
   Image,
@@ -7,29 +7,28 @@ import {
   View,
   TextInput,
   TouchableOpacity,
-  StatusBar
-} from "react-native";
-import { useNavigation } from "@react-navigation/native";
-import { Border, Padding, FontFamily, Color, FontSize } from "../GlobalStyles";
+  StatusBar,
+} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
+import {Border, Padding, FontFamily, Color, FontSize} from '../GlobalStyles';
 
 const DentistNewReturn = () => {
   const navigation = useNavigation();
 
   return (
     <View style={styles.dentistnewreturn}>
-              <StatusBar backgroundColor={Color.bgBlack} />
+      <StatusBar backgroundColor={Color.bgBlack} />
 
       <View style={styles.container}>
         <View style={styles.maincontainer}>
           <View style={styles.header}>
             <Pressable
               style={[styles.iconbutton, styles.iconbuttonFlexBox]}
-              onPress={() => navigation.goBack()}
-            >
+              onPress={() => navigation.goBack()}>
               <Image
                 style={styles.arrowLeftIcon}
                 resizeMode="contain"
-                source={require("../assets/arrowleft.png")}
+                source={require('../assets/icons/arrow-left.png')}
               />
             </Pressable>
             <View style={styles.header1}>
@@ -38,7 +37,7 @@ const DentistNewReturn = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-1.png")}
+              source={require('../assets/JplignLogo.png')}
             />
           </View>
           <View style={styles.prfilecontainer}>
@@ -47,23 +46,20 @@ const DentistNewReturn = () => {
                 <View>
                   <View style={styles.profilenamewtrapper}>
                     <View
-                      style={[styles.suffixwrapper, styles.iconbuttonFlexBox]}
-                    >
+                      style={[styles.suffixwrapper, styles.iconbuttonFlexBox]}>
                       <Text style={[styles.suffixtext, styles.greetingTypo]}>
                         Dr.
                       </Text>
                     </View>
                     <View
-                      style={[styles.namewrapper, styles.iconbuttonFlexBox]}
-                    >
+                      style={[styles.namewrapper, styles.iconbuttonFlexBox]}>
                       <Text style={[styles.suffixtext, styles.greetingTypo]}>
                         Fullname
                       </Text>
                     </View>
                   </View>
                   <View
-                    style={[styles.greetingwrapper, styles.iconbuttonFlexBox]}
-                  >
+                    style={[styles.greetingwrapper, styles.iconbuttonFlexBox]}>
                     <Text style={[styles.greeting, styles.greetingTypo]}>
                       Greeting
                     </Text>
@@ -74,7 +70,7 @@ const DentistNewReturn = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="contain"
-                  source={require("../assets/defaultimage.png")}
+                  source={require('../assets/ProfileImg.png')}
                 />
               </View>
             </View>
@@ -85,7 +81,7 @@ const DentistNewReturn = () => {
                 <Image
                   style={styles.arrowLeftIcon}
                   resizeMode="contain"
-                  source={require("../assets/packageplus22.png")}
+                  source={require('../assets/icons/package-plus.png')}
                 />
               </View>
               <View style={[styles.fieldwrapper, styles.label5SpaceBlock]}>
@@ -101,7 +97,7 @@ const DentistNewReturn = () => {
                   <Image
                     style={styles.chevronDownIcon}
                     resizeMode="cover"
-                    source={require("../assets/chevrondown.png")}
+                    source={require('../assets/icons/chevrondown.png')}
                   />
                 </View>
               </View>
@@ -111,7 +107,7 @@ const DentistNewReturn = () => {
                 <Image
                   style={styles.arrowLeftIcon}
                   resizeMode="contain"
-                  source={require("../assets/packageplus23.png")}
+                  source={require('../assets/icons/number.png')}
                 />
               </View>
               <View style={[styles.fieldwrapper, styles.label5SpaceBlock]}>
@@ -130,7 +126,7 @@ const DentistNewReturn = () => {
                 <Image
                   style={styles.arrowLeftIcon}
                   resizeMode="contain"
-                  source={require("../assets/packageplus19.png")}
+                  source={require('../assets/icons/reason.png')}
                 />
               </View>
               <View style={[styles.fieldwrapper, styles.label5SpaceBlock]}>
@@ -146,7 +142,7 @@ const DentistNewReturn = () => {
                   <Image
                     style={styles.chevronDownIcon}
                     resizeMode="cover"
-                    source={require("../assets/chevrondown.png")}
+                    source={require('../assets/icons/chevrondown.png')}
                   />
                 </View>
               </View>
@@ -156,7 +152,7 @@ const DentistNewReturn = () => {
                 <Image
                   style={styles.arrowLeftIcon}
                   resizeMode="contain"
-                  source={require("../assets/packageplus20.png")}
+                  source={require('../assets/icons/help-circle.png')}
                 />
               </View>
               <View style={[styles.fieldwrapper, styles.label5SpaceBlock]}>
@@ -173,7 +169,7 @@ const DentistNewReturn = () => {
                 <Image
                   style={styles.arrowLeftIcon}
                   resizeMode="contain"
-                  source={require("../assets/packageplus24.png")}
+                  source={require('../assets/icons/reason.png')}
                 />
               </View>
               <View style={[styles.fieldwrapper, styles.label5SpaceBlock]}>
@@ -187,7 +183,7 @@ const DentistNewReturn = () => {
                   <Image
                     style={styles.chevronDownIcon}
                     resizeMode="cover"
-                    source={require("../assets/chevrondown.png")}
+                    source={require('../assets/icons/chevrondown.png')}
                   />
                 </View>
               </View>
@@ -198,7 +194,7 @@ const DentistNewReturn = () => {
                   <Image
                     style={styles.arrowLeftIcon}
                     resizeMode="contain"
-                    source={require("../assets/info4.png")}
+                    source={require('../assets/icons/info.png')}
                   />
                 </View>
                 <Text style={[styles.label5, styles.labelTypo]}>
@@ -207,8 +203,10 @@ const DentistNewReturn = () => {
               </View>
               <View style={styles.infotextwrapper}>
                 <Text
-                  style={[styles.infotext, styles.greetingTypo]}
-                >{`Please pre-register the return aligner with the necessary support, only in some cases it is necessary to send back the damaged aligner. `}</Text>
+                  style={[
+                    styles.infotext,
+                    styles.greetingTypo,
+                  ]}>{`Please pre-register the return aligner with the necessary support, only in some cases it is necessary to send back the damaged aligner. `}</Text>
               </View>
             </View>
           </View>
@@ -217,8 +215,7 @@ const DentistNewReturn = () => {
           <TouchableOpacity
             style={[styles.growtextbutton, styles.bottomtabSpaceBlock]}
             activeOpacity={0.2}
-            onPress={() => navigation.navigate("DentistReturnList")}
-          >
+            onPress={() => navigation.navigate('DentistReturnList')}>
             <Text style={[styles.buttontext, styles.iconbuttonFlexBox]}>
               Save New Return
             </Text>
@@ -229,27 +226,27 @@ const DentistNewReturn = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require('../assets/icons/message-circle.png')}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube2.png")}
+          source={require('../assets/icons/youtube.png')}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info2.png")}
+          source={require('../assets/icons/info.png')}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require('../assets/icons/condition.png')}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require('../assets/icons/log-out.png')}
         />
       </View>
     </View>
@@ -258,18 +255,18 @@ const DentistNewReturn = () => {
 
 const styles = StyleSheet.create({
   iconbuttonFlexBox: {
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   inputgroupFlexBox: {
-    borderRadius: Border.br_xs,
-    padding: Padding.p_5xs,
-    flexDirection: "row",
-    alignSelf: "stretch",
+    borderRadius: 12,
+    padding: 8,
+    flexDirection: 'row',
+    alignSelf: 'stretch',
   },
   greetingTypo: {
-    textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    textAlign: 'left',
+    fontFamily: 'Poppins-Regular',
   },
   label5SpaceBlock: {
     marginLeft: 8,
@@ -277,20 +274,20 @@ const styles = StyleSheet.create({
   },
   labelTypo: {
     color: Color.colorPrimary,
-    textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    textAlign: 'left',
+    fontFamily: 'Poppins-Regular',
   },
   inputgroupSpaceBlock: {
     marginTop: 16,
     backgroundColor: Color.bgBrown,
-    borderRadius: Border.br_xs,
-    alignSelf: "stretch",
+    borderRadius: 12,
+    alignSelf: 'stretch',
   },
   bottomtabSpaceBlock: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
-    flexDirection: "row",
-    alignSelf: "stretch",
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    flexDirection: 'row',
+    alignSelf: 'stretch',
   },
   iconLayout: {
     width: 32,
@@ -299,105 +296,105 @@ const styles = StyleSheet.create({
   arrowLeftIcon: {
     width: 24,
     height: 24,
-    overflow: "hidden",
+    overflow: 'hidden',
   },
   iconbutton: {
     width: 40,
-    padding: Padding.p_5xs,
-    flexDirection: "row",
+    padding: 8,
+    flexDirection: 'row',
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
-    justifyContent: "center",
+    borderRadius: 15,
+    justifyContent: 'center',
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
-    fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
-    textAlign: "center",
+    fontSize: 24,
+    fontWeight: '700',
+    fontFamily: 'Poppins-Bold',
+    textAlign: 'center',
     color: Color.colorWhite,
   },
   header1: {
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     paddingVertical: 0,
-    justifyContent: "center",
-    flexDirection: "row",
-    alignItems: "center",
+    justifyContent: 'center',
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   headerChild: {
     width: 50,
     height: 40,
   },
   header: {
-    padding: Padding.p_base,
-    flexDirection: "row",
-    alignSelf: "stretch",
-    justifyContent: "space-between",
-    alignItems: "center",
+    padding: 16,
+    flexDirection: 'row',
+    alignSelf: 'stretch',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
   suffixtext: {
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
     color: Color.colorWhite,
   },
   suffixwrapper: {
-    flexDirection: "row",
+    flexDirection: 'row',
   },
   namewrapper: {
     marginLeft: 4,
-    flexDirection: "row",
+    flexDirection: 'row',
   },
   profilenamewtrapper: {
-    flexDirection: "row",
+    flexDirection: 'row',
   },
   greeting: {
     color: Color.colorDarkgray,
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
   },
   greetingwrapper: {
     marginTop: 8,
-    flexDirection: "row",
+    flexDirection: 'row',
   },
   defaultimageIcon: {
     height: 32,
     width: 20,
   },
   uploadimage: {
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
-    padding: Padding.p_base,
-    overflow: "hidden",
+    padding: 16,
+    overflow: 'hidden',
   },
   profilecard: {
     backgroundColor: Color.bgBrown,
-    justifyContent: "space-between",
+    justifyContent: 'space-between',
   },
   prfilecontainer: {
-    padding: Padding.p_base,
-    alignSelf: "stretch",
-    alignItems: "center",
+    padding: 16,
+    alignSelf: 'stretch',
+    alignItems: 'center',
   },
   label: {
-    fontSize: FontSize.bodyMedium_size,
-    alignSelf: "stretch",
+    fontSize: 18,
+    alignSelf: 'stretch',
   },
   inputtext: {
-    fontSize: FontSize.bodyMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 18,
+    fontFamily: 'Poppins-Regular',
     flex: 1,
   },
   chevronDownIcon: {
     height: 20,
     width: 20,
-    overflow: "hidden",
+    overflow: 'hidden',
   },
   input: {
     height: 19,
-    flexDirection: "row",
-    alignSelf: "stretch",
-    justifyContent: "space-between",
-    alignItems: "center",
+    flexDirection: 'row',
+    alignSelf: 'stretch',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
   fieldwrapper: {
     height: 40,
@@ -407,84 +404,84 @@ const styles = StyleSheet.create({
     backgroundColor: Color.bgBrown,
   },
   inputtext1: {
-    fontSize: FontSize.bodyMedium_size,
-    fontFamily: FontFamily.bodySmall,
-    alignSelf: "stretch",
+    fontSize: 18,
+    fontFamily: 'Poppins-Regular',
+    alignSelf: 'stretch',
   },
   inputgroup1: {
-    padding: Padding.p_5xs,
-    flexDirection: "row",
+    padding: 8,
+    flexDirection: 'row',
   },
   inputgroup2: {
     height: 56,
-    padding: Padding.p_5xs,
-    flexDirection: "row",
+    padding: 8,
+    flexDirection: 'row',
   },
   label5: {
     marginLeft: 8,
     flex: 1,
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
   },
   infotext: {
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
     color: Color.colorWhite,
     flex: 1,
   },
   infotextwrapper: {
-    paddingHorizontal: Padding.p_5xs,
-    paddingBottom: Padding.p_5xs,
-    flexDirection: "row",
-    alignSelf: "stretch",
+    paddingHorizontal: 8,
+    paddingBottom: 8,
+    flexDirection: 'row',
+    alignSelf: 'stretch',
   },
   fromsection: {
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     paddingVertical: 0,
-    alignSelf: "stretch",
-    alignItems: "center",
+    alignSelf: 'stretch',
+    alignItems: 'center',
   },
   maincontainer: {
-    alignSelf: "stretch",
-    alignItems: "center",
+    alignSelf: 'stretch',
+    alignItems: 'center',
   },
   buttontext: {
     color: Color.gray,
-    display: "flex",
+    display: 'flex',
     width: 304,
     height: 28,
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
-    textAlign: "center",
+    fontFamily: 'Poppins-Regular',
+    fontSize: 18,
+    textAlign: 'center',
   },
   growtextbutton: {
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
   },
   container: {
-    alignSelf: "stretch",
-    justifyContent: "space-between",
-    alignItems: "center",
+    alignSelf: 'stretch',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     flex: 1,
   },
   youtubeIcon: {
-    overflow: "hidden",
+    overflow: 'hidden',
   },
   bottomtab: {
-    borderStyle: "solid",
-    borderColor: "#000",
+    borderStyle: 'solid',
+    borderColor: '#000',
     borderTopWidth: 5,
     backgroundColor: Color.bgBrown,
-    justifyContent: "space-between",
+    justifyContent: 'space-between',
   },
   dentistnewreturn: {
     backgroundColor: Color.bgBlack,
-    width: "100%",
+    width: '100%',
     height: 879,
-    justifyContent: "space-between",
-    alignItems: "center",
-    overflow: "hidden",
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    overflow: 'hidden',
     flex: 1,
   },
 });

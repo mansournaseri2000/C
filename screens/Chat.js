@@ -27,7 +27,7 @@ const Chat = () => {
             <Image
               style={styles.arrowLeftIcon}
               resizeMode="contain"
-              source={require("../assets/arrowleft.png")}
+              source={require("../assets/icons/arrow-left.png")}
             />
           </Pressable>
           <View style={styles.header1}>
@@ -36,7 +36,7 @@ const Chat = () => {
           <Image
             style={styles.jplignlogoIcon}
             resizeMode="contain"
-            source={require("../assets/group-14.png")}
+            source={require("../assets/JplignLogo.png")}
           />
         </View>
       </View>
@@ -75,7 +75,7 @@ const Chat = () => {
             <Image
               style={styles.arrowLeftIcon}
               resizeMode="contain"
-              source={require("../assets/paperclip2.png")}
+              source={require("../assets/icons/paperclip.png")}
             />
             <TextInput
               style={[styles.messagebox, styles.messageboxSpaceBlock]}
@@ -86,7 +86,7 @@ const Chat = () => {
           <Image
             style={styles.sendbtnIcon}
             resizeMode="contain"
-            source={require("../assets/group-34808.png")}
+            source={require("../assets/icons/send-white.png")}
           />
         </View>
       </View>
@@ -106,31 +106,31 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   chat1SpaceBlock: {
-    paddingHorizontal: Padding.p_5xs,
+    paddingHorizontal: 8,
     flexDirection: "row",
   },
   messagewrapperLayout: {
     maxWidth: 296,
-    borderTopRightRadius: Border.br_xs,
-    borderTopLeftRadius: Border.br_xs,
-    padding: Padding.p_5xs,
+    borderTopRightRadius: 12,
+    borderTopLeftRadius: 12,
+    padding: 8,
     flexDirection: "row",
   },
   chatSpaceBlock: {
     marginTop: 8,
-    paddingHorizontal: Padding.p_5xs,
+    paddingHorizontal: 8,
     flexWrap: "wrap",
     paddingVertical: 0,
     flexDirection: "row",
     alignSelf: "stretch",
   },
   messageboxSpaceBlock: {
-    paddingVertical: Padding.p_9xs,
+    paddingVertical: 4,
     alignItems: "center",
   },
   rowSpaceBlock: {
-    padding: Padding.p_5xs,
-    borderRadius: Border.br_mini,
+    padding: 8,
+    borderRadius: 15,
   },
   arrowLeftIcon: {
     width: 24,
@@ -139,20 +139,20 @@ const styles = StyleSheet.create({
   },
   iconbutton: {
     width: 40,
-    padding: Padding.p_5xs,
-    borderRadius: Border.br_mini,
+    padding: 8,
+    borderRadius: 15,
     height: 40,
     backgroundColor: Color.colorPrimary,
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
     textAlign: "center",
   },
   header1: {
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     paddingVertical: 0,
     justifyContent: "center",
     flexDirection: "row",
@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
     height: 40,
   },
   header: {
-    padding: Padding.p_base,
+    padding: 16,
     justifyContent: "space-between",
   },
   container: {
@@ -171,24 +171,24 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   message: {
-    fontSize: FontSize.bodyMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 18,
+    fontFamily: "Poppins-Regular",
     color: Color.gray,
     textAlign: "left",
     flex: 1,
   },
   messagewrapper: {
-    borderBottomRightRadius: Border.br_xs,
+    borderBottomRightRadius: 12,
     backgroundColor: Color.colorPrimary,
   },
   chat1: {
     flexWrap: "wrap",
-    paddingHorizontal: Padding.p_5xs,
+    paddingHorizontal: 8,
     paddingVertical: 0,
     alignSelf: "stretch",
   },
   messagewrapper1: {
-    borderBottomLeftRadius: Border.br_xs,
+    borderBottomLeftRadius: 12,
     backgroundColor: Color.colorLightgray,
   },
   chat2: {
@@ -198,18 +198,18 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
   },
   conversationcontainer: {
-    padding: Padding.p_3xs,
+    padding: 10,
     alignSelf: "stretch",
     flex: 1,
   },
   messagebox: {
-    borderRadius: Border.br_8xs,
+    borderRadius: 5,
     backgroundColor: Color.colorDarkgray,
     fontWeight: "300",
     fontFamily: FontFamily.poppinsLight,
     fontSize: 13,
     marginLeft: 8,
-    paddingHorizontal: Padding.p_5xs,
+    paddingHorizontal: 8,
     flexDirection: "row",
     flex: 1,
   },
@@ -228,7 +228,7 @@ const styles = StyleSheet.create({
   },
   messagecontainer: {
     backgroundColor: Color.bgBrown,
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     alignSelf: "stretch",
   },
   chat: {

@@ -15,6 +15,6 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: Color.bgBlack,
-      paddingHorizontal: Padding.p_base,
+      // paddingHorizontal: 16,
     }
 })

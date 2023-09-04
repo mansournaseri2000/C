@@ -12,11 +12,11 @@ const OnboardingOne = () => {
   return (
     <Container>
       <HeroSection imageSrc={require("../assets/DrImage.png")} />
-      <TitleSection title="20 Years of experience for your dream smile" />
+      <TitleSection title="20 Years of experience for your dream smile"/>
       <IndicatorSection enabledIndicator={1}/>
       <Pressable style={[styles.btnsection, styles.btnsectionFlexBox]}>
-        <TextButton skipText="Skip" />
-        <PrimaryBtnSmall buttonText="Next" />
+        <TextButton skipText="Skip" goTo="Home" type="secondary"/>
+        <PrimaryBtnSmall buttonText="Next" goTo="OnboardingTwo"/>
       </Pressable>
       </Container>
   );
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   btnsection: {
     alignSelf: "stretch",
     flexDirection: "row",
-    paddingVertical: Padding.p_base,
+    paddingVertical: 16,
   },
 });
 

@@ -33,7 +33,7 @@ const CaseShopDisable = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-15.png")}
+              source={require("../assets/JplignLogo.png")}
             />
           </View>
           <View style={[styles.prfilecontainer, styles.headerSpaceBlock]}>
@@ -61,7 +61,7 @@ const CaseShopDisable = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="cover"
-                  source={require("../assets/defaultimage.png")}
+                  source={require("../assets/ProfileImg.png")}
                 />
               </View>
             </View>
@@ -108,7 +108,7 @@ const CaseShopDisable = () => {
                   <ImageBackground
                     style={styles.productimageIcon}
                     resizeMode="contain"
-                    source={require("../assets/productimage.png")}
+                    source={require("../assets/ProductImg.png")}
                   />
                 </View>
                 <Pressable
@@ -118,7 +118,7 @@ const CaseShopDisable = () => {
                     <Image
                       style={styles.packagePlusIcon}
                       resizeMode="contain"
-                      source={require("../assets/packageplus6.png")}
+                      source={require("../assets/icons/film.png")}
                     />
                     <Text style={[styles.buttontext1, styles.buttontextTypo]}>
                       Buy now
@@ -166,7 +166,7 @@ const CaseShopDisable = () => {
                   <ImageBackground
                     style={styles.productimageIcon}
                     resizeMode="contain"
-                    source={require("../assets/productimage.png")}
+                    source={require("../assets/ProductImg.png")}
                   />
                 </View>
                 <TouchableOpacity
@@ -178,7 +178,7 @@ const CaseShopDisable = () => {
                     <Image
                       style={styles.packagePlusIcon}
                       resizeMode="contain"
-                      source={require("../assets/packageplus6.png")}
+                      source={require("../assets/icons/film.png")}
                     />
                     <Text style={[styles.buttontext1, styles.buttontextTypo]}>
                       Buy now
@@ -228,7 +228,7 @@ const CaseShopDisable = () => {
                   <ImageBackground
                     style={styles.productimageIcon}
                     resizeMode="contain"
-                    source={require("../assets/productimage.png")}
+                    source={require("../assets/ProductImg.png")}
                   />
                 </View>
                 <Pressable
@@ -238,7 +238,7 @@ const CaseShopDisable = () => {
                     <Image
                       style={styles.packagePlusIcon}
                       resizeMode="contain"
-                      source={require("../assets/packageplus6.png")}
+                      source={require("../assets/icons/film.png")}
                     />
                     <Text style={[styles.buttontext1, styles.buttontextTypo]}>
                       Buy now
@@ -286,7 +286,7 @@ const CaseShopDisable = () => {
                   <ImageBackground
                     style={styles.productimageIcon}
                     resizeMode="contain"
-                    source={require("../assets/productimage.png")}
+                    source={require("../assets/ProductImg.png")}
                   />
                 </View>
                 <Pressable
@@ -296,7 +296,7 @@ const CaseShopDisable = () => {
                     <Image
                       style={styles.packagePlusIcon}
                       resizeMode="contain"
-                      source={require("../assets/packageplus6.png")}
+                      source={require("../assets/icons/film.png")}
                     />
                     <Text style={[styles.buttontext1, styles.buttontextTypo]}>
                       Buy now
@@ -312,27 +312,27 @@ const CaseShopDisable = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube2.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info2.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -341,21 +341,21 @@ const CaseShopDisable = () => {
 
 const styles = StyleSheet.create({
   headerSpaceBlock: {
-    padding: Padding.p_base,
+    padding: 16,
     alignItems: "center",
   },
   shrinkbuttonSpaceBlock1: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
   },
   buttontextTypo: {
     color: Color.gray,
     textAlign: "center",
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   profilecardLayout: {
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     backgroundColor: Color.bgBrown,
   },
   shrinkbuttonSpaceBlock: {
@@ -365,16 +365,16 @@ const styles = StyleSheet.create({
   greetingTypo: {
     color: Color.colorDarkgray,
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   rowSpaceBlock: {
-    paddingTop: Padding.p_45xl,
+    paddingTop: 64,
     alignSelf: "stretch",
   },
   productmodeltextTypo: {
     color: Color.colorPrimary,
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   iconLayout: {
     width: 32,
@@ -388,21 +388,21 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    paddingVertical: Padding.p_5xs,
-    borderRadius: Border.br_mini,
+    paddingVertical: 8,
+    borderRadius: 15,
     alignItems: "center",
     flexDirection: "row",
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
     textAlign: "center",
   },
   header1: {
     height: 30,
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     paddingVertical: 0,
     justifyContent: "center",
     flexDirection: "row",
@@ -420,8 +420,8 @@ const styles = StyleSheet.create({
   nametext: {
     textAlign: "left",
     color: Color.colorWhite,
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   namewrapper: {
     justifyContent: "center",
@@ -432,7 +432,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   greeting: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
   },
   greetingwrapper: {
     justifyContent: "center",
@@ -450,7 +450,7 @@ const styles = StyleSheet.create({
     height: 32,
   },
   uploadimage: {
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
@@ -458,7 +458,7 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   profilecard: {
-    padding: Padding.p_5xs,
+    padding: 8,
     backgroundColor: Color.bgBrown,
     flexDirection: "row",
     alignSelf: "stretch",
@@ -468,11 +468,11 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
   },
   productnametext: {
-    fontSize: FontSize.titleLarge_size,
+    fontSize: 22,
     width: 148,
   },
   productnamewrapper: {
-    padding: Padding.p_9xs,
+    padding: 4,
     zIndex: 0,
     justifyContent: "center",
     flexDirection: "row",
@@ -504,10 +504,10 @@ const styles = StyleSheet.create({
     zIndex: 3,
   },
   shopinfowrapper: {
-    paddingHorizontal: Padding.p_5xs,
-    paddingBottom: Padding.p_base,
+    paddingHorizontal: 8,
+    paddingBottom: 16,
     backgroundColor: Color.bgBrown,
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
   },
   packagePlusIcon: {
     width: 24,
@@ -527,10 +527,10 @@ const styles = StyleSheet.create({
   shrinkbutton: {
     backgroundColor: Color.colorDarkgray,
     justifyContent: "center",
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     height: 40,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     marginTop: 8,
     alignSelf: "stretch",
     alignItems: "center",
@@ -540,11 +540,11 @@ const styles = StyleSheet.create({
   },
   shrinkbutton1: {
     justifyContent: "center",
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     alignItems: "center",
     alignSelf: "stretch",
   },
@@ -562,8 +562,8 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
   },
   cardcontainer: {
-    paddingTop: Padding.p_base,
-    paddingHorizontal: Padding.p_base,
+    paddingTop: 16,
+    paddingHorizontal: 16,
     alignSelf: "stretch",
     alignItems: "center",
   },

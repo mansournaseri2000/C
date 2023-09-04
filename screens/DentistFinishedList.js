@@ -27,7 +27,7 @@ const DentistFinishedList = () => {
             <Image
               style={styles.arrowLeftIcon}
               resizeMode="contain"
-              source={require("../assets/arrowleft.png")}
+              source={require("../assets/icons/arrow-left.png")}
             />
           </Pressable>
           <View style={[styles.header1, styles.header1SpaceBlock]}>
@@ -36,7 +36,7 @@ const DentistFinishedList = () => {
           <Image
             style={styles.headerChild}
             resizeMode="contain"
-            source={require("../assets/group-1.png")}
+            source={require("../assets/JplignLogo.png")}
           />
         </View>
         <View style={[styles.profilecontainer, styles.headerSpaceBlock]}>
@@ -66,7 +66,7 @@ const DentistFinishedList = () => {
               <Image
                 style={styles.defaultimageIcon}
                 resizeMode="contain"
-                source={require("../assets/defaultimage.png")}
+                source={require("../assets/ProfileImg.png")}
               />
             </View>
           </View>
@@ -77,7 +77,7 @@ const DentistFinishedList = () => {
               <ImageBackground
                 style={styles.caseprofileIcon}
                 resizeMode="contain"
-                source={require("../assets/caseprofile.png")}
+                source={require("../assets/SampleProfileImg.png")}
               />
             </View>
             <View style={styles.infowrapper}>
@@ -121,7 +121,7 @@ const DentistFinishedList = () => {
               <ImageBackground
                 style={styles.caseprofileIcon}
                 resizeMode="contain"
-                source={require("../assets/caseprofile.png")}
+                source={require("../assets/SampleProfileImg.png")}
               />
             </View>
             <View style={styles.infowrapper}>
@@ -166,27 +166,27 @@ const DentistFinishedList = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube2.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info2.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -195,11 +195,11 @@ const DentistFinishedList = () => {
 
 const styles = StyleSheet.create({
   headerSpaceBlock: {
-    padding: Padding.p_base,
+    padding: 16,
     alignItems: "center",
   },
   shrinktextbuttonFlexBox: {
-    padding: Padding.p_5xs,
+    padding: 8,
     justifyContent: "center",
     alignItems: "center",
   },
@@ -208,9 +208,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   casecardFlexBox: {
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     backgroundColor: Color.bgBrown,
-    padding: Padding.p_5xs,
+    padding: 8,
     flexDirection: "row",
     alignSelf: "stretch",
   },
@@ -228,16 +228,16 @@ const styles = StyleSheet.create({
     textAlign: "left",
   },
   caselistSpaceBlock: {
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     alignSelf: "stretch",
   },
   greetingTypo: {
-    fontSize: FontSize.bodyMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 18,
+    fontFamily: "Poppins-Regular",
   },
   caseorderTypo: {
-    fontSize: FontSize.bodySmall_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 16,
+    fontFamily: "Poppins-Regular",
   },
   bottomtabBorder: {
     borderStyle: "solid",
@@ -257,19 +257,19 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
-    padding: Padding.p_5xs,
+    borderRadius: 15,
+    padding: 8,
     flexDirection: "row",
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     textAlign: "center",
     color: Color.colorWhite,
   },
   header1: {
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     justifyContent: "center",
     flexDirection: "row",
   },
@@ -283,8 +283,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   suffixtext: {
-    fontSize: FontSize.titleMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 18,
+    fontFamily: "Poppins-Regular",
     textAlign: "left",
   },
   suffixwrapper: {
@@ -299,8 +299,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   greeting: {
-    fontSize: FontSize.bodyMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 18,
+    fontFamily: "Poppins-Regular",
   },
   greetingwrapper: {
     marginTop: 8,
@@ -316,7 +316,7 @@ const styles = StyleSheet.create({
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     justifyContent: "center",
     overflow: "hidden",
   },
@@ -330,7 +330,7 @@ const styles = StyleSheet.create({
   caseprofileIcon: {
     width: 48,
     height: 48,
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
   },
   nametext1: {
     textAlign: "left",
@@ -357,9 +357,9 @@ const styles = StyleSheet.create({
     borderColor: "#241b18",
     borderWidth: 1,
     height: 32,
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     justifyContent: "center",
-    padding: Padding.p_5xs,
+    padding: 8,
     alignItems: "center",
   },
   buttontext: {
@@ -371,8 +371,8 @@ const styles = StyleSheet.create({
     height: 32,
     justifyContent: "center",
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
-    padding: Padding.p_5xs,
+    borderRadius: 15,
+    padding: 8,
     flexDirection: "row",
   },
   actions: {
@@ -410,8 +410,8 @@ const styles = StyleSheet.create({
   bottomtab: {
     borderColor: "#000",
     borderTopWidth: 5,
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     alignSelf: "stretch",
     backgroundColor: Color.bgBrown,
     justifyContent: "space-between",

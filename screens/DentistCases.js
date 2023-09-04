@@ -1,13 +1,11 @@
 import * as React from "react";
 import { ScrollView, StyleSheet, View,StatusBar } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import HeaderLan from "../components/HeaderLan";
 import HeaderBack from "../components/HeaderBack";
 import DrProfileCard from "../components/DrProfileCard";
 import HomeCard from "../components/HomeCard";
-import BottomTab from "../components/BottomTab2";
-import { Padding, Color } from "../GlobalStyles";
-import UnderBtnText from "../components/UnderBtnText";
+import BottomTab from "../components/BottomTab";
+import { Color } from "../GlobalStyles";
 
 const DentistHome = () => {
   const navigation = useNavigation();
@@ -25,7 +23,7 @@ const DentistHome = () => {
         <HeaderBack headerText="Cases" />
         <View style={styles.homesection}>
           <DrProfileCard
-            imageSrc={require("../assets/defaultimage1.png")}
+            imageSrc={require("../assets/ProfileImg.png")}
             nameText="Fullname"
             greeting="Greeting"
           />
@@ -33,20 +31,20 @@ const DentistHome = () => {
             <View style={styles.cardcontainer}>
               <View style={styles.row}>
                 <HomeCard
-                  iconSrc={require("../assets/trendingup.png")}
+                  iconSrc={require("../assets/icons/trending-up.png")}
                   cardText="Treatment"
                   onMainCardPress={() => navigation.navigate("DentistTreatmentList")}
                   mainCardMarginLeft="unset"
                 />
                 <HomeCard
-                  iconSrc={require("../assets/userplus.png")}
+                  iconSrc={require("../assets/icons/user-plus.png")}
                   cardText="New Cases"
                   onMainCardPress={() => navigation.navigate("DentistProfile")}
                 />
               </View>
-              <View style={styles.rowSpaceBlock}>
+              <View style={styles.row}>
                 <HomeCard
-                  iconSrc={require("../assets/packageplus21.png")}
+                  iconSrc={require("../assets/icons/condition.png")}
                   cardText="Refinement"
                   onMainCardPress={() =>
                     navigation.navigate("DentistRefinementList")
@@ -54,21 +52,21 @@ const DentistHome = () => {
                   mainCardMarginLeft="unset"
                 />
                 <HomeCard
-                  iconSrc={require("../assets/smile.png")}
+                  iconSrc={require("../assets/icons/smile.png")}
                   cardText="Finished"
                   onMainCardPress={() => navigation.navigate("DentistFinishedList")}
                   mainCardMarginLeft={16}
                 />
               </View>
-              <View style={[styles.row2, styles.rowSpaceBlock]}>
+              <View style={styles.row}>
                 <HomeCard
-                  iconSrc={require("../assets/rotateccw.png")}
+                  iconSrc={require("../assets/icons/rotate-ccw.png")}
                   cardText="Return"
                   onMainCardPress={() => navigation.navigate("DentistReturnList")}
                   mainCardMarginLeft="unset"
                 />
                 <HomeCard
-                  iconSrc={require("../assets/archive.png")}
+                  iconSrc={require("../assets/icons/archive.png")}
                   cardText="Archive"
                   onMainCardPress={() =>
                     navigation.navigate("DentistArchiveList")
@@ -76,9 +74,9 @@ const DentistHome = () => {
                   mainCardMarginLeft={16}
                 />
               </View>
-              <View style={[styles.row2, styles.rowSpaceBlock]}>
+              <View style={styles.row}>
                 <HomeCard
-                  iconSrc={require("../assets/frown.png")}
+                  iconSrc={require("../assets/icons/frown.png")}
                   cardText="Termination"
                   onMainCardPress={() =>
                     navigation.navigate("DentistTerminationAction")
@@ -86,7 +84,7 @@ const DentistHome = () => {
                   mainCardMarginLeft="unset"
                 />
                 <HomeCard
-                  iconSrc={require("../assets/tag.png")}
+                  iconSrc={require("../assets/icons/tag.png")}
                   cardText="Order"
                   onMainCardPress={() =>
                     navigation.navigate("DentistOrderList")
@@ -99,11 +97,11 @@ const DentistHome = () => {
         </View>
       </ScrollView>
       <BottomTab
-        messageWrapper={require("../assets/messagewrapper.png")}
-        youtube={require("../assets/youtube.png")}
-        info={require("../assets/info.png")}
-        condition={require("../assets/condition.png")}
-        logOut={require("../assets/logout.png")}
+        messageWrapper={require("../assets/icons/message-circle.png")}
+        youtube={require("../assets/icons/youtube.png")}
+        info={require("../assets/icons/info.png")}
+        condition={require("../assets/icons/condition.png")}
+        logOut={require("../assets/icons/log-out.png")}
       />
     </View>
   );
@@ -111,32 +109,28 @@ const DentistHome = () => {
 
 const styles = StyleSheet.create({
   containerScrollViewContent: {
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "flex-start",
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
   },
   mainFlexBox: {
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   rowSpaceBlock: {
     marginTop: 16,
     paddingVertical: 0,
-    paddingHorizontal: Padding.p_13xl,
-    flexDirection: "row",
-    alignSelf: "stretch",
+    paddingHorizontal: 32,
+    flexDirection: 'row',
+    alignSelf: 'stretch',
   },
   row: {
-    paddingVertical: 0,
-    paddingHorizontal: Padding.p_13xl,
-    justifyContent: "center",
-    flexDirection: "row",
-    alignSelf: "stretch",
-    alignItems: "center",
-  },
-  row2: {
-    justifyContent: "center",
-    alignItems: "center",
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    justifyContent: 'center',
+    flexDirection: 'row',
+    alignSelf: 'stretch',
+    alignItems: 'center',
   },
   cardcontainer: {
     flex: 1,
@@ -144,27 +138,27 @@ const styles = StyleSheet.create({
   main: {
     width: 390,
     paddingHorizontal: 0,
-    paddingVertical: Padding.p_base,
+    paddingVertical: 16,
     marginTop: 10,
-    flexDirection: "row",
-    justifyContent: "center",
+    flexDirection: 'row',
+    justifyContent: 'center',
   },
   homesection: {
-    padding: Padding.p_base,
-    alignSelf: "stretch",
-    alignItems: "center",
+    padding: 16,
+    alignSelf: 'stretch',
+    alignItems: 'center',
   },
   container: {
-    alignSelf: "stretch",
+    alignSelf: 'stretch',
     flex: 1,
   },
   dentisthome: {
     backgroundColor: Color.bgBlack,
-    width: "100%",
+    width: '100%',
     height: 863,
-    overflow: "hidden",
-    justifyContent: "space-between",
-    alignItems: "center",
+    overflow: 'hidden',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     flex: 1,
   },
 });

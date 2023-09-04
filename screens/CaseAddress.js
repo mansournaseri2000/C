@@ -33,7 +33,7 @@ const CaseAddress = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-11.png")}
+              source={require("../assets/JplignLogo.png")}
             />
           </View>
           <View style={[styles.prfilecontainer, styles.headerSpaceBlock]}>
@@ -56,7 +56,7 @@ const CaseAddress = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="cover"
-                  source={require("../assets/defaultimage1.png")}
+                  source={require("../assets/ProfileImg.png")}
                 />
               </View>
             </View>
@@ -69,7 +69,7 @@ const CaseAddress = () => {
                 <Image
                   style={styles.packageIconLayout}
                   resizeMode="contain"
-                  source={require("../assets/packageplus13.png")}
+                  source={require("../assets/icons/map-pin.png")}
                 />
               </View>
               <View style={styles.fieldwrapper}>
@@ -85,7 +85,7 @@ const CaseAddress = () => {
                   <Image
                     style={styles.chevronDownIcon}
                     resizeMode="cover"
-                    source={require("../assets/chevrondown.png")}
+                    source={require("../assets/icons/chevrondown.png")}
                   />
                 </View>
               </View>
@@ -97,7 +97,7 @@ const CaseAddress = () => {
                 <Image
                   style={[styles.packagePlusIcon1, styles.packageIconLayout]}
                   resizeMode="contain"
-                  source={require("../assets/packageplus14.png")}
+                  source={require("../assets/icons/mailbox.png")}
                 />
               </View>
               <View style={styles.fieldwrapper}>
@@ -111,7 +111,7 @@ const CaseAddress = () => {
                   <Image
                     style={styles.chevronDownIcon}
                     resizeMode="cover"
-                    source={require("../assets/chevrondown.png")}
+                    source={require("../assets/icons/chevrondown.png")}
                   />
                 </View>
               </View>
@@ -123,7 +123,7 @@ const CaseAddress = () => {
                 <Image
                   style={[styles.packagePlusIcon1, styles.packageIconLayout]}
                   resizeMode="contain"
-                  source={require("../assets/packageplus14.png")}
+                  source={require("../assets/icons/mailbox.png")}
                 />
               </View>
               <View style={styles.fieldwrapper}>
@@ -137,7 +137,7 @@ const CaseAddress = () => {
                   <Image
                     style={styles.chevronDownIcon}
                     resizeMode="cover"
-                    source={require("../assets/chevrondown.png")}
+                    source={require("../assets/icons/chevrondown.png")}
                   />
                 </View>
               </View>
@@ -149,7 +149,7 @@ const CaseAddress = () => {
                 <Image
                   style={[styles.packagePlusIcon1, styles.packageIconLayout]}
                   resizeMode="contain"
-                  source={require("../assets/packageplus14.png")}
+                  source={require("../assets/icons/mailbox.png")}
                 />
               </View>
               <View style={styles.fieldwrapper}>
@@ -170,7 +170,7 @@ const CaseAddress = () => {
                 <Image
                   style={[styles.packagePlusIcon1, styles.packageIconLayout]}
                   resizeMode="contain"
-                  source={require("../assets/packageplus15.png")}
+                  source={require("../assets/icons/users.png")}
                 />
               </View>
               <View style={styles.fieldwrapper}>
@@ -202,27 +202,27 @@ const CaseAddress = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -231,37 +231,37 @@ const CaseAddress = () => {
 
 const styles = StyleSheet.create({
   headerSpaceBlock: {
-    padding: Padding.p_base,
+    padding: 16,
     alignItems: "center",
   },
   growtextbuttonSpaceBlock: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
   },
   buttontextTypo: {
     color: Color.gray,
     textAlign: "center",
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   header1SpaceBlock: {
     paddingVertical: 0,
     alignItems: "center",
   },
   inputgroupSpaceBlock1: {
-    padding: Padding.p_5xs,
+    padding: 8,
     flexDirection: "row",
   },
   inputtextTypo: {
-    fontSize: FontSize.bodyMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 18,
+    fontFamily: "Poppins-Regular",
   },
   inputgroupSpaceBlock: {
     marginTop: 16,
-    padding: Padding.p_5xs,
+    padding: 8,
     backgroundColor: Color.bgBrown,
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     flexDirection: "row",
     alignSelf: "stretch",
   },
@@ -285,19 +285,19 @@ const styles = StyleSheet.create({
     height: 40,
     width: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     alignItems: "center",
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
     textAlign: "center",
   },
   header1: {
     height: 30,
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     justifyContent: "center",
     flexDirection: "row",
   },
@@ -313,8 +313,8 @@ const styles = StyleSheet.create({
   nametext: {
     textAlign: "left",
     color: Color.colorWhite,
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   namewrapper: {
     justifyContent: "center",
@@ -346,7 +346,7 @@ const styles = StyleSheet.create({
     width: 20,
   },
   uploadimage: {
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
@@ -356,8 +356,8 @@ const styles = StyleSheet.create({
   profilecard: {
     backgroundColor: Color.bgBrown,
     alignSelf: "stretch",
-    borderRadius: Border.br_xs,
-    padding: Padding.p_5xs,
+    borderRadius: 12,
+    padding: 8,
     justifyContent: "space-between",
   },
   prfilecontainer: {
@@ -368,7 +368,7 @@ const styles = StyleSheet.create({
     height: 40,
     width: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     alignItems: "center",
   },
   label: {
@@ -400,8 +400,8 @@ const styles = StyleSheet.create({
     height: 56,
     backgroundColor: Color.bgBrown,
     alignSelf: "stretch",
-    borderRadius: Border.br_xs,
-    padding: Padding.p_5xs,
+    borderRadius: 12,
+    padding: 8,
   },
   packagePlusIcon1: {
     overflow: "hidden",
@@ -413,7 +413,7 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
   },
   formsection: {
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     paddingVertical: 0,
     alignSelf: "stretch",
   },
@@ -433,8 +433,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
-    paddingVertical: Padding.p_5xs,
+    borderRadius: 15,
+    paddingVertical: 8,
     alignSelf: "stretch",
     alignItems: "center",
   },
@@ -451,8 +451,8 @@ const styles = StyleSheet.create({
     borderStyle: "solid",
     borderColor: "#000",
     borderTopWidth: 5,
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
     justifyContent: "space-between",
   },

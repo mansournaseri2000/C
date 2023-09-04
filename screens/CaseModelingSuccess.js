@@ -36,7 +36,7 @@ const CaseModelingSuccess = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-15.png")}
+              source={require("../assets/JplignLogo.png")}
             />
           </View>
           <View style={styles.prfilecontainer}>
@@ -73,7 +73,7 @@ const CaseModelingSuccess = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="cover"
-                  source={require("../assets/defaultimage.png")}
+                  source={require("../assets/ProfileImg.png")}
                 />
               </View>
             </View>
@@ -119,7 +119,7 @@ const CaseModelingSuccess = () => {
               <ImageBackground
                 style={styles.boxClosedCopy1}
                 resizeMode="contain"
-                source={require("../assets/box-closed-copy-1.png")}
+                source={require("../assets/ProductImg.png")}
               />
             </View>
           </View>
@@ -143,27 +143,27 @@ const CaseModelingSuccess = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube2.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info2.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -177,9 +177,9 @@ const styles = StyleSheet.create({
   },
   buttontextTypo: {
     color: Color.gray,
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
     textAlign: "center",
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
   },
   bottomtabBg: {
     backgroundColor: Color.bgBrown,
@@ -187,7 +187,7 @@ const styles = StyleSheet.create({
   },
   textTypo: {
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   wrapperSpaceBlock: {
     marginTop: 8,
@@ -196,7 +196,7 @@ const styles = StyleSheet.create({
   greetingTypo: {
     color: Color.colorDarkgray,
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   iconLayout: {
     width: 32,
@@ -207,24 +207,24 @@ const styles = StyleSheet.create({
   },
   growtextbutton: {
     width: 40,
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     justifyContent: "center",
   },
   headertext: {
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     textAlign: "center",
   },
   header1: {
     height: 30,
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     paddingVertical: 0,
     flexDirection: "row",
   },
@@ -233,7 +233,7 @@ const styles = StyleSheet.create({
     height: 40,
   },
   header: {
-    padding: Padding.p_base,
+    padding: 16,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",
@@ -241,7 +241,7 @@ const styles = StyleSheet.create({
   },
   nametext: {
     color: Color.colorWhite,
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
     textAlign: "left",
   },
   namewrapper: {
@@ -251,7 +251,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   greeting: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
   },
   greetingwrapper: {
     justifyContent: "center",
@@ -269,27 +269,27 @@ const styles = StyleSheet.create({
     height: 32,
   },
   uploadimage: {
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
-    padding: Padding.p_base,
+    padding: 16,
     overflow: "hidden",
   },
   profilecard: {
-    padding: Padding.p_5xs,
-    borderRadius: Border.br_xs,
+    padding: 8,
+    borderRadius: 12,
     backgroundColor: Color.bgBrown,
     flexDirection: "row",
     justifyContent: "space-between",
   },
   prfilecontainer: {
-    padding: Padding.p_base,
+    padding: 16,
     alignSelf: "stretch",
     alignItems: "center",
   },
   success: {
-    fontSize: FontSize.displayMedium_size,
+    fontSize: 30,
     color: Color.colorSuccess,
   },
   successWrapper: {
@@ -297,7 +297,7 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
   },
   modelingKit: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
   },
   modelingKitWrapper: {
     justifyContent: "center",
@@ -305,7 +305,7 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
   },
   text: {
-    fontSize: FontSize.headingLarge_size,
+    fontSize: 28,
     color: Color.colorPrimary,
   },
   wrapper: {
@@ -321,7 +321,7 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
   },
   thankYouSo: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     color: Color.colorWhite,
     flex: 1,
   },
@@ -340,13 +340,13 @@ const styles = StyleSheet.create({
   },
   paymentrecipt: {
     paddingVertical: Padding.p_45xl,
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     backgroundColor: Color.bgBrown,
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
   },
   paymentcontainer: {
-    paddingTop: Padding.p_77xl,
-    paddingHorizontal: Padding.p_base,
+    paddingTop: 96,
+    paddingHorizontal: 16,
     alignSelf: "stretch",
     alignItems: "center",
   },
@@ -363,12 +363,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   growtextbutton1: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     justifyContent: "center",
     alignSelf: "stretch",
   },
@@ -385,8 +385,8 @@ const styles = StyleSheet.create({
     borderStyle: "solid",
     borderColor: "#000",
     borderTopWidth: 5,
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
     justifyContent: "space-between",
   },

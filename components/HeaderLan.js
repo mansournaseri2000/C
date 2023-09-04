@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Pressable, Text, StyleSheet, View, Image } from "react-native";
-import { FontSize, FontFamily, Color, Border, Padding } from "../GlobalStyles";
+import { Color } from "../GlobalStyles";
 
 const HeaderLan = ({ headerText = "Header" }) => {
   return (
@@ -14,7 +14,7 @@ const HeaderLan = ({ headerText = "Header" }) => {
       <Image
         style={styles.headerChild}
         resizeMode="contain"
-        source={require("../assets/group-11.png")}
+        source={require("../assets/JplignLogo.png")}
       />
     </View>
   );
@@ -27,29 +27,27 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   buttontext: {
-    fontSize: FontSize.titleMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 18,
+    fontFamily: "Poppins-Regular",
     color: Color.gray,
     textAlign: "center",
   },
   growtextbutton: {
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     backgroundColor: Color.colorPrimary,
     width: 40,
-    paddingHorizontal: Padding.p_base,
-    paddingVertical: Padding.p_5xs,
+    paddingVertical: 8,
     height: 40,
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
     textAlign: "center",
   },
   header1: {
     height: 30,
-    paddingHorizontal: Padding.p_3xs,
     paddingVertical: 0,
   },
   headerChild: {
@@ -58,7 +56,7 @@ const styles = StyleSheet.create({
   },
   header: {
     alignSelf: "stretch",
-    padding: Padding.p_base,
+    paddingVertical: 16,
     justifyContent: "space-between",
     alignItems: "center",
     flexDirection: "row",

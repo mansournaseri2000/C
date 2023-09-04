@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 import { Image, StyleSheet, View, StatusBar } from "react-native";
 import { Color } from "../GlobalStyles";
 
@@ -11,7 +11,7 @@ const SplashScreen = () => {
         <Image
           style={styles.jplignlogoIcon}
           resizeMode="cover"
-          source={require("../assets/jplignlogo2.png")}
+          source={require("../assets/JplignLogo.png")}
         />
       </View>
     </View>

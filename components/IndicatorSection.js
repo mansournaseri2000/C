@@ -41,9 +41,9 @@ const styles = StyleSheet.create({
   },
   indicatorsection: {
     alignSelf: "stretch",
-    height: 68,
+    height: 70,
     paddingHorizontal: 0,
-    paddingVertical: Padding.p_5xs,
+    paddingVertical: 8,
     justifyContent: "center",
   },
 });

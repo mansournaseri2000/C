@@ -27,7 +27,7 @@ const DentistGuaranteeList = () => {
             <Image
               style={styles.arrowLeftIcon}
               resizeMode="contain"
-              source={require("../assets/arrowleft.png")}
+              source={require("../assets/icons/arrow-left.png")}
             />
           </Pressable>
           <View style={[styles.header1, styles.header1SpaceBlock]}>
@@ -36,7 +36,7 @@ const DentistGuaranteeList = () => {
           <Image
             style={styles.headerChild}
             resizeMode="contain"
-            source={require("../assets/group-1.png")}
+            source={require("../assets/JplignLogo.png")}
           />
         </View>
         <View style={[styles.prfilecontainer, styles.headerSpaceBlock]}>
@@ -68,7 +68,7 @@ const DentistGuaranteeList = () => {
               <Image
                 style={styles.defaultimageIcon}
                 resizeMode="contain"
-                source={require("../assets/defaultimage.png")}
+                source={require("../assets/ProfileImg.png")}
               />
             </View>
           </View>
@@ -80,7 +80,7 @@ const DentistGuaranteeList = () => {
                 <Image
                   style={styles.arrowLeftIcon}
                   resizeMode="contain"
-                  source={require("../assets/search.png")}
+                  source={require("../assets/icons/search-white.png")}
                 />
                 <TextInput
                   style={[styles.textwrapper, styles.textwrapperSpaceBlock]}
@@ -97,7 +97,7 @@ const DentistGuaranteeList = () => {
                   <Image
                     style={styles.userIcon}
                     resizeMode="contain"
-                    source={require("../assets/user1.png")}
+                    source={require("../assets/icons/user.png")}
                   />
                   <Text
                     style={[styles.fullnametext, styles.textwrapperSpaceBlock]}
@@ -111,7 +111,7 @@ const DentistGuaranteeList = () => {
                   <Image
                     style={styles.userIcon}
                     resizeMode="contain"
-                    source={require("../assets/package.png")}
+                    source={require("../assets/icons/box.png")}
                   />
                   <Text
                     style={[styles.producttext, styles.textwrapperSpaceBlock]}
@@ -126,7 +126,7 @@ const DentistGuaranteeList = () => {
                     <Image
                       style={styles.userIcon}
                       resizeMode="contain"
-                      source={require("../assets/baggageclaim.png")}
+                      source={require("../assets/icons/baggage-claim.png")}
                     />
                     <Text
                       style={[styles.producttext, styles.textwrapperSpaceBlock]}
@@ -146,7 +146,7 @@ const DentistGuaranteeList = () => {
                   <Image
                     style={styles.userIcon}
                     resizeMode="contain"
-                    source={require("../assets/user1.png")}
+                    source={require("../assets/icons/user.png")}
                   />
                   <Text
                     style={[styles.fullnametext, styles.textwrapperSpaceBlock]}
@@ -160,7 +160,7 @@ const DentistGuaranteeList = () => {
                   <Image
                     style={styles.userIcon}
                     resizeMode="contain"
-                    source={require("../assets/package.png")}
+                    source={require("../assets/icons/box.png")}
                   />
                   <Text
                     style={[styles.producttext, styles.textwrapperSpaceBlock]}
@@ -175,7 +175,7 @@ const DentistGuaranteeList = () => {
                     <Image
                       style={styles.userIcon}
                       resizeMode="contain"
-                      source={require("../assets/baggageclaim.png")}
+                      source={require("../assets/icons/baggage-claim.png")}
                     />
                     <Text
                       style={[styles.producttext, styles.textwrapperSpaceBlock]}
@@ -198,27 +198,27 @@ const DentistGuaranteeList = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube2.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info2.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -231,13 +231,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   headerSpaceBlock: {
-    padding: Padding.p_base,
+    padding: 16,
     alignItems: "center",
   },
   searchbtnFlexBox: {
-    padding: Padding.p_5xs,
+    padding: 8,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     flexDirection: "row",
     alignItems: "center",
   },
@@ -246,14 +246,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   gauranteecardLayout: {
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     backgroundColor: Color.bgBrown,
-    padding: Padding.p_5xs,
+    padding: 8,
     alignSelf: "stretch",
   },
   suffixtextTypo: {
     textAlign: "left",
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
     color: Color.colorWhite,
   },
   statuswarpperFlexBox: {
@@ -263,21 +263,21 @@ const styles = StyleSheet.create({
   },
   greetingTypo: {
     color: Color.colorDarkgray,
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     textAlign: "left",
   },
   bottomtabSpaceBlock: {
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     alignSelf: "stretch",
   },
   textwrapperSpaceBlock: {
     marginLeft: 8,
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   statustextTypo: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   iconLayout: {
     width: 32,
@@ -294,14 +294,14 @@ const styles = StyleSheet.create({
     height: 40,
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     textAlign: "center",
     color: Color.colorWhite,
   },
   header1: {
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     justifyContent: "center",
     flexDirection: "row",
   },
@@ -315,7 +315,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   suffixtext: {
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   suffixwrapper: {
     justifyContent: "center",
@@ -332,7 +332,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   greeting: {
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   greetingwrapper: {
     justifyContent: "center",
@@ -342,7 +342,7 @@ const styles = StyleSheet.create({
     width: 20,
   },
   uploadimage: {
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
@@ -381,7 +381,7 @@ const styles = StyleSheet.create({
   },
   fullnametext: {
     textAlign: "left",
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
     color: Color.colorWhite,
   },
   fullnamewrapper: {
@@ -391,7 +391,7 @@ const styles = StyleSheet.create({
   },
   producttext: {
     color: Color.colorDarkgray,
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     textAlign: "left",
   },
   productwrapper: {
@@ -426,7 +426,7 @@ const styles = StyleSheet.create({
     borderStyle: "solid",
     borderColor: "#000",
     borderTopWidth: 5,
-    paddingVertical: Padding.p_5xs,
+    paddingVertical: 8,
     backgroundColor: Color.bgBrown,
     flexDirection: "row",
     justifyContent: "space-between",

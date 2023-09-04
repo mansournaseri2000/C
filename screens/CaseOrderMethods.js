@@ -30,7 +30,7 @@ const CaseOrderMethods = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-15.png")}
+              source={require("../assets/JplignLogo.png")}
             />
           </View>
           <View style={styles.prfilecontainer}>
@@ -55,7 +55,7 @@ const CaseOrderMethods = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="cover"
-                  source={require("../assets/defaultimage.png")}
+                  source={require("../assets/ProfileImg.png")}
                 />
               </View>
             </View>
@@ -69,7 +69,7 @@ const CaseOrderMethods = () => {
                   <Image
                     style={styles.packagePlusIcon}
                     resizeMode="contain"
-                    source={require("../assets/doctor.png")}
+                    source={require("../assets/icons/doctor.png")}
                   />
                 </View>
                 <Text style={[styles.label, styles.labelTypo]}>
@@ -106,7 +106,7 @@ const CaseOrderMethods = () => {
                   <Image
                     style={styles.packagePlusIcon}
                     resizeMode="contain"
-                    source={require("../assets/3d.png")}
+                    source={require("../assets/icons/3d.png")}
                   />
                 </View>
                 <Text style={[styles.label, styles.labelTypo]}>
@@ -142,7 +142,7 @@ const CaseOrderMethods = () => {
                   <Image
                     style={styles.packagePlusIcon}
                     resizeMode="contain"
-                    source={require("../assets/support.png")}
+                    source={require("../assets/icons/support.png")}
                   />
                 </Pressable>
                 <Text style={[styles.label, styles.labelTypo]}>
@@ -175,27 +175,27 @@ const CaseOrderMethods = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube2.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info2.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -209,20 +209,20 @@ const styles = StyleSheet.create({
   },
   buttontextTypo: {
     color: Color.gray,
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
     textAlign: "center",
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
   },
   inputgroupSpaceBlock: {
-    padding: Padding.p_5xs,
+    padding: 8,
     flexDirection: "row",
   },
   labelTypo: {
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   methodSpaceBlock: {
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     alignSelf: "stretch",
   },
   bottomtabBg: {
@@ -243,25 +243,25 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   growtextbutton: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     height: 40,
     width: 40,
     justifyContent: "center",
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     flexDirection: "row",
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
     textAlign: "center",
   },
   header1: {
     height: 30,
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     paddingVertical: 0,
     flexDirection: "row",
   },
@@ -270,7 +270,7 @@ const styles = StyleSheet.create({
     height: 40,
   },
   header: {
-    padding: Padding.p_base,
+    padding: 16,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",
@@ -278,7 +278,7 @@ const styles = StyleSheet.create({
   },
   nametext: {
     color: Color.colorWhite,
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
     textAlign: "left",
   },
   namewrapper: {
@@ -288,7 +288,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   greeting: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     color: Color.colorDarkgray,
   },
   profileinfowrapper1: {
@@ -303,21 +303,21 @@ const styles = StyleSheet.create({
     height: 32,
   },
   uploadimage: {
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
-    padding: Padding.p_base,
+    padding: 16,
     overflow: "hidden",
   },
   profilecard: {
     backgroundColor: Color.bgBrown,
     alignSelf: "stretch",
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     justifyContent: "space-between",
   },
   prfilecontainer: {
-    padding: Padding.p_base,
+    padding: 16,
     alignSelf: "stretch",
     alignItems: "center",
   },
@@ -332,33 +332,33 @@ const styles = StyleSheet.create({
     height: 40,
     width: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
   },
   label: {
     color: Color.colorPrimary,
     marginLeft: 8,
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
     textAlign: "left",
     flex: 1,
   },
   inputgroup: {
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     alignSelf: "stretch",
   },
   infotext: {
     color: Color.colorWhite,
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
     textAlign: "left",
     flex: 1,
   },
   infotextwrapper: {
-    paddingHorizontal: Padding.p_5xs,
-    paddingBottom: Padding.p_5xs,
+    paddingHorizontal: 8,
+    paddingBottom: 8,
     flexDirection: "row",
     alignSelf: "stretch",
   },
   infocardwrapper: {
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
   },
   buttontext1: {
     display: "flex",
@@ -369,19 +369,19 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   growtextbutton1: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     marginTop: 8,
     alignSelf: "stretch",
   },
   method: {
-    paddingTop: Padding.p_base,
+    paddingTop: 16,
   },
   method1: {
-    paddingTop: Padding.p_13xl,
+    paddingTop: 32,
   },
   maincontainer: {
     alignSelf: "stretch",
@@ -400,8 +400,8 @@ const styles = StyleSheet.create({
     borderStyle: "solid",
     borderColor: "#000",
     borderTopWidth: 5,
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
     justifyContent: "space-between",
   },

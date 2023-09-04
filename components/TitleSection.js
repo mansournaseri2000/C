@@ -13,15 +13,15 @@ const TitleSection = ({ title = "Hero title" }) => {
 const styles = StyleSheet.create({
   title: {
     flex: 1,
-    fontSize: FontSize.headingMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 20,
+    fontFamily: "Poppins-Regular",
     color: Color.colorPrimary,
     textAlign: "center",
   },
   titlesection: {
     alignSelf: "stretch",
     flexDirection: "row",
-    paddingHorizontal: Padding.p_13xl,
+    paddingHorizontal: 32,
     paddingVertical: 0,
     alignItems: "center",
     justifyContent: "center",

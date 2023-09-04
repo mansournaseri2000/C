@@ -32,7 +32,7 @@ const CaseSutable = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-15.png")}
+              source={require("../assets/JplignLogo.png")}
             />
           </View>
           <View style={styles.prfilecontainer}>
@@ -62,7 +62,7 @@ const CaseSutable = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="cover"
-                  source={require("../assets/defaultimage.png")}
+                  source={require("../assets/ProfileImg.png")}
                 />
               </View>
             </View>
@@ -73,7 +73,7 @@ const CaseSutable = () => {
                 <Image
                   style={styles.packagePlusIcon}
                   resizeMode="contain"
-                  source={require("../assets/packageplus25.png")}
+                  source={require("../assets/icons/help-circle.png")}
                 />
               </View>
               <View style={styles.radioquwrapper1}>
@@ -107,7 +107,7 @@ const CaseSutable = () => {
                 <Image
                   style={styles.packagePlusIcon}
                   resizeMode="contain"
-                  source={require("../assets/packageplus25.png")}
+                  source={require("../assets/icons/help-circle.png")}
                 />
               </View>
               <View style={styles.radioquwrapper1}>
@@ -137,7 +137,7 @@ const CaseSutable = () => {
                 <Image
                   style={styles.packagePlusIcon}
                   resizeMode="contain"
-                  source={require("../assets/packageplus25.png")}
+                  source={require("../assets/icons/help-circle.png")}
                 />
               </View>
               <View style={styles.radioquwrapper1}>
@@ -180,27 +180,27 @@ const CaseSutable = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube2.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info2.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -213,35 +213,35 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   profilecardSpaceBlock: {
-    padding: Padding.p_5xs,
+    padding: 8,
     flexDirection: "row",
   },
   greetingTypo: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   frameParentSpaceBlock: {
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     alignSelf: "stretch",
   },
   nametextTypo: {
     textAlign: "left",
     color: Color.colorWhite,
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   frameChildLayout: {
     height: 22,
     backgroundColor: Color.colorDarkgray,
-    borderRadius: Border.br_81xl,
+    borderRadius: 100,
     width: 24,
   },
   buttontextTypo: {
     textAlign: "center",
     color: Color.gray,
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   bottomtabBg: {
     backgroundColor: Color.bgBrown,
@@ -252,25 +252,25 @@ const styles = StyleSheet.create({
     height: 32,
   },
   growtextbutton: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
     height: 40,
     width: 40,
     justifyContent: "center",
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
     textAlign: "center",
   },
   header1: {
     height: 30,
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     paddingVertical: 0,
     flexDirection: "row",
   },
@@ -279,7 +279,7 @@ const styles = StyleSheet.create({
     height: 40,
   },
   header: {
-    padding: Padding.p_base,
+    padding: 16,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",
@@ -310,22 +310,22 @@ const styles = StyleSheet.create({
     height: 32,
   },
   uploadimage: {
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
-    padding: Padding.p_base,
+    padding: 16,
     overflow: "hidden",
   },
   profilecard: {
     backgroundColor: Color.bgBrown,
     alignSelf: "stretch",
-    borderRadius: Border.br_xs,
-    padding: Padding.p_5xs,
+    borderRadius: 12,
+    padding: 8,
     justifyContent: "space-between",
   },
   prfilecontainer: {
-    padding: Padding.p_base,
+    padding: 16,
     alignSelf: "stretch",
     alignItems: "center",
   },
@@ -340,7 +340,7 @@ const styles = StyleSheet.create({
     height: 40,
     width: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
   },
   radiotext: {
     color: Color.colorPrimary,
@@ -354,8 +354,8 @@ const styles = StyleSheet.create({
   radioquwrapper: {
     backgroundColor: Color.bgBrown,
     alignSelf: "stretch",
-    borderRadius: Border.br_xs,
-    padding: Padding.p_5xs,
+    borderRadius: 12,
+    padding: 8,
   },
   crowding: {
     marginLeft: 8,
@@ -374,7 +374,7 @@ const styles = StyleSheet.create({
     paddingVertical: 0,
   },
   radioquestion: {
-    paddingBottom: Padding.p_base,
+    paddingBottom: 16,
   },
   frameChild5: {
     display: "none",
@@ -397,12 +397,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   growtextbutton1: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     justifyContent: "center",
     alignSelf: "stretch",
   },
@@ -419,8 +419,8 @@ const styles = StyleSheet.create({
     borderStyle: "solid",
     borderColor: "#000",
     borderTopWidth: 5,
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
     justifyContent: "space-between",
   },

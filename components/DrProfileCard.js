@@ -4,9 +4,8 @@ import {
   StyleSheet,
   View,
   Image,
-  ImageSourcePropType,
 } from "react-native";
-import { FontFamily, FontSize, Color, Border, Padding } from "../GlobalStyles";
+import { Color } from "../GlobalStyles";
 
 const DrProfileCard = ({
   imageSrc,
@@ -18,23 +17,23 @@ const DrProfileCard = ({
       <View>
         <View>
           <View style={styles.profilenamewtrapper}>
-            <View style={[styles.suffixwrapper, styles.namewrapperFlexBox]}>
+            <View style={styles.suffixwrapper}>
               <Text style={[styles.suffixtext, styles.greetingTypo]}>Dr.</Text>
             </View>
-            <View style={[styles.namewrapper, styles.namewrapperFlexBox]}>
+            <View style={styles.namewrapper}>
               <Text style={[styles.suffixtext, styles.greetingTypo]}>
                 {nameText}
               </Text>
             </View>
           </View>
-          <View style={[styles.greetingwrapper, styles.namewrapperFlexBox]}>
+          <View style={styles.greetingwrapper}>
             <Text style={[styles.greeting, styles.greetingTypo]}>
               {greeting}
             </Text>
           </View>
         </View>
       </View>
-      <View style={[styles.uploadimage, styles.namewrapperFlexBox]}>
+      <View style={styles.uploadimage}>
         <Image
           style={styles.defaultimageIcon}
           resizeMode="contain"
@@ -46,31 +45,31 @@ const DrProfileCard = ({
 };
 
 const styles = StyleSheet.create({
-  namewrapperFlexBox: {
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  greetingTypo: {
-    textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
-  },
   suffixtext: {
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
     color: Color.colorWhite,
+    textAlign: "left",
+    fontFamily: "Poppins-Regular",
   },
   suffixwrapper: {
     flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
   },
   namewrapper: {
     marginLeft: 4,
     flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
   },
   profilenamewtrapper: {
     flexDirection: "row",
   },
   greeting: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     color: Color.colorDarkgray,
+    textAlign: "left",
+    fontFamily: "Poppins-Regular",
   },
   greetingwrapper: {
     marginTop: 8,
@@ -81,18 +80,21 @@ const styles = StyleSheet.create({
     height: 32,
   },
   uploadimage: {
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     backgroundColor: Color.colorLightgray,
-    width: 56,
-    height: 56,
+    width: 64,
+    height: 64,
     overflow: "hidden",
-    padding: Padding.p_base,
+    alignSelf: "center",
+    // padding: 16,
+    justifyContent: "center",
+    alignItems: "center",
   },
   profilecard: {
     alignSelf: "stretch",
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     backgroundColor: Color.bgBrown,
-    padding: Padding.p_5xs,
+    padding: 16,
     justifyContent: "space-between",
     flexDirection: "row",
   },

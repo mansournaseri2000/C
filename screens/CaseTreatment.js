@@ -43,7 +43,7 @@ const CaseTreatment = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-15.png")}
+              source={require("../assets/JplignLogo.png")}
             />
           </View>
           <View style={styles.prfilecontainer}>
@@ -68,7 +68,7 @@ const CaseTreatment = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="cover"
-                  source={require("../assets/defaultimage2.png")}
+                  source={require("../assets/ProfileImg.png")}
                 />
               </View>
             </View>
@@ -79,7 +79,7 @@ const CaseTreatment = () => {
                 <Image
                   style={[styles.calendarIcon, styles.iconLayout]}
                   resizeMode="contain"
-                  source={require("../assets/calendar.png")}
+                  source={require("../assets/icons/calendar.png")}
                 />
                 <View style={styles.titletextwrapper}>
                   <Text
@@ -136,7 +136,7 @@ const CaseTreatment = () => {
                 <Image
                   style={[styles.calendarIcon, styles.iconLayout]}
                   resizeMode="cover"
-                  source={require("../assets/flag.png")}
+                  source={require("../assets/icons/flag.png")}
                 />
                 <View style={styles.titletextwrapper}>
                   <Text style={[styles.titletext, styles.dateTypo]}>
@@ -157,7 +157,7 @@ const CaseTreatment = () => {
               <Image
                 style={styles.plusCircleIcon}
                 resizeMode="cover"
-                source={require("../assets/pluscircle.png")}
+                source={require("../assets/icons/plus-circle-lg.png")}
               />
             </View>
           </View>
@@ -187,27 +187,27 @@ const CaseTreatment = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.calendarIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube3.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.calendarIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info3.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.calendarIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition2.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.calendarIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -219,21 +219,21 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   growtextbuttonSpaceBlock: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
-    borderRadius: Border.br_mini,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    borderRadius: 15,
     justifyContent: "center",
     height: 40,
     flexDirection: "row",
   },
   dateTypo: {
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   greetingTypo: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   iconLayout: {
     width: 32,
@@ -241,15 +241,15 @@ const styles = StyleSheet.create({
   },
   counterwrapperBorder: {
     borderWidth: 1,
-    borderColor: "#c5ab8e",
+    borderColor: Color.colorPrimary,
     borderStyle: "solid",
     alignItems: "center",
   },
   datacardSpaceBlock: {
-    paddingVertical: Padding.p_9xs,
+    paddingVertical: 4,
     paddingHorizontal: Padding.p_xs,
     width: 125,
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     alignItems: "center",
   },
   addbtnFlexBox: {
@@ -262,15 +262,15 @@ const styles = StyleSheet.create({
     width: 304,
     display: "flex",
     textAlign: "center",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
     justifyContent: "center",
     alignItems: "center",
   },
   buttontext: {
     textAlign: "center",
     color: Color.gray,
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   growtextbutton: {
     width: 40,
@@ -280,14 +280,14 @@ const styles = StyleSheet.create({
   },
   headertext: {
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     textAlign: "center",
   },
   header1: {
     height: 30,
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     paddingVertical: 0,
     justifyContent: "center",
     flexDirection: "row",
@@ -298,7 +298,7 @@ const styles = StyleSheet.create({
     height: 40,
   },
   header: {
-    padding: Padding.p_base,
+    padding: 16,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",
@@ -306,7 +306,7 @@ const styles = StyleSheet.create({
   },
   nametext: {
     color: Color.colorWhite,
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
   },
   namewrapper: {
     justifyContent: "center",
@@ -331,25 +331,25 @@ const styles = StyleSheet.create({
     height: 32,
   },
   uploadimage: {
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
     justifyContent: "center",
-    padding: Padding.p_base,
+    padding: 16,
     alignItems: "center",
     overflow: "hidden",
   },
   profilecard: {
-    padding: Padding.p_5xs,
+    padding: 8,
     backgroundColor: Color.bgBrown,
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",
   },
   prfilecontainer: {
-    padding: Padding.p_base,
+    padding: 16,
     alignSelf: "stretch",
     alignItems: "center",
   },
@@ -358,7 +358,7 @@ const styles = StyleSheet.create({
   },
   titletext: {
     color: Color.colorPrimary,
-    fontSize: FontSize.titleLarge_size,
+    fontSize: 22,
   },
   titletextwrapper: {
     marginLeft: 9,
@@ -377,10 +377,10 @@ const styles = StyleSheet.create({
   },
   labeltext: {
     color: Color.colorPrimary,
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
   },
   number: {
-    fontSize: FontSize.displayLarge_size,
+    fontSize: 34,
     color: Color.colorPrimary,
   },
   counternumber: {
@@ -389,16 +389,16 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   counterwrapper: {
-    borderRadius: Border.br_xs,
-    padding: Padding.p_base,
+    borderRadius: 12,
+    padding: 16,
   },
   label: {
-    fontSize: FontSize.titleLarge_size,
+    fontSize: 22,
     color: Color.gray,
   },
   date: {
     color: Color.colorLightgray,
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
   },
   datacard: {
     backgroundColor: Color.colorPrimary,
@@ -438,13 +438,13 @@ const styles = StyleSheet.create({
   },
   slidersection: {
     width: 390,
-    padding: Padding.p_base,
+    padding: 16,
     overflow: "hidden",
   },
   buttontext1: {
     height: 28,
     color: Color.gray,
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
   },
   growtextbutton1: {
     justifyContent: "center",
@@ -454,15 +454,15 @@ const styles = StyleSheet.create({
   },
   ghostbuttontext: {
     color: Color.colorPrimary,
-    fontSize: FontSize.titleLarge_size,
+    fontSize: 22,
     alignSelf: "stretch",
   },
   growtextbutton2: {
     marginTop: 10,
     justifyContent: "center",
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
-    borderRadius: Border.br_mini,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    borderRadius: 15,
     height: 40,
     flexDirection: "row",
     alignSelf: "stretch",
@@ -478,8 +478,8 @@ const styles = StyleSheet.create({
     borderTopWidth: 5,
     borderStyle: "solid",
     backgroundColor: Color.bgBrown,
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",

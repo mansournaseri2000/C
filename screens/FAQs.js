@@ -19,7 +19,7 @@ const FAQs = () => {
             <Image
               style={styles.arrowLeftIcon}
               resizeMode="cover"
-              source={require("../assets/arrowleft.png")}
+              source={require("../assets/icons/arrow-left.png")}
             />
           </Pressable>
           <View style={[styles.header1, styles.header1FlexBox]}>
@@ -28,7 +28,7 @@ const FAQs = () => {
           <Image
             style={styles.jplignlogoIcon}
             resizeMode="contain"
-            source={require("../assets/group-14.png")}
+            source={require("../assets/JplignLogo.png")}
           />
         </View>
       </View>
@@ -36,27 +36,27 @@ const FAQs = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -84,21 +84,21 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   iconbutton: {
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     backgroundColor: Color.colorPrimary,
     width: 40,
-    padding: Padding.p_5xs,
+    padding: 8,
     height: 40,
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
     textAlign: "center",
   },
   header1: {
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     paddingVertical: 0,
   },
   jplignlogoIcon: {
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
     height: 40,
   },
   header: {
-    padding: Padding.p_base,
+    padding: 16,
     alignItems: "center",
     flexDirection: "row",
   },
@@ -122,8 +122,8 @@ const styles = StyleSheet.create({
     borderStyle: "solid",
     borderColor: "#000",
     borderTopWidth: 5,
-    paddingHorizontal: Padding.p_base,
-    paddingVertical: Padding.p_5xs,
+    paddingHorizontal: 16,
+    paddingVertical: 8,
   },
   faqs: {
     backgroundColor: Color.bgBlack,

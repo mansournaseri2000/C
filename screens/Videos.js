@@ -33,7 +33,7 @@ const Videos = () => {
             <Image
               style={styles.arrowLeftIcon}
               resizeMode="contain"
-              source={require("../assets/arrowleft.png")}
+              source={require("../assets/icons/arrow-left.png")}
             />
           </Pressable>
           <View style={[styles.header1, styles.header1FlexBox]}>
@@ -42,7 +42,7 @@ const Videos = () => {
           <Image
             style={styles.jplignlogoIcon}
             resizeMode="contain"
-            source={require("../assets/group-14.png")}
+            source={require("../assets/JplignLogo.png")}
           />
         </View>
         <ScrollView
@@ -57,7 +57,7 @@ const Videos = () => {
                 <Image
                   style={styles.arrowLeftIcon}
                   resizeMode="cover"
-                  source={require("../assets/packageplus16.png")}
+                  source={require("../assets/icons/film.png")}
                 />
               </View>
               <View style={styles.videoinfowrapper}>
@@ -83,27 +83,27 @@ const Videos = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="cover"
-          source={require("../assets/youtube.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="cover"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
   },
   headerSpaceBlock: {
-    padding: Padding.p_base,
+    padding: 16,
     alignSelf: "stretch",
   },
   header1FlexBox: {
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
   },
   labelFlexBox: {
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
     alignSelf: "stretch",
   },
   iconLayout: {
@@ -149,21 +149,21 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   iconbutton: {
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     backgroundColor: Color.colorPrimary,
     width: 40,
-    padding: Padding.p_5xs,
+    padding: 8,
     height: 40,
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
     textAlign: "center",
   },
   header1: {
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     paddingVertical: 0,
   },
   jplignlogoIcon: {
@@ -176,11 +176,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   label: {
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
     color: Color.colorPrimary,
   },
   label1: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     color: Color.colorDarkgray,
   },
   videoinfowrapper: {
@@ -188,8 +188,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   inputgroup: {
-    borderRadius: Border.br_xs,
-    padding: Padding.p_5xs,
+    borderRadius: 12,
+    padding: 8,
     flexDirection: "row",
     alignSelf: "stretch",
   },
@@ -198,12 +198,12 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   videowrapper: {
-    padding: Padding.p_5xs,
+    padding: 8,
     alignSelf: "stretch",
     alignItems: "center",
   },
   youtuebvideo: {
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
   },
   videocontainer: {
     flex: 1,
@@ -219,8 +219,8 @@ const styles = StyleSheet.create({
     borderStyle: "solid",
     borderColor: "#000",
     borderTopWidth: 5,
-    paddingHorizontal: Padding.p_base,
-    paddingVertical: Padding.p_5xs,
+    paddingHorizontal: 16,
+    paddingVertical: 8,
     flexDirection: "row",
     justifyContent: "space-between",
   },

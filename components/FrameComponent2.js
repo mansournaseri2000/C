@@ -16,7 +16,7 @@ const FrameComponent2 = ({ style }) => {
         <Image
           style={styles.teethWhiteningAfterTreatmenIcon}
           resizeMode="cover"
-          source={require("../assets/image3.png")}
+          source={require("../assets/SmileImg.png")}
         />
       </View>
       <Text style={styles.text}>#3</Text>
@@ -26,20 +26,20 @@ const FrameComponent2 = ({ style }) => {
 
 const styles = StyleSheet.create({
   teethWhiteningAfterTreatmenIcon: {
-    borderRadius: Border.br_11xs,
+    borderRadius: 2,
     width: 150,
     height: 100,
   },
   teethWhiteningAfterTreatmenWrapper: {
-    borderRadius: Border.br_8xs,
+    borderRadius: 5,
     borderStyle: "solid",
-    borderColor: "#c5ab8e",
+    borderColor: Color.colorPrimary,
     borderWidth: 2,
-    padding: Padding.p_9xs,
+    padding: 4,
   },
   text: {
-    fontSize: FontSize.titleMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 18,
+    fontFamily: "Poppins-Regular",
     color: Color.colorPrimary,
     textAlign: "left",
     marginTop: 8,

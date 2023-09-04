@@ -1,184 +1,81 @@
-import * as React from "react";
+import * as React from 'react';
 import {
-  ScrollView,
   Image,
   StyleSheet,
-  Text,
   View,
-  TextInput,
-  Pressable,
-  TouchableOpacity,
-  StatusBar
-} from "react-native";
-import { useNavigation } from "@react-navigation/native";
-import { Color, FontFamily, FontSize, Padding, Border } from "../GlobalStyles";
+  StatusBar,
+} from 'react-native';
+import InputGroup from '../components/InputGroup';
+import {useNavigation} from '@react-navigation/native';
+import UnderBtnText from '../components/UnderBtnText';
+import {Color, FontFamily, FontSize, Padding, Border} from '../GlobalStyles';
+import {ScrollView} from 'react-native-gesture-handler';
+import EntryPagesTitle from '../components/EntryPagesTitle';
+import PrimaryBtn from '../components/PrimaryBtn'
 
 const CaseRegister = () => {
   const navigation = useNavigation();
 
   return (
-    <ScrollView
-      style={styles.caseregister}
-      showsVerticalScrollIndicator={true}
-      showsHorizontalScrollIndicator={true}
-      contentContainerStyle={styles.caseRegisterScrollViewContent}
-    >
-              <StatusBar backgroundColor={Color.bgBlack} />
+    <ScrollView>
+      <View style={styles.dentistregister}>
+        <StatusBar backgroundColor={Color.bgBlack} />
 
-      <View style={[styles.topsection, styles.topsectionFlexBox]}>
-        <Image
-          style={styles.jplignlogoIcon}
-          resizeMode="cover"
-          source={require("../assets/jplignlogo.png")}
-        />
-        <View style={styles.formsectionSpaceBlock1}>
-          <Text style={[styles.brandname, styles.labelFlexBox]}>
-            Health Teeth Operation GmbH / JPLign
-          </Text>
-          <Text style={[styles.pagename, styles.pagenameTypo]}>
-            Paitent Register Account
-          </Text>
-        </View>
-        <View style={[styles.formsection, styles.formsectionSpaceBlock]}>
-          <View style={styles.inputgroup}>
-            <View style={[styles.inputiconwrapper, styles.buttontextFlexBox]}>
-              <Image
-                style={styles.packagePlusIcon}
-                resizeMode="contain"
-                source={require("../assets/packageplus.png")}
-              />
-            </View>
-            <View style={styles.fieldinput}>
-              <Text style={[styles.label, styles.labelTypo]}>Firstname</Text>
-              <TextInput
-                style={styles.labelTypo}
-                placeholder="Placeholder"
-                placeholderTextColor="#e6e6e6"
-              />
-            </View>
-          </View>
-          <View style={styles.inputgroupSpaceBlock}>
-            <View style={[styles.inputiconwrapper, styles.buttontextFlexBox]}>
-              <Image
-                style={styles.packagePlusIcon}
-                resizeMode="contain"
-                source={require("../assets/packageplus.png")}
-              />
-            </View>
-            <View style={styles.fieldinput}>
-              <Text style={[styles.label, styles.labelTypo]}>Lastname</Text>
-              <TextInput
-                style={styles.labelTypo}
-                placeholder="Placeholder"
-                placeholderTextColor="#e6e6e6"
-              />
-            </View>
-          </View>
-          <View style={styles.inputgroupSpaceBlock}>
-            <View style={[styles.inputiconwrapper, styles.buttontextFlexBox]}>
-              <Image
-                style={styles.packagePlusIcon}
-                resizeMode="cover"
-                source={require("../assets/packageplus1.png")}
-              />
-            </View>
-            <View style={styles.fieldinput}>
-              <Text style={[styles.label, styles.labelTypo]}>Phone</Text>
-              <TextInput
-                style={styles.labelTypo}
-                placeholder="Placeholder"
-                placeholderTextColor="#e6e6e6"
-              />
-            </View>
-          </View>
-          <View style={styles.inputgroupSpaceBlock}>
-            <View style={[styles.inputiconwrapper, styles.buttontextFlexBox]}>
-              <Image
-                style={styles.packagePlusIcon}
-                resizeMode="contain"
-                source={require("../assets/packageplus2.png")}
-              />
-            </View>
-            <View style={styles.fieldinput}>
-              <Text style={[styles.label, styles.labelTypo]}>Email</Text>
-              <TextInput
-                style={styles.labelTypo}
-                placeholder="Placeholder"
-                placeholderTextColor="#e6e6e6"
-              />
-            </View>
-          </View>
-          <View style={[styles.inputgroup4, styles.inputgroupSpaceBlock]}>
-            <View style={[styles.inputiconwrapper, styles.buttontextFlexBox]}>
-              <Image
-                style={styles.packagePlusIcon}
-                resizeMode="cover"
-                source={require("../assets/packageplus3.png")}
-              />
-            </View>
-            <View style={styles.fieldinput}>
-              <Text style={[styles.label, styles.labelTypo]}>Gender</Text>
-              <TextInput
-                style={[styles.input, styles.labelTypo]}
-                placeholder="Select your gender"
-                placeholderTextColor="#e6e6e6"
-              />
-            </View>
-          </View>
-          <View style={styles.inputgroupSpaceBlock}>
-            <View style={[styles.inputiconwrapper, styles.buttontextFlexBox]}>
-              <Image
-                style={styles.packagePlusIcon}
-                resizeMode="contain"
-                source={require("../assets/packageplus4.png")}
-              />
-            </View>
-            <View style={styles.fieldinput}>
-              <Text style={[styles.label, styles.labelTypo]}>Birthday</Text>
-              <TextInput
-                style={styles.labelTypo}
-                placeholder="Placeholder"
-                placeholderTextColor="#e6e6e6"
-              />
-            </View>
-          </View>
-          <View style={styles.inputgroupSpaceBlock}>
-            <View style={[styles.inputiconwrapper, styles.buttontextFlexBox]}>
-              <Image
-                style={styles.packagePlusIcon}
-                resizeMode="cover"
-                source={require("../assets/packageplus5.png")}
-              />
-            </View>
-            <View style={styles.fieldinput}>
-              <Text style={[styles.label, styles.labelTypo]}>Password</Text>
-              <TextInput
-                style={styles.labelTypo}
-                placeholder="Placeholder"
-                placeholderTextColor="#e6e6e6"
-              />
-            </View>
+        <View style={styles.topsection}>
+          <Image
+            style={styles.jplignlogoIcon}
+            resizeMode="cover"
+            source={require('../assets/JplignLogo.png')}
+          />
+          <EntryPagesTitle pageTitle={'Patient Register'} />
+          <View style={styles.formsection}>
+            <InputGroup
+              iconSrc={require('../assets/icons/user.png')}
+              label="Firstname"
+              placeholder="Enter your firstname"
+              hasIcon
+            />
+            <InputGroup
+              iconSrc={require('../assets/icons/user.png')}
+              label="Lastname"
+              placeholder="Enter your lastname"
+              hasIcon
+            />
+            <InputGroup
+              iconSrc={require('../assets/icons/phone.png')}
+              label="Phone"
+              placeholder="Enter your phone"
+              hasIcon
+            />
+            <InputGroup
+              iconSrc={require('../assets/icons/mail.png')}
+              label="Email"
+              placeholder="Enter your email"
+              hasIcon
+            />
+            <InputGroup
+              iconSrc={require('../assets/icons/gender.png')}
+              label="Gender"
+              placeholder="Select your gender"
+              hasIcon
+            />
+            <InputGroup
+              iconSrc={require('../assets/icons/calendar.png')}
+              label="Birthday"
+              placeholder="Select your birthday"
+              hasIcon
+            />
+            <InputGroup
+              iconSrc={require('../assets/icons/password.png')}
+              label="Password"
+              placeholder="Enter your password"
+              hasIcon
+            />
           </View>
         </View>
-      </View>
-      <View style={[styles.bottomsection, styles.topsectionFlexBox]}>
-        <Pressable
-          style={[styles.growtextbutton, styles.buttontextFlexBox]}
-          onPress={() => navigation.navigate("CaseLogin")}
-        >
-          <Text style={[styles.buttontext, styles.buttontextFlexBox]}>
-            Register
-          </Text>
-        </Pressable>
-        <View style={[styles.underbtntext, styles.buttontextFlexBox]}>
-          <Text style={styles.pagenameTypo}>Already have an account?</Text>
-          <TouchableOpacity
-            style={styles.actiontext}
-            activeOpacity={0.8}
-            onPress={() => navigation.navigate("CaseLogin")}
-          >
-            <Text style={[styles.login, styles.labelFlexBox]}>Login</Text>
-          </TouchableOpacity>
+        <View style={styles.bottomsection}>
+          <PrimaryBtn buttonText="Register" goTo={'CaseLogin'} />
+          <UnderBtnText inofText="Already have an account?" pageName="Login" goTo={'CaseLogin'}/>
         </View>
       </View>
     </ScrollView>
@@ -186,151 +83,46 @@ const CaseRegister = () => {
 };
 
 const styles = StyleSheet.create({
-  caseRegisterScrollViewContent: {
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "space-between",
-  },
-  topsectionFlexBox: {
-    alignSelf: "stretch",
-    alignItems: "center",
-  },
-  labelFlexBox: {
-    textAlign: "left",
-    color: Color.colorPrimary,
-  },
-  pagenameTypo: {
-    color: Color.colorWhite,
-    textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
-  },
-  formsectionSpaceBlock: {
-    paddingVertical: 0,
-    paddingHorizontal: Padding.p_base,
-    alignSelf: "stretch",
-  },
-  buttontextFlexBox: {
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  labelTypo: {
-    fontSize: FontSize.bodyMedium_size,
-    fontFamily: FontFamily.bodySmall,
-    alignSelf: "stretch",
-  },
-  inputgroupSpaceBlock: {
-    marginTop: 16,
-    padding: Padding.p_5xs,
-    flexDirection: "row",
-    backgroundColor: Color.bgBrown,
-    borderRadius: Border.br_xs,
-    alignSelf: "stretch",
-  },
+
   jplignlogoIcon: {
     width: 96,
     height: 75,
   },
-  brandname: {
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
-  },
-  pagename: {
-    marginTop: 8,
-  },
-  formsectionSpaceBlock1: {
-    marginTop: 32,
-    alignItems: "center",
-  },
-  packagePlusIcon: {
-    width: 24,
-    height: 24,
-    overflow: "hidden",
-  },
-  inputiconwrapper: {
-    width: 40,
-    height: 40,
-    backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
-    justifyContent: "center",
-    flexDirection: "row",
-    padding: Padding.p_5xs,
-  },
-  label: {
-    textAlign: "left",
-    color: Color.colorPrimary,
-  },
-  fieldinput: {
-    marginLeft: 8,
-    height: 40,
-    flex: 1,
-  },
-  inputgroup: {
-    padding: Padding.p_5xs,
-    flexDirection: "row",
-    backgroundColor: Color.bgBrown,
-    borderRadius: Border.br_xs,
-    alignSelf: "stretch",
-  },
-  input: {
-    height: 19,
-    justifyContent: "space-between",
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  inputgroup4: {
-    height: 56,
-  },
   formsection: {
+    paddingVertical: 0,
     marginTop: 32,
-    alignItems: "center",
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    alignSelf: 'stretch',
   },
   topsection: {
-    paddingTop: Padding.p_13xl,
-    alignItems: "center",
+    paddingTop: 32,
+    alignSelf: 'stretch',
+    alignItems: 'center',
   },
   buttontext: {
     color: Color.gray,
-    textAlign: "center",
-    display: "flex",
+    textAlign: 'center',
+    display: 'flex',
     width: 304,
     height: 28,
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
-  },
-  growtextbutton: {
-    paddingVertical: Padding.p_5xs,
-    height: 40,
-    backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
-    justifyContent: "center",
-    flexDirection: "row",
-    paddingHorizontal: Padding.p_base,
-    alignSelf: "stretch",
-  },
-  login: {
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
-  },
-  actiontext: {
-    marginLeft: 8,
-  },
-  underbtntext: {
-    flexDirection: "row",
-    paddingVertical: 0,
-    paddingHorizontal: Padding.p_base,
-    alignSelf: "stretch",
-    marginTop: 8,
+    fontFamily: 'Poppins-Regular',
+    fontSize: 18,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   bottomsection: {
-    padding: Padding.p_base,
-    alignItems: "center",
+    padding: 16,
+    alignSelf: 'stretch',
+    alignItems: 'center',
   },
-  caseregister: {
+  dentistregister: {
     backgroundColor: Color.bgBlack,
-    width: "100%",
-    maxWidth: "100%",
-    overflow: "hidden",
+    width: '100%',
+    height: 898,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    overflow: 'hidden',
     flex: 1,
   },
 });

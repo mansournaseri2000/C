@@ -28,7 +28,7 @@ const DentistTerminationAction = () => {
             <Image
               style={styles.arrowLeftIcon}
               resizeMode="contain"
-              source={require("../assets/arrowleft.png")}
+              source={require("../assets/icons/arrow-left.png")}
             />
           </Pressable>
           <View style={[styles.header1, styles.header1SpaceBlock]}>
@@ -37,7 +37,7 @@ const DentistTerminationAction = () => {
           <Image
             style={styles.headerChild}
             resizeMode="contain"
-            source={require("../assets/group-1.png")}
+            source={require("../assets/JplignLogo.png")}
           />
         </View>
         <View style={[styles.profilecontainer, styles.headerSpaceBlock]}>
@@ -67,7 +67,7 @@ const DentistTerminationAction = () => {
               <Image
                 style={styles.defaultimageIcon}
                 resizeMode="contain"
-                source={require("../assets/defaultimage.png")}
+                source={require("../assets/ProfileImg.png")}
               />
             </View>
           </View>
@@ -78,7 +78,7 @@ const DentistTerminationAction = () => {
               <ImageBackground
                 style={styles.caseprofileIcon}
                 resizeMode="contain"
-                source={require("../assets/caseprofile.png")}
+                source={require("../assets/SampleProfileImg.png")}
               />
             </View>
             <View style={styles.infowrapper}>
@@ -128,27 +128,27 @@ const DentistTerminationAction = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube2.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info2.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -157,12 +157,12 @@ const DentistTerminationAction = () => {
 
 const styles = StyleSheet.create({
   headerSpaceBlock: {
-    padding: Padding.p_base,
+    padding: 16,
     alignItems: "center",
   },
   shrinktextbuttonFlexBox: {
-    padding: Padding.p_5xs,
-    borderRadius: Border.br_mini,
+    padding: 8,
+    borderRadius: 15,
     justifyContent: "center",
     flexDirection: "row",
     alignItems: "center",
@@ -189,16 +189,16 @@ const styles = StyleSheet.create({
     textAlign: "left",
   },
   caselistSpaceBlock: {
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     alignSelf: "stretch",
   },
   greetingTypo: {
-    fontSize: FontSize.bodyMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 18,
+    fontFamily: "Poppins-Regular",
   },
   buttontextTypo: {
-    fontSize: FontSize.bodySmall_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 16,
+    fontFamily: "Poppins-Regular",
   },
   iconLayout: {
     width: 32,
@@ -214,18 +214,18 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    padding: Padding.p_5xs,
-    borderRadius: Border.br_mini,
+    padding: 8,
+    borderRadius: 15,
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     textAlign: "center",
     color: Color.colorWhite,
   },
   header1: {
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     justifyContent: "center",
     flexDirection: "row",
   },
@@ -239,8 +239,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   suffixtext: {
-    fontSize: FontSize.titleMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 18,
+    fontFamily: "Poppins-Regular",
     textAlign: "left",
   },
   suffixwrapper: {
@@ -255,8 +255,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   greeting: {
-    fontSize: FontSize.bodyMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 18,
+    fontFamily: "Poppins-Regular",
   },
   greetingwrapper: {
     marginTop: 8,
@@ -272,14 +272,14 @@ const styles = StyleSheet.create({
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     justifyContent: "center",
     overflow: "hidden",
   },
   profilecard: {
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     backgroundColor: Color.bgBrown,
-    padding: Padding.p_5xs,
+    padding: 8,
     alignSelf: "stretch",
     justifyContent: "space-between",
   },
@@ -289,7 +289,7 @@ const styles = StyleSheet.create({
   caseprofileIcon: {
     width: 48,
     height: 48,
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
   },
   nametext1: {
     textAlign: "left",
@@ -317,8 +317,8 @@ const styles = StyleSheet.create({
     display: "none",
     height: 32,
     justifyContent: "center",
-    padding: Padding.p_5xs,
-    borderRadius: Border.br_mini,
+    padding: 8,
+    borderRadius: 15,
   },
   buttontext1: {
     color: Color.gray,
@@ -329,8 +329,8 @@ const styles = StyleSheet.create({
     height: 32,
     justifyContent: "center",
     backgroundColor: Color.colorPrimary,
-    padding: Padding.p_5xs,
-    borderRadius: Border.br_mini,
+    padding: 8,
+    borderRadius: 15,
   },
   actions: {
     justifyContent: "flex-end",
@@ -345,9 +345,9 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   casecard: {
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     backgroundColor: Color.bgBrown,
-    padding: Padding.p_5xs,
+    padding: 8,
     alignSelf: "stretch",
     alignItems: "center",
   },
@@ -366,7 +366,7 @@ const styles = StyleSheet.create({
     borderStyle: "solid",
     borderColor: "#000",
     borderTopWidth: 5,
-    paddingVertical: Padding.p_5xs,
+    paddingVertical: 8,
     backgroundColor: Color.bgBrown,
     flexDirection: "row",
     justifyContent: "space-between",

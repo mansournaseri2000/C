@@ -1,62 +1,54 @@
-import React, { useMemo } from "react";
+import * as React from 'react';
 import {
-  ImageBackground,
+  Image,
   StyleSheet,
-  View,
   Text,
-  Pressable,
-  ImageSourcePropType,
-} from "react-native";
-import { Padding, FontSize, FontFamily, Border, Color } from "../GlobalStyles";
+  View,
+} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
+import {Color} from '../GlobalStyles';
+import PrimaryBtnSmall from '../components/PrimaryBtnSmall';
+import GhostBtn from './PrimaryGhostBtn';
+import SecondaryBtnSmall from './SecondaryBtnSmall';
 
-const getStyleValue = (key, value) => {
-  if (value === undefined) return;
-  return { [key]: value === "unset" ? undefined : value };
-};
 const TreatmentCard = ({
-  caseProfileSrc,
-  nameText = "Fullname",
-  casePhone = "+98..............",
-  caseCardMarginTop,
+  fullname = 'fullname',
+  phone = '+49xxxxxxxx',
+  price = '1000',
+  dir = 'ltr',
 }) => {
-  const caseCardStyle = useMemo(() => {
-    return {
-      ...getStyleValue("marginTop", caseCardMarginTop),
-    };
-  }, [caseCardMarginTop]);
-
+  const navigation = useNavigation();
+  function handleAccept() {
+    navigation('DentistDiffAccept');
+  }
+  function handlePayment() {
+    navigation('PaypalLogin');
+  }
   return (
-    <View style={[styles.casecard, styles.actionsFlexBox, caseCardStyle]}>
-      <View style={styles.profilewrapper}>
-        <ImageBackground
-          style={styles.caseprofileIcon}
-          resizeMode="contain"
-          source={caseProfileSrc}
-        />
-      </View>
-      <View style={styles.infowrapper}>
-        <View style={[styles.namewrapper, styles.actionsFlexBox]}>
-          <Text style={styles.nametext}>{nameText}</Text>
+    <View style={dir == 'ltr' ? styles.card : styles.cardRTL}>
+      <Image
+        style={styles.profilewrapperIcon}
+        resizeMode="contain"
+        source={require('../assets/SampleProfileImg.png')}
+      />
+      <View style={dir == 'ltr' ? styles.infowrapper : styles.infowrapperRTL}>
+        <View style={styles.namewrapper}>
+          <Text
+            style={dir == 'ltr' ? styles.nametext : styles.nametextRTL}
+            numberOfLines={1}
+            ellipsizeMode="tail">
+            {fullname}
+          </Text>
+          <Text style={dir == 'ltr' ? styles.phone : styles.phoneRTL}>
+            {phone}
+          </Text>
         </View>
-        <View style={[styles.detailwrapper, styles.actionsFlexBox]}>
-          <View style={styles.detailwrapper1}>
-            <Text style={styles.caseorder}>{casePhone}</Text>
+        <View style={dir == 'ltr' ? styles.actions : styles.actionsRTL}>
+          <View style={styles.acceptCard}>
+            <SecondaryBtnSmall buttonText="4 / 12" activeOpacity={1}/>
           </View>
-          <View style={[styles.actions, styles.actionsFlexBox]}>
-            <Pressable
-              style={[styles.shrinktextbutton, styles.shrinktextbuttonFlexBox]}
-            >
-              <Text style={[styles.ghostbuttontext, styles.buttontextTypo]}>
-                05
-              </Text>
-            </Pressable>
-            <Pressable
-              style={[styles.shrinktextbutton1, styles.shrinktextbuttonFlexBox]}
-            >
-              <Text style={[styles.buttontext, styles.buttontextTypo]}>
-                Login
-              </Text>
-            </Pressable>
+          <View style={styles.priceCard}>
+            <PrimaryBtnSmall buttonText={'Login'} handler={handlePayment} />
           </View>
         </View>
       </View>
@@ -65,85 +57,100 @@ const TreatmentCard = ({
 };
 
 const styles = StyleSheet.create({
-  actionsFlexBox: {
-    alignItems: "center",
-    flexDirection: "row",
+  card: {
+    borderRadius: 12,
+    backgroundColor: Color.bgBrown,
+    padding: 16,
+    alignSelf: 'stretch',
+    alignItems: 'center',
+    backgroundColor: Color.bgBrown,
+    flexDirection: 'row',
   },
-  shrinktextbuttonFlexBox: {
-    justifyContent: "center",
-    height: 32,
-    alignItems: "center",
-    padding: Padding.p_5xs,
-    flexDirection: "row",
+  cardRTL: {
+    borderRadius: 12,
+    backgroundColor: Color.bgBrown,
+    padding: 16,
+    alignSelf: 'stretch',
+    alignItems: 'center',
+    backgroundColor: Color.bgBrown,
+    flexDirection: 'row-reverse',
   },
-  buttontextTypo: {
-    textAlign: "center",
-    fontSize: FontSize.bodySmall_size,
-    fontFamily: FontFamily.bodySmall,
-  },
-  caseprofileIcon: {
+  profilewrapperIcon: {
     width: 48,
     height: 48,
-    borderRadius: Border.br_31xl,
-  },
-  profilewrapper: {
-    flexDirection: "row",
-  },
-  nametext: {
-    fontSize: FontSize.bodyMedium_size,
-    color: Color.colorWhite,
-    textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
-  },
-  namewrapper: {
-    flexWrap: "wrap",
-    alignSelf: "stretch",
-    alignItems: "center",
-  },
-  caseorder: {
-    color: Color.colorDarkgray,
-    fontSize: FontSize.bodySmall_size,
-    textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
-  },
-  detailwrapper1: {
-    flex: 1,
-  },
-  ghostbuttontext: {
-    color: Color.colorPrimary,
-  },
-  shrinktextbutton: {
-    borderStyle: "solid",
-    borderColor: "#241b18",
-    borderWidth: 1,
-    borderRadius: Border.br_31xl,
-  },
-  buttontext: {
-    color: Color.gray,
-  },
-  shrinktextbutton1: {
-    borderRadius: Border.br_mini,
-    backgroundColor: Color.colorPrimary,
-    marginLeft: 8,
-  },
-  actions: {
-    justifyContent: "flex-end",
-    marginLeft: 4,
-  },
-  detailwrapper: {
-    alignSelf: "stretch",
-    alignItems: "center",
+    overflow: 'hidden',
   },
   infowrapper: {
     marginLeft: 8,
     flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    overflow: 'hidden',
   },
-  casecard: {
-    borderRadius: Border.br_xs,
-    backgroundColor: Color.bgBrown,
-    padding: Padding.p_5xs,
-    alignItems: "center",
-    alignSelf: "stretch",
+  infowrapperRTL: {
+    marginLeft: 8,
+    flex: 1,
+    flexDirection: 'row-reverse',
+    justifyContent: 'space-between',
+    overflow: 'hidden',
+  },
+  namewrapper: {
+    flexBasis: '50%',
+    // flexWrap: 'wrap',
+    // flexDirection: 'row',
+    // alignSelf: 'stretch',
+    // alignItems: 'center',
+  },
+  nametext: {
+    textAlign: 'left',
+    color: Color.colorWhite,
+    fontSize: 18,
+    fontFamily: 'Poppins-Regular',
+  },
+  nametextRTL: {
+    textAlign: 'right',
+    color: Color.colorWhite,
+    fontSize: 18,
+    fontFamily: 'Poppins-Regular',
+  },
+  phoneRTL: {
+    textAlign: 'right',
+    color: Color.colorDarkgray,
+    fontSize: 14,
+    fontFamily: 'Poppins-Regular',
+  },
+  detailcontainer: {
+    flexDirection: 'row',
+    alignSelf: 'stretch',
+    alignItems: 'center',
+  },
+  phonewrapper: {
+    flex: 1,
+  },
+  phone: {
+    color: Color.colorDarkgray,
+    textAlign: 'left',
+    fontSize: 14,
+    fontFamily: 'Poppins-Regular',
+  },
+  actions: {
+    // justifyContent: 'flex-end',
+    justifyContent: 'space-between',
+    marginLeft: 4,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  actionsRTL:{
+    justifyContent: 'space-between',
+    marginLeft: 4,
+    flexDirection: 'row-reverse',
+    alignItems: 'center',
+  },
+  acceptCard: {
+    marginHorizontal: 8,
+  },
+  priceCard: {
+    // marginHorizontal: 4,
   },
 });
 

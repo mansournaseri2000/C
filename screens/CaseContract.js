@@ -31,7 +31,7 @@ const CaseContract = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-15.png")}
+              source={require("../assets/JplignLogo.png")}
             />
           </View>
           <View style={styles.headerFlexBox}>
@@ -56,7 +56,7 @@ const CaseContract = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="cover"
-                  source={require("../assets/defaultimage2.png")}
+                  source={require("../assets/ProfileImg.png")}
                 />
               </View>
             </View>
@@ -77,7 +77,7 @@ const CaseContract = () => {
                   <ImageBackground
                     style={styles.page1imageIcon}
                     resizeMode="cover"
-                    source={require("../assets/page1image.png")}
+                    source={require("../assets/Page1Img.png")}
                   />
                   <View
                     style={[styles.uploadwrapper, styles.underbtntextFlexBox]}
@@ -86,7 +86,7 @@ const CaseContract = () => {
                       <Image
                         style={styles.packagePlusIcon}
                         resizeMode="contain"
-                        source={require("../assets/image.png")}
+                        source={require("../assets/icons/image.png")}
                       />
                     </View>
                     <View
@@ -95,7 +95,7 @@ const CaseContract = () => {
                       <Image
                         style={styles.packagePlusIcon}
                         resizeMode="contain"
-                        source={require("../assets/camera.png")}
+                        source={require("../assets/icons/camera.png")}
                       />
                     </View>
                   </View>
@@ -104,7 +104,7 @@ const CaseContract = () => {
                   <ImageBackground
                     style={styles.page1imageIcon}
                     resizeMode="contain"
-                    source={require("../assets/page2image.png")}
+                    source={require("../assets/Page2Img.png")}
                   />
                   <View
                     style={[styles.uploadwrapper, styles.underbtntextFlexBox]}
@@ -113,7 +113,7 @@ const CaseContract = () => {
                       <Image
                         style={styles.packagePlusIcon}
                         resizeMode="contain"
-                        source={require("../assets/image.png")}
+                        source={require("../assets/icons/image.png")}
                       />
                     </View>
                     <View
@@ -122,7 +122,7 @@ const CaseContract = () => {
                       <Image
                         style={styles.packagePlusIcon}
                         resizeMode="contain"
-                        source={require("../assets/camera.png")}
+                        source={require("../assets/icons/camera.png")}
                       />
                     </View>
                   </View>
@@ -135,7 +135,7 @@ const CaseContract = () => {
                   <ImageBackground
                     style={styles.page1imageIcon}
                     resizeMode="cover"
-                    source={require("../assets/page3image.png")}
+                    source={require("../assets/Page3Img.png")}
                   />
                   <View
                     style={[styles.uploadwrapper, styles.underbtntextFlexBox]}
@@ -144,7 +144,7 @@ const CaseContract = () => {
                       <Image
                         style={styles.packagePlusIcon}
                         resizeMode="contain"
-                        source={require("../assets/image.png")}
+                        source={require("../assets/icons/image.png")}
                       />
                     </View>
                     <View
@@ -153,7 +153,7 @@ const CaseContract = () => {
                       <Image
                         style={styles.packagePlusIcon}
                         resizeMode="contain"
-                        source={require("../assets/camera.png")}
+                        source={require("../assets/icons/camera.png")}
                       />
                     </View>
                   </View>
@@ -162,7 +162,7 @@ const CaseContract = () => {
                   <ImageBackground
                     style={styles.page1imageIcon}
                     resizeMode="contain"
-                    source={require("../assets/page4image.png")}
+                    source={require("../assets/Page4Img.png")}
                   />
                   <View
                     style={[styles.uploadwrapper, styles.underbtntextFlexBox]}
@@ -171,7 +171,7 @@ const CaseContract = () => {
                       <Image
                         style={styles.packagePlusIcon}
                         resizeMode="contain"
-                        source={require("../assets/image.png")}
+                        source={require("../assets/icons/image.png")}
                       />
                     </View>
                     <View
@@ -180,7 +180,7 @@ const CaseContract = () => {
                       <Image
                         style={styles.packagePlusIcon}
                         resizeMode="contain"
-                        source={require("../assets/camera.png")}
+                        source={require("../assets/icons/camera.png")}
                       />
                     </View>
                   </View>
@@ -219,27 +219,27 @@ const CaseContract = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube3.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info3.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition2.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -248,7 +248,7 @@ const CaseContract = () => {
 
 const styles = StyleSheet.create({
   headerFlexBox: {
-    padding: Padding.p_base,
+    padding: 16,
     alignSelf: "stretch",
     alignItems: "center",
   },
@@ -259,8 +259,8 @@ const styles = StyleSheet.create({
   buttontextTypo: {
     color: Color.gray,
     textAlign: "center",
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   bottomtabFlexBox: {
     backgroundColor: Color.bgBrown,
@@ -268,23 +268,23 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
   },
   nametextTypo: {
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
     textAlign: "left",
   },
   bottomtabSpaceBlock: {
     borderStyle: "solid",
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
   },
   uploadPdfClr: {
     color: Color.colorPrimary,
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   uploadimageSpaceBlock: {
-    paddingVertical: Padding.p_base,
+    paddingVertical: 16,
     backgroundColor: Color.bgBrown,
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     overflow: "hidden",
     flex: 1,
   },
@@ -295,9 +295,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   camerabtnLayout: {
-    paddingVertical: Padding.p_21xl,
+    paddingVertical: 40,
     backgroundColor: Color.gray,
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     justifyContent: "center",
     height: 40,
     width: 40,
@@ -305,7 +305,7 @@ const styles = StyleSheet.create({
   },
   camerabtnSpaceBlock: {
     marginLeft: 16,
-    paddingHorizontal: Padding.p_5xs,
+    paddingHorizontal: 8,
     alignItems: "center",
   },
   row1SpaceBlock: {
@@ -313,8 +313,8 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
   },
   growtextbuttonSpaceBlock: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
   },
   iconLayout: {
     width: 32,
@@ -324,25 +324,25 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   growtextbutton: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     height: 40,
     width: 40,
     justifyContent: "center",
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     flexDirection: "row",
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
     textAlign: "center",
   },
   header1: {
     height: 30,
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     paddingVertical: 0,
     flexDirection: "row",
   },
@@ -357,7 +357,7 @@ const styles = StyleSheet.create({
   nametext: {
     textAlign: "left",
     color: Color.colorWhite,
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
   },
   namewrapper: {
     flexDirection: "row",
@@ -366,7 +366,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   greeting: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     color: Color.colorDarkgray,
     textAlign: "left",
   },
@@ -385,29 +385,29 @@ const styles = StyleSheet.create({
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     justifyContent: "center",
-    padding: Padding.p_base,
+    padding: 16,
     alignItems: "center",
     overflow: "hidden",
   },
   profilecard: {
-    padding: Padding.p_5xs,
-    borderRadius: Border.br_xs,
+    padding: 8,
+    borderRadius: 12,
     backgroundColor: Color.bgBrown,
     flexDirection: "row",
   },
   ghostbuttontext: {
-    fontSize: FontSize.titleLarge_size,
+    fontSize: 22,
     textAlign: "center",
   },
   growtextbutton1: {
-    borderColor: "#c5ab8e",
+    borderColor: Color.colorPrimary,
     borderWidth: 1,
     justifyContent: "center",
     alignItems: "center",
     height: 40,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     borderStyle: "solid",
   },
   page1imageIcon: {
@@ -420,13 +420,13 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   gallerybtn: {
-    paddingHorizontal: Padding.p_5xs,
+    paddingHorizontal: 8,
     alignItems: "center",
   },
   camerabtn: {
-    paddingVertical: Padding.p_21xl,
+    paddingVertical: 40,
     backgroundColor: Color.gray,
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     justifyContent: "center",
     height: 40,
     width: 40,
@@ -437,13 +437,13 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
   },
   uploadimage1: {
-    paddingHorizontal: Padding.p_5xs,
+    paddingHorizontal: 8,
     alignItems: "center",
   },
   uploadimage2: {
-    paddingVertical: Padding.p_base,
+    paddingVertical: 16,
     backgroundColor: Color.bgBrown,
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     overflow: "hidden",
     flex: 1,
   },
@@ -469,25 +469,25 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   growtextbutton2: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     height: 40,
     backgroundColor: Color.colorPrimary,
     justifyContent: "center",
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     flexDirection: "row",
     alignSelf: "stretch",
   },
   uploadPdf: {
     textAlign: "left",
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
   },
   actiontext: {
     marginLeft: 8,
   },
   underbtntext: {
     paddingVertical: 0,
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     marginTop: 8,
   },
   bottombtn: {

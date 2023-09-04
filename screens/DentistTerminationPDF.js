@@ -29,7 +29,7 @@ const DentistTerminationPDF = () => {
               <Image
                 style={styles.arrowLeftIcon}
                 resizeMode="contain"
-                source={require("../assets/arrowleft.png")}
+                source={require("../assets/icons/arrow-left.png")}
               />
             </Pressable>
             <View style={styles.header1}>
@@ -38,7 +38,7 @@ const DentistTerminationPDF = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-1.png")}
+              source={require("../assets/JplignLogo.png")}
             />
           </View>
           <View style={styles.prfilecontainer}>
@@ -74,7 +74,7 @@ const DentistTerminationPDF = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="contain"
-                  source={require("../assets/defaultimage.png")}
+                  source={require("../assets/ProfileImg.png")}
                 />
               </View>
             </View>
@@ -92,7 +92,7 @@ const DentistTerminationPDF = () => {
                 <ImageBackground
                   style={styles.terminationimageIcon}
                   resizeMode="contain"
-                  source={require("../assets/terminationimage.png")}
+                  source={require("../assets/TerminationImg.png")}
                 />
                 <View
                   style={[styles.circleiconbutton, styles.uploadimageFlexBox]}
@@ -100,7 +100,7 @@ const DentistTerminationPDF = () => {
                   <Image
                     style={styles.arrowLeftIcon}
                     resizeMode="contain"
-                    source={require("../assets/paperclip1.png")}
+                    source={require("../assets/icons/paperclip.png")}
                   />
                 </View>
               </View>
@@ -135,27 +135,27 @@ const DentistTerminationPDF = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube2.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info2.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -172,24 +172,24 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   profilecardLayout: {
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     backgroundColor: Color.bgBrown,
   },
   uploadimageFlexBox: {
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     justifyContent: "center",
     alignItems: "center",
   },
   growtextbuttonSpaceBlock: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
   },
   uploadImageClr: {
     color: Color.colorPrimary,
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   underbtntextFlexBox: {
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     paddingVertical: 0,
     justifyContent: "center",
     flexDirection: "row",
@@ -205,23 +205,23 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   iconbutton: {
-    padding: Padding.p_5xs,
+    padding: 8,
     flexDirection: "row",
     height: 40,
     width: 40,
     backgroundColor: Color.colorPrimary,
     justifyContent: "center",
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     textAlign: "center",
     color: Color.colorWhite,
   },
   header1: {
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     paddingVertical: 0,
     justifyContent: "center",
     flexDirection: "row",
@@ -232,7 +232,7 @@ const styles = StyleSheet.create({
     height: 40,
   },
   header: {
-    padding: Padding.p_base,
+    padding: 16,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",
@@ -240,8 +240,8 @@ const styles = StyleSheet.create({
   },
   suffixtext: {
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
     color: Color.colorWhite,
   },
   suffixwrapper: {
@@ -255,10 +255,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   greeting: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     color: Color.colorDarkgray,
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   greetingwrapper: {
     marginTop: 8,
@@ -272,35 +272,35 @@ const styles = StyleSheet.create({
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
-    padding: Padding.p_base,
+    padding: 16,
     overflow: "hidden",
   },
   profilecard: {
     backgroundColor: Color.bgBrown,
-    padding: Padding.p_5xs,
+    padding: 8,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",
   },
   prfilecontainer: {
-    padding: Padding.p_base,
+    padding: 16,
     alignSelf: "stretch",
     alignItems: "center",
   },
   ghostbuttontext: {
-    fontSize: FontSize.titleLarge_size,
+    fontSize: 22,
     textAlign: "center",
   },
   growtextbutton: {
-    borderColor: "#c5ab8e",
+    borderColor: Color.colorPrimary,
     borderWidth: 1,
     borderStyle: "solid",
-    paddingVertical: Padding.p_5xs,
+    paddingVertical: 8,
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
     height: 40,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
   },
   terminationimageIcon: {
     height: 375,
@@ -308,8 +308,8 @@ const styles = StyleSheet.create({
   },
   circleiconbutton: {
     backgroundColor: Color.gray,
-    paddingHorizontal: Padding.p_5xs,
-    paddingVertical: Padding.p_21xl,
+    paddingHorizontal: 8,
+    paddingVertical: 40,
     marginTop: 8,
     height: 40,
     width: 40,
@@ -317,7 +317,7 @@ const styles = StyleSheet.create({
   },
   pdfcontainer: {
     backgroundColor: Color.bgBrown,
-    padding: Padding.p_base,
+    padding: 16,
     alignItems: "center",
     flex: 1,
   },
@@ -334,8 +334,8 @@ const styles = StyleSheet.create({
     display: "flex",
     width: 304,
     height: 28,
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
     textAlign: "center",
   },
   growtextbutton1: {
@@ -343,13 +343,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     flexDirection: "row",
     alignSelf: "stretch",
   },
   uploadImage: {
     textAlign: "left",
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
   },
   actiontext: {
     marginLeft: 8,
@@ -373,7 +373,7 @@ const styles = StyleSheet.create({
     borderColor: "#000",
     borderTopWidth: 5,
     borderStyle: "solid",
-    paddingVertical: Padding.p_5xs,
+    paddingVertical: 8,
     flexDirection: "row",
     backgroundColor: Color.bgBrown,
     alignSelf: "stretch",

@@ -33,7 +33,7 @@ const CaseSimulationFirst = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-15.png")}
+              source={require("../assets/JplignLogo.png")}
             />
           </View>
           <View style={[styles.prfilecontainer, styles.headerSpaceBlock]}>
@@ -58,7 +58,7 @@ const CaseSimulationFirst = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="cover"
-                  source={require("../assets/defaultimage.png")}
+                  source={require("../assets/ProfileImg.png")}
                 />
               </View>
             </View>
@@ -68,7 +68,7 @@ const CaseSimulationFirst = () => {
           <ImageBackground
             style={styles.dimageIcon}
             resizeMode="contain"
-            source={require("../assets/image101.png")}
+            source={require("../assets/3Dimage.png")}
           />
         </View>
         <View style={[styles.bottombtn, styles.growtextbuttonSpaceBlock]}>
@@ -87,27 +87,27 @@ const CaseSimulationFirst = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube2.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info2.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -116,18 +116,18 @@ const CaseSimulationFirst = () => {
 
 const styles = StyleSheet.create({
   headerSpaceBlock: {
-    padding: Padding.p_base,
+    padding: 16,
     alignItems: "center",
   },
   growtextbuttonSpaceBlock: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
   },
   buttontextTypo: {
     color: Color.gray,
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
     textAlign: "center",
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
   },
   header1SpaceBlock: {
     paddingVertical: 0,
@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
   },
   nametextTypo: {
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   iconLayout: {
     width: 32,
@@ -155,21 +155,21 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
-    paddingHorizontal: Padding.p_base,
+    borderRadius: 15,
+    paddingHorizontal: 16,
     flexDirection: "row",
     alignItems: "center",
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
     textAlign: "center",
   },
   header1: {
     height: 30,
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     justifyContent: "center",
     flexDirection: "row",
   },
@@ -184,7 +184,7 @@ const styles = StyleSheet.create({
   },
   nametext: {
     color: Color.colorWhite,
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
     textAlign: "left",
   },
   namewrapper: {
@@ -196,7 +196,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   greeting: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     color: Color.colorDarkgray,
   },
   greetingwrapper: {
@@ -217,7 +217,7 @@ const styles = StyleSheet.create({
     height: 32,
   },
   uploadimage: {
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
@@ -225,8 +225,8 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   profilecard: {
-    borderRadius: Border.br_xs,
-    padding: Padding.p_5xs,
+    borderRadius: 12,
+    padding: 8,
   },
   prfilecontainer: {
     alignSelf: "stretch",
@@ -240,7 +240,7 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
   },
   dimagewrapper: {
-    paddingHorizontal: Padding.p_13xl,
+    paddingHorizontal: 32,
     alignSelf: "stretch",
   },
   buttontext1: {
@@ -255,8 +255,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
-    paddingHorizontal: Padding.p_base,
+    borderRadius: 15,
+    paddingHorizontal: 16,
     flexDirection: "row",
     alignItems: "center",
     alignSelf: "stretch",
@@ -278,8 +278,8 @@ const styles = StyleSheet.create({
     borderStyle: "solid",
     borderColor: "#000",
     borderTopWidth: 5,
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
   },
   casesimulationfirst: {
     backgroundColor: Color.bgBlack,

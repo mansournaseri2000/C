@@ -34,7 +34,7 @@ const CaseProgress = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-15.png")}
+              source={require("../assets/JplignLogo.png")}
             />
           </View>
           <View style={styles.prfilecontainer}>
@@ -57,7 +57,7 @@ const CaseProgress = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="cover"
-                  source={require("../assets/defaultimage2.png")}
+                  source={require("../assets/ProfileImg.png")}
                 />
               </View>
             </View>
@@ -117,14 +117,14 @@ MAGICAL SMILE`}</Text>
               <Image
                 style={styles.sliderIcon}
                 resizeMode="contain"
-                source={require("../assets/slider.png")}
+                source={require("../assets/SmileImg.png")}
               />
             </View>
             <View style={[styles.play, styles.playFlexBox]}>
               <Image
                 style={styles.playCircleIcon}
                 resizeMode="contain"
-                source={require("../assets/playcircle.png")}
+                source={require("../assets/icons/paly-circle-lg.png")}
               />
             </View>
           </View>
@@ -152,27 +152,27 @@ MAGICAL SMILE`}</Text>
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube3.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info3.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition2.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -181,18 +181,18 @@ MAGICAL SMILE`}</Text>
 
 const styles = StyleSheet.create({
   growtextbuttonSpaceBlock: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
   },
   greetingTypo: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   numberTypo: {
-    fontSize: FontSize.displayLarge_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 34,
+    fontFamily: "Poppins-Regular",
   },
   growtextbutton2SpaceBlock: {
     marginTop: 10,
@@ -203,10 +203,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   datacardSpaceBlock: {
-    paddingVertical: Padding.p_9xs,
-    paddingHorizontal: Padding.p_xs,
+    paddingVertical: 4,
+    paddingHorizontal: 12,
     width: 125,
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     alignItems: "center",
   },
   bottomtabBorder: {
@@ -223,7 +223,7 @@ const styles = StyleSheet.create({
     width: 304,
     display: "flex",
     textAlign: "center",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
     justifyContent: "center",
     alignItems: "center",
   },
@@ -234,27 +234,27 @@ const styles = StyleSheet.create({
   buttontext: {
     textAlign: "center",
     color: Color.gray,
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   growtextbutton: {
     width: 40,
     justifyContent: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     alignItems: "center",
   },
   headertext: {
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     textAlign: "center",
   },
   header1: {
     height: 30,
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     paddingVertical: 0,
     justifyContent: "center",
     flexDirection: "row",
@@ -265,7 +265,7 @@ const styles = StyleSheet.create({
     height: 40,
   },
   header: {
-    padding: Padding.p_base,
+    padding: 16,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",
@@ -274,8 +274,8 @@ const styles = StyleSheet.create({
   nametext: {
     textAlign: "left",
     color: Color.colorWhite,
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   namewrapper: {
     justifyContent: "center",
@@ -300,25 +300,25 @@ const styles = StyleSheet.create({
     height: 32,
   },
   uploadimage: {
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
     justifyContent: "center",
-    padding: Padding.p_base,
+    padding: 16,
     alignItems: "center",
     overflow: "hidden",
   },
   profilecard: {
-    padding: Padding.p_5xs,
+    padding: 8,
     backgroundColor: Color.bgBrown,
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",
   },
   prfilecontainer: {
-    padding: Padding.p_base,
+    padding: 16,
     alignSelf: "stretch",
     alignItems: "center",
   },
@@ -333,7 +333,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   sloganwrapper: {
-    padding: Padding.p_3xs,
+    padding: 10,
     justifyContent: "center",
     flexDirection: "row",
     alignItems: "center",
@@ -350,8 +350,8 @@ const styles = StyleSheet.create({
   labeltext: {
     color: Color.colorPrimary,
     textAlign: "left",
-    fontSize: FontSize.headingMediumBold_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 24,
+    fontFamily: "Poppins-Regular",
   },
   number: {
     color: Color.colorPrimary,
@@ -363,32 +363,32 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   counterwrapper: {
-    borderColor: "#c5ab8e",
+    borderColor: Color.colorPrimary,
     borderStyle: "solid",
     borderWidth: 1,
-    borderRadius: Border.br_xs,
-    padding: Padding.p_base,
+    borderRadius: 12,
+    padding: 16,
   },
   label: {
-    fontSize: FontSize.titleLarge_size,
+    fontSize: 22,
     textAlign: "left",
     color: Color.gray,
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   date: {
     color: Color.colorLightgray,
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   datacard: {
     backgroundColor: Color.colorPrimary,
   },
   label1: {
-    fontSize: FontSize.titleLarge_size,
+    fontSize: 22,
     color: Color.colorPrimary,
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   datacard1: {
     backgroundColor: Color.bgBrown,
@@ -404,7 +404,7 @@ const styles = StyleSheet.create({
   sliderIcon: {
     width: 300,
     height: 200,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
   },
   slidercontainer: {
     width: 297,
@@ -422,7 +422,7 @@ const styles = StyleSheet.create({
   },
   progresscontainer: {
     width: 390,
-    padding: Padding.p_base,
+    padding: 16,
     alignItems: "center",
     overflow: "hidden",
   },
@@ -433,33 +433,33 @@ const styles = StyleSheet.create({
   buttontext1: {
     height: 28,
     color: Color.gray,
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
   },
   growtextbutton1: {
     justifyContent: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     alignSelf: "stretch",
     alignItems: "center",
   },
   ghostbuttontext: {
-    fontSize: FontSize.titleLarge_size,
+    fontSize: 22,
     color: Color.colorPrimary,
     alignSelf: "stretch",
   },
   growtextbutton2: {
-    borderColor: "#c5ab8e",
+    borderColor: Color.colorPrimary,
     borderStyle: "solid",
     borderWidth: 1,
     marginTop: 10,
     alignSelf: "stretch",
     justifyContent: "center",
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
     height: 40,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
   },
   container: {
     alignSelf: "stretch",
@@ -473,8 +473,8 @@ const styles = StyleSheet.create({
   bottomtab: {
     borderTopWidth: 5,
     backgroundColor: Color.bgBrown,
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",

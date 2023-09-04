@@ -1,12 +1,12 @@
 import * as React from "react";
 import { StyleProp, ViewStyle, Image, StyleSheet } from "react-native";
 
-const ConditionIcon = ({ style }) => {
+const Condition = ({ style }) => {
   return (
     <Image
       style={[styles.conditionIcon, style]}
       resizeMode="contain"
-      source={require("../assets/condition.png")}
+      source={require("../assets/icons/condition.png")}
     />
   );
 };
@@ -19,4 +19,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ConditionIcon;
+export default Condition;

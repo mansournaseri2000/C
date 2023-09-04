@@ -39,7 +39,7 @@ const CaseMedical = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-15.png")}
+              source={require("../assets/JplignLogo.png")}
             />
           </View>
           <View style={[styles.prfilecontainer, styles.headerSpaceBlock]}>
@@ -64,7 +64,7 @@ const CaseMedical = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="cover"
-                  source={require("../assets/defaultimage.png")}
+                  source={require("../assets/ProfileImg.png")}
                 />
               </View>
             </View>
@@ -90,7 +90,7 @@ const CaseMedical = () => {
                   <ImageBackground
                     style={styles.sampleimageIcon}
                     resizeMode="contain"
-                    source={require("../assets/sampleimage.png")}
+                    source={require("../assets/SmileImg.png")}
                   />
                 </View>
                 <View style={[styles.uploadwrapper, styles.row1SpaceBlock]}>
@@ -98,14 +98,14 @@ const CaseMedical = () => {
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/image.png")}
+                      source={require("../assets/icons/image.png")}
                     />
                   </View>
                   <View style={[styles.camerabtn, styles.camerabtnLayout]}>
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/camera.png")}
+                      source={require("../assets/icons/camera.png")}
                     />
                   </View>
                 </View>
@@ -129,7 +129,7 @@ const CaseMedical = () => {
                   <ImageBackground
                     style={styles.sampleimageIcon}
                     resizeMode="contain"
-                    source={require("../assets/sampleimage.png")}
+                    source={require("../assets/SmileImg.png")}
                   />
                 </View>
                 <View style={[styles.uploadwrapper, styles.row1SpaceBlock]}>
@@ -137,14 +137,14 @@ const CaseMedical = () => {
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/image.png")}
+                      source={require("../assets/icons/image.png")}
                     />
                   </View>
                   <View style={[styles.camerabtn, styles.camerabtnLayout]}>
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/camera.png")}
+                      source={require("../assets/icons/camera.png")}
                     />
                   </View>
                 </View>
@@ -170,7 +170,7 @@ const CaseMedical = () => {
                   <ImageBackground
                     style={styles.sampleimageIcon}
                     resizeMode="contain"
-                    source={require("../assets/sampleimage.png")}
+                    source={require("../assets/SmileImg.png")}
                   />
                 </View>
                 <View style={[styles.uploadwrapper, styles.row1SpaceBlock]}>
@@ -178,14 +178,14 @@ const CaseMedical = () => {
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/image.png")}
+                      source={require("../assets/icons/image.png")}
                     />
                   </View>
                   <View style={[styles.camerabtn, styles.camerabtnLayout]}>
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/camera.png")}
+                      source={require("../assets/icons/camera.png")}
                     />
                   </View>
                 </View>
@@ -209,7 +209,7 @@ const CaseMedical = () => {
                   <ImageBackground
                     style={styles.sampleimageIcon}
                     resizeMode="contain"
-                    source={require("../assets/sampleimage.png")}
+                    source={require("../assets/SmileImg.png")}
                   />
                 </View>
                 <View style={[styles.uploadwrapper, styles.row1SpaceBlock]}>
@@ -217,14 +217,14 @@ const CaseMedical = () => {
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/image.png")}
+                      source={require("../assets/icons/image.png")}
                     />
                   </View>
                   <View style={[styles.camerabtn, styles.camerabtnLayout]}>
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/camera.png")}
+                      source={require("../assets/icons/camera.png")}
                     />
                   </View>
                 </View>
@@ -250,7 +250,7 @@ const CaseMedical = () => {
                   <ImageBackground
                     style={styles.sampleimageIcon}
                     resizeMode="contain"
-                    source={require("../assets/sampleimage.png")}
+                    source={require("../assets/SmileImg.png")}
                   />
                 </View>
                 <View style={[styles.uploadwrapper, styles.row1SpaceBlock]}>
@@ -258,14 +258,14 @@ const CaseMedical = () => {
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/image.png")}
+                      source={require("../assets/icons/image.png")}
                     />
                   </View>
                   <View style={[styles.camerabtn, styles.camerabtnLayout]}>
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/camera.png")}
+                      source={require("../assets/icons/camera.png")}
                     />
                   </View>
                 </View>
@@ -289,7 +289,7 @@ const CaseMedical = () => {
                   <ImageBackground
                     style={styles.sampleimageIcon}
                     resizeMode="contain"
-                    source={require("../assets/sampleimage.png")}
+                    source={require("../assets/SmileImg.png")}
                   />
                 </View>
                 <View style={[styles.uploadwrapper, styles.row1SpaceBlock]}>
@@ -297,14 +297,14 @@ const CaseMedical = () => {
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/image.png")}
+                      source={require("../assets/icons/image.png")}
                     />
                   </View>
                   <View style={[styles.camerabtn, styles.camerabtnLayout]}>
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/camera.png")}
+                      source={require("../assets/icons/camera.png")}
                     />
                   </View>
                 </View>
@@ -330,7 +330,7 @@ const CaseMedical = () => {
                   <ImageBackground
                     style={styles.sampleimageIcon}
                     resizeMode="contain"
-                    source={require("../assets/sampleimage.png")}
+                    source={require("../assets/SmileImg.png")}
                   />
                 </View>
                 <View style={[styles.uploadwrapper, styles.row1SpaceBlock]}>
@@ -338,14 +338,14 @@ const CaseMedical = () => {
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/image.png")}
+                      source={require("../assets/icons/image.png")}
                     />
                   </View>
                   <View style={[styles.camerabtn, styles.camerabtnLayout]}>
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/camera.png")}
+                      source={require("../assets/icons/camera.png")}
                     />
                   </View>
                 </View>
@@ -369,7 +369,7 @@ const CaseMedical = () => {
                   <ImageBackground
                     style={styles.sampleimageIcon}
                     resizeMode="contain"
-                    source={require("../assets/sampleimage.png")}
+                    source={require("../assets/SmileImg.png")}
                   />
                 </View>
                 <View style={[styles.uploadwrapper, styles.row1SpaceBlock]}>
@@ -377,14 +377,14 @@ const CaseMedical = () => {
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/image.png")}
+                      source={require("../assets/icons/image.png")}
                     />
                   </View>
                   <View style={[styles.camerabtn, styles.camerabtnLayout]}>
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/camera.png")}
+                      source={require("../assets/icons/camera.png")}
                     />
                   </View>
                 </View>
@@ -410,7 +410,7 @@ const CaseMedical = () => {
                   <ImageBackground
                     style={styles.sampleimageIcon}
                     resizeMode="contain"
-                    source={require("../assets/sampleimage.png")}
+                    source={require("../assets/SmileImg.png")}
                   />
                 </View>
                 <View style={[styles.uploadwrapper, styles.row1SpaceBlock]}>
@@ -418,14 +418,14 @@ const CaseMedical = () => {
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/image.png")}
+                      source={require("../assets/icons/image.png")}
                     />
                   </View>
                   <View style={[styles.camerabtn, styles.camerabtnLayout]}>
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/camera.png")}
+                      source={require("../assets/icons/camera.png")}
                     />
                   </View>
                 </View>
@@ -449,7 +449,7 @@ const CaseMedical = () => {
                   <ImageBackground
                     style={styles.sampleimageIcon}
                     resizeMode="contain"
-                    source={require("../assets/sampleimage.png")}
+                    source={require("../assets/SmileImg.png")}
                   />
                 </View>
                 <View style={[styles.uploadwrapper, styles.row1SpaceBlock]}>
@@ -457,14 +457,14 @@ const CaseMedical = () => {
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/image.png")}
+                      source={require("../assets/icons/image.png")}
                     />
                   </View>
                   <View style={[styles.camerabtn, styles.camerabtnLayout]}>
                     <Image
                       style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                       resizeMode="contain"
-                      source={require("../assets/camera.png")}
+                      source={require("../assets/icons/camera.png")}
                     />
                   </View>
                 </View>
@@ -480,7 +480,7 @@ const CaseMedical = () => {
                   <Image
                     style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                     resizeMode="contain"
-                    source={require("../assets/packageplus16.png")}
+                    source={require("../assets/icons/film.png")}
                   />
                 </View>
                 <Text style={[styles.label, styles.labelTypo]}>
@@ -538,27 +538,27 @@ const CaseMedical = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube2.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info2.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -568,33 +568,33 @@ const CaseMedical = () => {
 const styles = StyleSheet.create({
   radioBtnText: {},
   headerSpaceBlock: {
-    padding: Padding.p_base,
+    padding: 16,
     alignSelf: "stretch",
   },
   growtextbuttonSpaceBlock: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
   },
   buttontextTypo: {
     color: Color.gray,
     textAlign: "center",
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   header1SpaceBlock: {
     paddingVertical: 0,
     alignItems: "center",
   },
   nametextTypo: {
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
     textAlign: "left",
     color: Color.colorWhite,
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   greetingClr: {
     color: Color.colorDarkgray,
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   labelClr: {
     color: Color.colorPrimary,
@@ -609,10 +609,10 @@ const styles = StyleSheet.create({
     width: 24,
   },
   camerabtnLayout: {
-    paddingVertical: Padding.p_21xl,
+    paddingVertical: 40,
     backgroundColor: Color.gray,
-    paddingHorizontal: Padding.p_5xs,
-    borderRadius: Border.br_31xl,
+    paddingHorizontal: 8,
+    borderRadius: 50,
     justifyContent: "center",
     height: 40,
     width: 40,
@@ -624,14 +624,14 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     alignItems: "center",
   },
   labelTypo: {
     marginLeft: 8,
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   iconLayout: {
     width: 32,
@@ -645,19 +645,19 @@ const styles = StyleSheet.create({
     height: 40,
     width: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     alignItems: "center",
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
     textAlign: "center",
   },
   header1: {
     height: 30,
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     justifyContent: "center",
     flexDirection: "row",
   },
@@ -673,7 +673,7 @@ const styles = StyleSheet.create({
   nametext: {
     textAlign: "left",
     color: Color.colorWhite,
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   namewrapper: {
     justifyContent: "center",
@@ -684,7 +684,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   greeting: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     textAlign: "left",
   },
   greetingwrapper: {
@@ -708,16 +708,16 @@ const styles = StyleSheet.create({
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     justifyContent: "center",
-    padding: Padding.p_base,
+    padding: 16,
     alignItems: "center",
     overflow: "hidden",
   },
   profilecard: {
-    padding: Padding.p_5xs,
+    padding: 8,
     backgroundColor: Color.bgBrown,
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",
@@ -726,18 +726,18 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   labeltext: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     textAlign: "center",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   labelwrapper: {
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     justifyContent: "center",
     flexDirection: "row",
     alignSelf: "stretch",
   },
   selectivetext: {
-    fontSize: FontSize.bodySmall_size,
+    fontSize: 16,
     textAlign: "center",
     flex: 1,
   },
@@ -750,13 +750,13 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
   },
   sampleimageIcon: {
-    borderRadius: Border.br_8xs,
+    borderRadius: 5,
     width: 104,
     height: 70,
   },
   imagecontainer: {
     justifyContent: "center",
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     marginTop: 16,
     alignItems: "center",
   },
@@ -773,17 +773,17 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   uploadcontainer: {
-    padding: Padding.p_5xs,
+    padding: 8,
     backgroundColor: Color.bgBrown,
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     overflow: "hidden",
     flex: 1,
   },
   uploadcontainer1: {
     marginLeft: 16,
-    padding: Padding.p_5xs,
+    padding: 8,
     backgroundColor: Color.bgBrown,
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     overflow: "hidden",
     flex: 1,
   },
@@ -791,12 +791,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   uploacontainer: {
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     paddingVertical: 0,
     alignSelf: "stretch",
   },
   inputiconwrapper: {
-    padding: Padding.p_5xs,
+    padding: 8,
     justifyContent: "center",
     height: 40,
     flexDirection: "row",
@@ -806,20 +806,20 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   inputgroup: {
-    padding: Padding.p_5xs,
-    borderRadius: Border.br_xs,
+    padding: 8,
+    borderRadius: 12,
     flexDirection: "row",
     alignSelf: "stretch",
   },
   videoinfotext: {
     textAlign: "left",
     color: Color.colorWhite,
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
     flex: 1,
   },
   videoinfowrapper: {
-    paddingBottom: Padding.p_5xs,
-    paddingHorizontal: Padding.p_5xs,
+    paddingBottom: 8,
+    paddingHorizontal: 8,
     flexDirection: "row",
     alignSelf: "stretch",
   },
@@ -828,23 +828,23 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   videocoverwrapper: {
-    padding: Padding.p_5xs,
+    padding: 8,
     alignSelf: "stretch",
     alignItems: "center",
   },
   video: {
     backgroundColor: Color.bgBrown,
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     alignSelf: "stretch",
   },
   radiobtn: {
-    borderRadius: Border.br_81xl,
+    borderRadius: 100,
   },
   acceptancetext: {
     color: Color.colorWhite,
   },
   acceptancewrapper: {
-    padding: Padding.p_5xs,
+    padding: 8,
     justifyContent: "center",
     flexDirection: "row",
     alignSelf: "stretch",
@@ -869,8 +869,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    paddingVertical: Padding.p_5xs,
-    borderRadius: Border.br_mini,
+    paddingVertical: 8,
+    borderRadius: 15,
     alignSelf: "stretch",
     alignItems: "center",
   },

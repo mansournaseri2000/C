@@ -16,7 +16,7 @@ const ImageContainer = ({ style }) => {
         <ImageBackground
           style={styles.imageIcon}
           resizeMode="contain"
-          source={require("../assets/image3.png")}
+          source={require("../assets/SmileImg.png")}
         />
       </View>
       <Text style={styles.alignernumber}>#1</Text>
@@ -26,20 +26,20 @@ const ImageContainer = ({ style }) => {
 
 const styles = StyleSheet.create({
   imageIcon: {
-    borderRadius: Border.br_11xs,
+    borderRadius: 2,
     width: 150,
     height: 100,
   },
   imagewrapper: {
-    borderRadius: Border.br_8xs,
+    borderRadius: 5,
     borderStyle: "solid",
-    borderColor: "#c5ab8e",
+    borderColor: Color.colorPrimary,
     borderWidth: 2,
-    padding: Padding.p_9xs,
+    padding: 4,
   },
   alignernumber: {
-    fontSize: FontSize.titleMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 18,
+    fontFamily: "Poppins-Regular",
     color: Color.colorPrimary,
     textAlign: "left",
     marginTop: 8,

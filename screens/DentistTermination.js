@@ -29,7 +29,7 @@ const DentistTermination = () => {
               <Image
                 style={styles.arrowLeftIcon}
                 resizeMode="contain"
-                source={require("../assets/arrowleft.png")}
+                source={require("../assets/icons/arrow-left.png")}
               />
             </Pressable>
             <View style={styles.header1}>
@@ -38,7 +38,7 @@ const DentistTermination = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-1.png")}
+              source={require("../assets/JplignLogo.png")}
             />
           </View>
           <View style={styles.headerFlexBox}>
@@ -62,7 +62,7 @@ const DentistTermination = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="contain"
-                  source={require("../assets/defaultimage.png")}
+                  source={require("../assets/ProfileImg.png")}
                 />
               </View>
             </View>
@@ -83,7 +83,7 @@ const DentistTermination = () => {
                   <ImageBackground
                     style={styles.page1imageIcon}
                     resizeMode="cover"
-                    source={require("../assets/page1image.png")}
+                    source={require("../assets/Page1Img.png")}
                   />
                   <View
                     style={[styles.uploadwrapper, styles.uploadwrapperFlexBox]}
@@ -92,7 +92,7 @@ const DentistTermination = () => {
                       <Image
                         style={styles.arrowLeftIcon}
                         resizeMode="contain"
-                        source={require("../assets/image.png")}
+                        source={require("../assets/icons/image.png")}
                       />
                     </View>
                     <View
@@ -101,7 +101,7 @@ const DentistTermination = () => {
                       <Image
                         style={styles.arrowLeftIcon}
                         resizeMode="contain"
-                        source={require("../assets/camera.png")}
+                        source={require("../assets/icons/camera.png")}
                       />
                     </View>
                   </View>
@@ -110,7 +110,7 @@ const DentistTermination = () => {
                   <ImageBackground
                     style={styles.page1imageIcon}
                     resizeMode="contain"
-                    source={require("../assets/page2image.png")}
+                    source={require("../assets/Page2Img.png")}
                   />
                   <View
                     style={[styles.uploadwrapper, styles.uploadwrapperFlexBox]}
@@ -119,7 +119,7 @@ const DentistTermination = () => {
                       <Image
                         style={styles.arrowLeftIcon}
                         resizeMode="contain"
-                        source={require("../assets/image.png")}
+                        source={require("../assets/icons/image.png")}
                       />
                     </View>
                     <View
@@ -128,7 +128,7 @@ const DentistTermination = () => {
                       <Image
                         style={styles.arrowLeftIcon}
                         resizeMode="contain"
-                        source={require("../assets/camera.png")}
+                        source={require("../assets/icons/camera.png")}
                       />
                     </View>
                   </View>
@@ -141,7 +141,7 @@ const DentistTermination = () => {
                   <ImageBackground
                     style={styles.page1imageIcon}
                     resizeMode="cover"
-                    source={require("../assets/page3image.png")}
+                    source={require("../assets/Page3Img.png")}
                   />
                   <View
                     style={[styles.uploadwrapper, styles.uploadwrapperFlexBox]}
@@ -150,7 +150,7 @@ const DentistTermination = () => {
                       <Image
                         style={styles.arrowLeftIcon}
                         resizeMode="contain"
-                        source={require("../assets/image.png")}
+                        source={require("../assets/icons/image.png")}
                       />
                     </View>
                     <View
@@ -159,7 +159,7 @@ const DentistTermination = () => {
                       <Image
                         style={styles.arrowLeftIcon}
                         resizeMode="contain"
-                        source={require("../assets/camera.png")}
+                        source={require("../assets/icons/camera.png")}
                       />
                     </View>
                   </View>
@@ -168,7 +168,7 @@ const DentistTermination = () => {
                   <ImageBackground
                     style={styles.page1imageIcon}
                     resizeMode="contain"
-                    source={require("../assets/page4image.png")}
+                    source={require("../assets/Page4Img.png")}
                   />
                   <View
                     style={[styles.uploadwrapper, styles.uploadwrapperFlexBox]}
@@ -177,7 +177,7 @@ const DentistTermination = () => {
                       <Image
                         style={styles.arrowLeftIcon}
                         resizeMode="contain"
-                        source={require("../assets/image.png")}
+                        source={require("../assets/icons/image.png")}
                       />
                     </View>
                     <View
@@ -186,7 +186,7 @@ const DentistTermination = () => {
                       <Image
                         style={styles.arrowLeftIcon}
                         resizeMode="contain"
-                        source={require("../assets/camera.png")}
+                        source={require("../assets/icons/camera.png")}
                       />
                     </View>
                   </View>
@@ -223,27 +223,27 @@ const DentistTermination = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube2.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info2.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -256,7 +256,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   headerFlexBox: {
-    padding: Padding.p_base,
+    padding: 16,
     alignSelf: "stretch",
     alignItems: "center",
   },
@@ -270,17 +270,17 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
   },
   growtextbuttonSpaceBlock: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
   },
   uploadPdfClr: {
     color: Color.colorPrimary,
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   uploadimageSpaceBlock: {
-    paddingVertical: Padding.p_base,
+    paddingVertical: 16,
     backgroundColor: Color.bgBrown,
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     overflow: "hidden",
     flex: 1,
   },
@@ -291,9 +291,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   camerabtnLayout: {
-    paddingVertical: Padding.p_21xl,
+    paddingVertical: 40,
     backgroundColor: Color.gray,
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     justifyContent: "center",
     height: 40,
     width: 40,
@@ -301,7 +301,7 @@ const styles = StyleSheet.create({
   },
   camerabtnSpaceBlock: {
     marginLeft: 16,
-    paddingHorizontal: Padding.p_5xs,
+    paddingHorizontal: 8,
     alignItems: "center",
   },
   row1SpaceBlock: {
@@ -318,23 +318,23 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   iconbutton: {
-    padding: Padding.p_5xs,
+    padding: 8,
     width: 40,
     justifyContent: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     flexDirection: "row",
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     textAlign: "center",
     color: Color.colorWhite,
   },
   header1: {
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     paddingVertical: 0,
     justifyContent: "center",
     flexDirection: "row",
@@ -350,8 +350,8 @@ const styles = StyleSheet.create({
   },
   suffixtext: {
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
     color: Color.colorWhite,
   },
   suffixwrapper: {
@@ -365,10 +365,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   greeting: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     color: Color.colorDarkgray,
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   defaultimageIcon: {
     width: 20,
@@ -378,45 +378,45 @@ const styles = StyleSheet.create({
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     justifyContent: "center",
-    padding: Padding.p_base,
+    padding: 16,
     alignItems: "center",
     overflow: "hidden",
   },
   profilecard: {
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     backgroundColor: Color.bgBrown,
-    padding: Padding.p_5xs,
+    padding: 8,
     flexDirection: "row",
   },
   ghostbuttontext: {
-    fontSize: FontSize.titleLarge_size,
+    fontSize: 22,
     textAlign: "center",
   },
   growtextbutton: {
-    borderColor: "#c5ab8e",
+    borderColor: Color.colorPrimary,
     borderWidth: 1,
     borderStyle: "solid",
-    paddingVertical: Padding.p_5xs,
+    paddingVertical: 8,
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
     height: 40,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
   },
   page1imageIcon: {
     height: 150,
     alignSelf: "stretch",
   },
   gallerybtn: {
-    paddingHorizontal: Padding.p_5xs,
+    paddingHorizontal: 8,
     alignItems: "center",
   },
   camerabtn: {
-    paddingVertical: Padding.p_21xl,
+    paddingVertical: 40,
     backgroundColor: Color.gray,
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     justifyContent: "center",
     height: 40,
     width: 40,
@@ -427,13 +427,13 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
   },
   uploadimage1: {
-    paddingHorizontal: Padding.p_5xs,
+    paddingHorizontal: 8,
     alignItems: "center",
   },
   uploadimage2: {
-    paddingVertical: Padding.p_base,
+    paddingVertical: 16,
     backgroundColor: Color.bgBrown,
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     overflow: "hidden",
     flex: 1,
   },
@@ -455,8 +455,8 @@ const styles = StyleSheet.create({
     display: "flex",
     width: 304,
     height: 28,
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
     textAlign: "center",
   },
   growtextbutton1: {
@@ -464,20 +464,20 @@ const styles = StyleSheet.create({
     alignItems: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    paddingVertical: Padding.p_5xs,
-    borderRadius: Border.br_mini,
+    paddingVertical: 8,
+    borderRadius: 15,
     flexDirection: "row",
     alignSelf: "stretch",
   },
   uploadPdf: {
     textAlign: "left",
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
   },
   actiontext: {
     marginLeft: 8,
   },
   underbtntext: {
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     marginTop: 8,
     paddingVertical: 0,
     justifyContent: "center",
@@ -500,7 +500,7 @@ const styles = StyleSheet.create({
     borderColor: "#000",
     borderTopWidth: 5,
     borderStyle: "solid",
-    paddingVertical: Padding.p_5xs,
+    paddingVertical: 8,
     flexDirection: "row",
     backgroundColor: Color.bgBrown,
     justifyContent: "space-between",

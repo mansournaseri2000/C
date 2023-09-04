@@ -15,7 +15,7 @@ const HeaderBack = ({ headerText = "Header" }) => {
         <Image
           style={styles.arrowLeftIcon}
           resizeMode="contain"
-          source={require("../assets/arrowleft.png")}
+          source={require("../assets/icons/arrow-left.png")}
         />
       </Pressable>
       <View style={[styles.header1, styles.header1FlexBox]}>
@@ -24,7 +24,7 @@ const HeaderBack = ({ headerText = "Header" }) => {
       <Image
         style={styles.headerChild}
         resizeMode="contain"
-        source={require("../assets/group-1.png")}
+        source={require("../assets/JplignLogo.png")}
       />
     </View>
   );
@@ -42,21 +42,21 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   iconbutton: {
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     backgroundColor: Color.colorPrimary,
     width: 40,
-    padding: Padding.p_5xs,
+    padding: 8,
     height: 40,
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
     textAlign: "center",
   },
   header1: {
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     paddingVertical: 0,
   },
   headerChild: {
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   },
   header: {
     alignSelf: "stretch",
-    padding: Padding.p_base,
+    paddingVertical: 16,
     justifyContent: "space-between",
     alignItems: "center",
     flexDirection: "row",

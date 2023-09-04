@@ -1,24 +1,24 @@
-import * as React from "react";
+import * as React from 'react';
 import {
   Image,
   StyleSheet,
   View,
   Text,
   TextInput,
-  ImageSourcePropType,
-} from "react-native";
-import { Padding, FontFamily, FontSize, Border, Color } from "../GlobalStyles";
+  KeyboardAvoidingView, Platform 
+} from 'react-native';
+import {Padding, FontFamily, FontSize, Border, Color} from '../GlobalStyles';
 
 const InputGroup = ({
-  iconSrc,
-  label = "Label",
-  placeholder = "Placeholder",
+  iconSrc= require('../assets/icons/info.png'),
+  label = 'Label',
+  placeholder = 'Placeholder',
   defaultValue,
   hasIcon,
 }) => {
   return (
-    <View style={[styles.inputgroup, styles.inputgroupSpaceBlock]}>
-      <View style={[styles.inputiconwrapper, styles.inputgroupSpaceBlock]}>
+    <View style={styles.inputgroup}>
+      <View style={styles.inputiconwrapper}>
         <Image
           style={styles.packagePlusIcon}
           resizeMode="contain"
@@ -26,56 +26,59 @@ const InputGroup = ({
         />
       </View>
       <View style={styles.fieldinput}>
-        <Text style={[styles.label, styles.labelTypo]}>{label}</Text>
-        <TextInput
-          style={styles.labelTypo}
-          placeholder={placeholder}
-          placeholderTextColor="#e6e6e6"
-          defaultValue={defaultValue}
-        />
+        <Text style={styles.label}>{label}</Text>
+          <TextInput
+            style={styles.labelTypo}
+            placeholder={placeholder}
+            placeholderTextColor="#e6e6e6"
+            defaultValue={defaultValue}
+          />
       </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  inputgroupSpaceBlock: {
-    padding: Padding.p_5xs,
-    flexDirection: "row",
+  inputgroup: {
+    borderRadius: 12,
+    backgroundColor: Color.bgBrown,
+    // alignSelf: "stretch",
+    padding: 8,
+    flexDirection: 'row',
+    marginBottom: 8,
   },
-  labelTypo: {
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.bodyMedium_size,
-    alignSelf: "stretch",
+  inputiconwrapper: {
+    borderRadius: 50,
+    backgroundColor: Color.colorPrimary,
+    width: 40,
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: 40,
+    // padding: 8,
+    // flexDirection: 'row',
   },
   packagePlusIcon: {
     width: 24,
     height: 24,
-    overflow: "hidden",
-  },
-  inputiconwrapper: {
-    borderRadius: Border.br_mini,
-    backgroundColor: Color.colorPrimary,
-    width: 40,
-    alignItems: "center",
-    justifyContent: "center",
-    height: 40,
-  },
-  label: {
-    color: Color.colorPrimary,
-    textAlign: "left",
+    overflow: 'hidden',
   },
   fieldinput: {
     flex: 1,
-    marginLeft: 8,
-    height: 40,
+    marginHorizontal: 8,
+    // height: 40,
   },
-  inputgroup: {
-    borderRadius: Border.br_xs,
-    backgroundColor: Color.bgBrown,
-    alignSelf: "stretch",
-    padding: Padding.p_5xs,
-    flexDirection: "row",
+  label: {
+    color: Color.colorPrimary,
+    // textAlign: "left",
+    fontFamily: 'Poppins-Regular',
+    fontSize: 16,
+    padding: 0,
+  },
+  labelTypo: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 14,
+    padding: 0,
+    color: Color.colorWhite,
   },
 });
 

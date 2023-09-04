@@ -1,34 +1,21 @@
-import React, { useMemo } from "react";
+import React from "react";
 import {
-  Pressable,
   Image,
   StyleSheet,
   View,
   Text,
   TouchableOpacity,
-  ImageSourcePropType,
 } from "react-native";
-import { Padding, Border, Color, FontSize, FontFamily } from "../GlobalStyles";
+import {Color} from "../GlobalStyles";
 
-const getStyleValue = (key, value) => {
-  if (value === undefined) return;
-  return { [key]: value === "unset" ? undefined : value };
-};
 const HomeCard = ({
   iconSrc,
   cardText = "CardName",
   onMainCardPress,
-  mainCardMarginLeft,
 }) => {
-  const mainCardStyle = useMemo(() => {
-    return {
-      ...getStyleValue("marginLeft", mainCardMarginLeft),
-    };
-  }, [mainCardMarginLeft]);
-
   return (
     <TouchableOpacity
-      style={[styles.maincard, styles.maincardFlexBox, mainCardStyle]}
+      style={[styles.maincard, styles.maincardFlexBox]}
       activeOpacity={0.8}
       onPress={onMainCardPress}
     >
@@ -45,8 +32,8 @@ const HomeCard = ({
 const styles = StyleSheet.create({
   maincardFlexBox: {
     justifyContent: "space-between",
-    padding: Padding.p_5xs,
-    borderRadius: Border.br_xs,
+    padding: 8,
+    borderRadius: 12,
     alignItems: "center",
   },
   userIcon: {
@@ -61,30 +48,29 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   cardtext: {
-    fontSize: FontSize.titleMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 18,
+    fontFamily: "Poppins-Regular",
     color: Color.colorDarkgray,
     textAlign: "center",
     display: "flex",
-    height: 64,
+    height: 60,
     justifyContent: "center",
     alignItems: "center",
     flex: 1,
+    marginTop:4,
   },
   cardtextwrapper: {
-    width: 123,
     flexWrap: "wrap",
     justifyContent: "center",
     flexDirection: "row",
   },
   maincard: {
     backgroundColor: Color.bgBrown,
-    height: 120,
-    marginLeft: 16,
+    marginHorizontal: 8,
     flex: 1,
     justifyContent: "space-between",
-    padding: Padding.p_5xs,
-    borderRadius: Border.br_xs,
+    padding: 8,
+    borderRadius: 12,
   },
 });
 

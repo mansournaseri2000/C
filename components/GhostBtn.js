@@ -3,14 +3,14 @@ import { Pressable, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { FontSize, FontFamily, Color, Border, Padding } from "../GlobalStyles";
 
-const GhostBtn = ({ ghostButtonText = "ButtonText" }) => {
+const GhostBtn = ({ ghostButtonText = "ButtonText" , goTo, handler}) => {
   const navigation = useNavigation();
 
   return (
     <TouchableOpacity
       style={[styles.growtextbutton, styles.growtextbuttonFlexBox]}
       activeOpacity={0.8}
-      onPress={() => navigation.navigate("DentistRegister")}
+      onPress={() =>goTo?  navigation.navigate("DentistRegister") : handler()}
     >
       <Text style={[styles.ghostbuttontext, styles.growtextbuttonFlexBox]}>
         {ghostButtonText}
@@ -26,22 +26,20 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
   },
   ghostbuttontext: {
-    fontSize: FontSize.titleMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 18,
+    fontFamily: "Poppins-Regular",
     color: Color.colorPrimary,
     textAlign: "center",
     display: "flex",
-    width: 304,
   },
   growtextbutton: {
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     borderStyle: "solid",
-    borderColor: "#c5ab8e",
+    borderColor: Color.colorPrimary,
     borderWidth: 1,
-    height: 40,
     flexDirection: "row",
-    paddingHorizontal: Padding.p_base,
-    paddingVertical: Padding.p_5xs,
+    paddingHorizontal: 16,
+    paddingVertical: 8,
   },
 });
 

@@ -11,35 +11,37 @@ import { FontFamily, FontSize, Color, Padding } from "../GlobalStyles";
 
 const UnderBtnText = ({
   inofText = "Information for change page",
-  login = "PageTitle",
+  pageName = "PageTitle",
+  goTo 
 }) => {
   const navigation = useNavigation();
 
   return (
     <View style={styles.underbtntext}>
-      <Text style={[styles.inoftext, styles.loginTypo]}>{inofText}</Text>
+      <Text style={styles.inoftext}>{inofText}</Text>
       <TouchableOpacity
         style={styles.actiontext}
         activeOpacity={0.8}
-        onPress={() => navigation.navigate("DentistLogin")}
+        onPress={() => navigation.navigate(goTo)}
       >
-        <Text style={[styles.login, styles.loginTypo]}>{login}</Text>
+        <Text style={styles.login}>{pageName}</Text>
       </TouchableOpacity>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  loginTypo: {
-    textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
-  },
   inoftext: {
     color: Color.colorWhite,
+    textAlign: "left",
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   login: {
     color: Color.colorPrimary,
+    textAlign: "left",
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   actiontext: {
     marginLeft: 8,
@@ -47,7 +49,7 @@ const styles = StyleSheet.create({
   underbtntext: {
     alignSelf: "stretch",
     flexDirection: "row",
-    paddingHorizontal: Padding.p_base,
+    // paddingHorizontal: 16,
     paddingVertical: 0,
     alignItems: "center",
     justifyContent: "center",

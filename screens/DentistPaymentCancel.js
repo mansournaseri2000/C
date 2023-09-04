@@ -29,7 +29,7 @@ const DentistPaymentCancel = () => {
               <Image
                 style={styles.arrowLeftIcon}
                 resizeMode="contain"
-                source={require("../assets/arrowleft.png")}
+                source={require("../assets/icons/arrow-left.png")}
               />
             </Pressable>
             <View style={[styles.header1, styles.wrapperFlexBox]}>
@@ -38,7 +38,7 @@ const DentistPaymentCancel = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-1.png")}
+              source={require("../assets/JplignLogo.png")}
             />
           </View>
           <View style={styles.prfilecontainer}>
@@ -70,7 +70,7 @@ const DentistPaymentCancel = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="contain"
-                  source={require("../assets/defaultimage.png")}
+                  source={require("../assets/ProfileImg.png")}
                 />
               </View>
             </View>
@@ -115,7 +115,7 @@ const DentistPaymentCancel = () => {
               <ImageBackground
                 style={styles.boxClosedCopy1}
                 resizeMode="contain"
-                source={require("../assets/box-closed-copy-1.png")}
+                source={require("../assets/ProductImg.png")}
               />
             </View>
           </View>
@@ -134,27 +134,27 @@ const DentistPaymentCancel = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube2.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info2.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -172,12 +172,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   profilecardLayout: {
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     backgroundColor: Color.bgBrown,
   },
   textTypo: {
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   wrapperSpaceBlock: {
     marginTop: 8,
@@ -186,15 +186,15 @@ const styles = StyleSheet.create({
   greetingTypo: {
     color: Color.colorDarkgray,
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   paymentreciptSpaceBlock: {
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     alignSelf: "stretch",
   },
   bottomtabSpaceBlock: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
     alignSelf: "stretch",
   },
@@ -209,22 +209,22 @@ const styles = StyleSheet.create({
   },
   iconbutton: {
     width: 40,
-    padding: Padding.p_5xs,
+    padding: 8,
     flexDirection: "row",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     justifyContent: "center",
   },
   headertext: {
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     textAlign: "center",
     color: Color.colorWhite,
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
   },
   header1: {
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     paddingVertical: 0,
     flexDirection: "row",
   },
@@ -233,14 +233,14 @@ const styles = StyleSheet.create({
     height: 40,
   },
   header: {
-    padding: Padding.p_base,
+    padding: 16,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",
     alignItems: "center",
   },
   suffixtext: {
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
     textAlign: "left",
     color: Color.colorWhite,
   },
@@ -255,7 +255,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   greeting: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
   },
   greetingwrapper: {
     justifyContent: "center",
@@ -266,27 +266,27 @@ const styles = StyleSheet.create({
     height: 32,
   },
   uploadimage: {
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
-    padding: Padding.p_base,
+    padding: 16,
     overflow: "hidden",
   },
   profilecard: {
     backgroundColor: Color.bgBrown,
-    padding: Padding.p_5xs,
+    padding: 8,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",
   },
   prfilecontainer: {
-    padding: Padding.p_base,
+    padding: 16,
     alignSelf: "stretch",
     alignItems: "center",
   },
   cancel: {
-    fontSize: FontSize.displayMedium_size,
+    fontSize: 30,
     color: Color.colorDanger,
   },
   cancelWrapper: {
@@ -294,7 +294,7 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
   },
   modelingKit: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     color: Color.colorDarkgray,
   },
   modelingKitWrapper: {
@@ -319,7 +319,7 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
   },
   thankYouSo: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     color: Color.colorWhite,
     textAlign: "left",
     flex: 1,
@@ -338,12 +338,12 @@ const styles = StyleSheet.create({
     zIndex: 2,
   },
   paymentrecipt: {
-    paddingVertical: Padding.p_45xl,
+    paddingVertical: 64,
     backgroundColor: Color.bgBrown,
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
   },
   paymentcontainer: {
-    paddingTop: Padding.p_77xl,
+    paddingTop: 96,
     alignItems: "center",
   },
   maincontainer: {
@@ -355,8 +355,8 @@ const styles = StyleSheet.create({
     display: "flex",
     width: 304,
     height: 28,
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
     textAlign: "center",
     justifyContent: "center",
     alignItems: "center",
@@ -366,7 +366,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
   },
   container: {
     alignSelf: "stretch",

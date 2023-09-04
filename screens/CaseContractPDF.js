@@ -33,7 +33,7 @@ const CaseContractPDF = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-15.png")}
+              source={require("../assets/JplignLogo.png")}
             />
           </View>
           <View style={styles.prfilecontainer}>
@@ -65,7 +65,7 @@ const CaseContractPDF = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="cover"
-                  source={require("../assets/defaultimage2.png")}
+                  source={require("../assets/ProfileImg.png")}
                 />
               </View>
             </View>
@@ -83,7 +83,7 @@ const CaseContractPDF = () => {
                 <ImageBackground
                   style={styles.contractimageIcon}
                   resizeMode="contain"
-                  source={require("../assets/contractimage.png")}
+                  source={require("../assets/ContractImg.png")}
                 />
                 <View
                   style={[styles.circleiconbutton, styles.uploadimageFlexBox]}
@@ -91,7 +91,7 @@ const CaseContractPDF = () => {
                   <Image
                     style={styles.packagePlusIcon}
                     resizeMode="contain"
-                    source={require("../assets/paperclip1.png")}
+                    source={require("../assets/icons/paperclip.png")}
                   />
                 </View>
               </View>
@@ -128,27 +128,27 @@ const CaseContractPDF = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube3.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info3.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition2.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -163,8 +163,8 @@ const styles = StyleSheet.create({
   buttontextTypo: {
     color: Color.gray,
     textAlign: "center",
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   header1FlexBox: {
     paddingVertical: 0,
@@ -172,11 +172,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   profilecardLayout: {
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     backgroundColor: Color.bgBrown,
   },
   nametextTypo: {
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
     textAlign: "left",
   },
   underbtntextSpaceBlock: {
@@ -184,23 +184,23 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   uploadimageFlexBox: {
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     justifyContent: "center",
     alignItems: "center",
   },
   bottomtabSpaceBlock: {
     borderStyle: "solid",
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
   },
   uploadImageClr: {
     color: Color.colorPrimary,
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   growtextbuttonSpaceBlock: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
   },
   iconLayout: {
     width: 32,
@@ -210,25 +210,25 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   growtextbutton: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     height: 40,
     width: 40,
     backgroundColor: Color.colorPrimary,
     justifyContent: "center",
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     flexDirection: "row",
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
     textAlign: "center",
   },
   header1: {
     height: 30,
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     flexDirection: "row",
   },
   headerChild: {
@@ -236,7 +236,7 @@ const styles = StyleSheet.create({
     height: 40,
   },
   header: {
-    padding: Padding.p_base,
+    padding: 16,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",
@@ -245,7 +245,7 @@ const styles = StyleSheet.create({
   nametext: {
     textAlign: "left",
     color: Color.colorWhite,
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
   },
   namewrapper: {
     flexDirection: "row",
@@ -254,7 +254,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   greeting: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     color: Color.colorDarkgray,
     textAlign: "left",
   },
@@ -277,32 +277,32 @@ const styles = StyleSheet.create({
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
-    padding: Padding.p_base,
+    padding: 16,
     overflow: "hidden",
   },
   profilecard: {
-    padding: Padding.p_5xs,
+    padding: 8,
     backgroundColor: Color.bgBrown,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",
   },
   prfilecontainer: {
-    padding: Padding.p_base,
+    padding: 16,
     alignSelf: "stretch",
     alignItems: "center",
   },
   ghostbuttontext: {
-    fontSize: FontSize.titleLarge_size,
+    fontSize: 22,
     textAlign: "center",
   },
   growtextbutton1: {
-    borderColor: "#c5ab8e",
+    borderColor: Color.colorPrimary,
     borderWidth: 1,
     justifyContent: "center",
     alignItems: "center",
     height: 40,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     borderStyle: "solid",
   },
   contractimageIcon: {
@@ -316,8 +316,8 @@ const styles = StyleSheet.create({
   },
   circleiconbutton: {
     backgroundColor: Color.gray,
-    paddingHorizontal: Padding.p_5xs,
-    paddingVertical: Padding.p_21xl,
+    paddingHorizontal: 8,
+    paddingVertical: 40,
     marginTop: 8,
     flexDirection: "row",
     height: 40,
@@ -325,13 +325,13 @@ const styles = StyleSheet.create({
   },
   pdfcontainer: {
     backgroundColor: Color.bgBrown,
-    padding: Padding.p_base,
+    padding: 16,
     alignItems: "center",
     flex: 1,
   },
   uploadsection: {
     marginTop: 16,
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     paddingVertical: 0,
     flexDirection: "row",
     alignSelf: "stretch",
@@ -349,18 +349,18 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   growtextbutton2: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     height: 40,
     backgroundColor: Color.colorPrimary,
     justifyContent: "center",
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     flexDirection: "row",
     alignSelf: "stretch",
   },
   uploadImage: {
     textAlign: "left",
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
   },
   actiontext: {
     marginLeft: 8,
@@ -369,7 +369,7 @@ const styles = StyleSheet.create({
     paddingVertical: 0,
     justifyContent: "center",
     alignItems: "center",
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
   },
   bottombtn: {
     alignSelf: "stretch",

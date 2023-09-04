@@ -3,7 +3,7 @@ import { StyleSheet, View, StatusBar} from "react-native";
 import HeaderBack from "../components/HeaderBack";
 import DrProfileCard from "../components/DrProfileCard";
 import TreatmentCard from "../components/TreatmentCard";
-import BottomTab from "../components/BottomTab2";
+import BottomTab from "../components/BottomTab";
 import { Padding, Color } from "../GlobalStyles";
 
 const DentistTreatmentList = () => {
@@ -15,19 +15,19 @@ const DentistTreatmentList = () => {
         <HeaderBack headerText="Treatment" />
         <View style={[styles.profilecontainer, styles.caselistFlexBox]}>
           <DrProfileCard
-            imageSrc={require("../assets/defaultimage.png")}
+            imageSrc={require("../assets/ProfileImg.png")}
             nameText="Fullname"
             greeting="Greeting"
           />
         </View>
         <View style={[styles.caselist, styles.caselistFlexBox]}>
           <TreatmentCard
-            caseProfileSrc={require("../assets/caseprofile.png")}
+            caseProfileSrc={require("../assets/SampleProfileImg.png")}
             nameText="Fullname"
             casePhone="+989126030028"
           />
           <TreatmentCard
-            caseProfileSrc={require("../assets/caseprofile.png")}
+            caseProfileSrc={require("../assets/SampleProfileImg.png")}
             nameText="Fullname"
             casePhone="+989126030028"
             caseCardMarginTop={16}
@@ -35,11 +35,11 @@ const DentistTreatmentList = () => {
         </View>
       </View>
       <BottomTab
-        messageWrapper={require("../assets/messagewrapper.png")}
-        youtube={require("../assets/youtube.png")}
-        info={require("../assets/info.png")}
-        condition={require("../assets/condition.png")}
-        logOut={require("../assets/logout.png")}
+        messageWrapper={require("../assets/icons/message-circle.png")}
+        youtube={require("../assets/icons/youtube.png")}
+        info={require("../assets/icons/info.png")}
+        condition={require("../assets/icons/condition.png")}
+        logOut={require("../assets/icons/log-out.png")}
       />
     </View>
   );
@@ -51,10 +51,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   profilecontainer: {
-    padding: Padding.p_base,
+    padding: 16,
   },
   caselist: {
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     paddingVertical: 0,
   },
   dentisttreatmentlist: {

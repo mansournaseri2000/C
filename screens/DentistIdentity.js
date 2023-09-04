@@ -17,8 +17,6 @@ const DentistIdentity = () => {
 
   return (
     <View style={styles.dentistidentity}>
-              <StatusBar backgroundColor={Color.bgBlack} />
-
       <View style={styles.container}>
         <View style={styles.maincontainer}>
           <View style={[styles.header, styles.headerFlexBox]}>
@@ -29,7 +27,7 @@ const DentistIdentity = () => {
               <Image
                 style={styles.arrowLeftIcon}
                 resizeMode="contain"
-                source={require("../assets/arrowleft.png")}
+                source={require("../assets/icons/arrow-left.png")}
               />
             </Pressable>
             <View style={styles.header1}>
@@ -38,7 +36,7 @@ const DentistIdentity = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-1.png")}
+              source={require("../assets/JplignLogo.png")}
             />
           </View>
           <View style={styles.headerFlexBox}>
@@ -78,7 +76,7 @@ const DentistIdentity = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="contain"
-                  source={require("../assets/defaultimage.png")}
+                  source={require("../assets/ProfileImg.png")}
                 />
               </View>
             </View>
@@ -90,7 +88,7 @@ const DentistIdentity = () => {
                   <Image
                     style={styles.arrowLeftIcon}
                     resizeMode="contain"
-                    source={require("../assets/identification1.png")}
+                    source={require("../assets/icons/Identification.png")}
                   />
                 </View>
                 <Text style={[styles.label, styles.labelTypo]}>
@@ -101,21 +99,21 @@ const DentistIdentity = () => {
               <ImageBackground
                 style={styles.identificationimageIcon}
                 resizeMode="contain"
-                source={require("../assets/identificationimage.png")}
+                source={require("../assets/IdentificationImg.png")}
               />
               <View style={styles.uploadwrapper}>
                 <View style={styles.camerabtnLayout}>
                   <Image
                     style={styles.arrowLeftIcon}
                     resizeMode="contain"
-                    source={require("../assets/image1.png")}
+                    source={require("../assets/icons/image.png")}
                   />
                 </View>
                 <View style={[styles.camerabtn, styles.camerabtnLayout]}>
                   <Image
                     style={styles.arrowLeftIcon}
                     resizeMode="contain"
-                    source={require("../assets/camera1.png")}
+                    source={require("../assets/icons/camera.png")}
                   />
                 </View>
               </View>
@@ -126,7 +124,7 @@ const DentistIdentity = () => {
                   <Image
                     style={styles.arrowLeftIcon}
                     resizeMode="contain"
-                    source={require("../assets/identification1.png")}
+                    source={require("../assets/icons/Identification.png")}
                   />
                 </View>
                 <Text style={[styles.label, styles.labelTypo]}>
@@ -137,21 +135,21 @@ const DentistIdentity = () => {
               <ImageBackground
                 style={styles.identificationimageIcon}
                 resizeMode="contain"
-                source={require("../assets/isuranceimage.png")}
+                source={require("../assets/InsuranceImg.png")}
               />
               <View style={styles.uploadwrapper}>
                 <View style={styles.camerabtnLayout}>
                   <Image
                     style={styles.arrowLeftIcon}
                     resizeMode="contain"
-                    source={require("../assets/camera2.png")}
+                    source={require("../assets/icons/camera.png")}
                   />
                 </View>
                 <View style={[styles.camerabtn, styles.camerabtnLayout]}>
                   <Image
                     style={styles.arrowLeftIcon}
                     resizeMode="contain"
-                    source={require("../assets/camera2.png")}
+                    source={require("../assets/icons/camera.png")}
                   />
                 </View>
               </View>
@@ -162,7 +160,7 @@ const DentistIdentity = () => {
                   <Image
                     style={styles.arrowLeftIcon}
                     resizeMode="contain"
-                    source={require("../assets/award.png")}
+                    source={require("../assets/icons/award.png")}
                   />
                 </View>
                 <Text style={[styles.label, styles.labelTypo]}>
@@ -173,21 +171,21 @@ const DentistIdentity = () => {
               <ImageBackground
                 style={styles.certificationimageIcon}
                 resizeMode="contain"
-                source={require("../assets/certificationimage.png")}
+                source={require("../assets/CertificationImg.png")}
               />
               <View style={styles.uploadwrapper}>
                 <View style={styles.camerabtnLayout}>
                   <Image
                     style={styles.arrowLeftIcon}
                     resizeMode="contain"
-                    source={require("../assets/image2.png")}
+                    source={require("../assets/icons/image.png")}
                   />
                 </View>
                 <View style={[styles.camerabtn, styles.camerabtnLayout]}>
                   <Image
                     style={styles.arrowLeftIcon}
                     resizeMode="contain"
-                    source={require("../assets/camera3.png")}
+                    source={require("../assets/icons/camera.png")}
                   />
                 </View>
               </View>
@@ -210,27 +208,27 @@ const DentistIdentity = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -239,7 +237,7 @@ const DentistIdentity = () => {
 
 const styles = StyleSheet.create({
   headerFlexBox: {
-    padding: Padding.p_base,
+    padding: 16,
     alignSelf: "stretch",
     alignItems: "center",
   },
@@ -248,24 +246,24 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   indentifycardLayout: {
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     alignSelf: "stretch",
   },
   suffixtextTypo: {
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   labelTypo: {
     marginLeft: 8,
     color: Color.colorPrimary,
-    fontSize: FontSize.bodyMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 18,
+    fontFamily: "Poppins-Regular",
   },
   camerabtnLayout: {
-    paddingVertical: Padding.p_21xl,
+    paddingVertical: 40,
     backgroundColor: Color.gray,
-    paddingHorizontal: Padding.p_5xs,
-    borderRadius: Border.br_31xl,
+    paddingHorizontal: 8,
+    borderRadius: 50,
     justifyContent: "center",
     height: 40,
     width: 40,
@@ -273,8 +271,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   bottomtabSpaceBlock: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
     alignSelf: "stretch",
   },
@@ -288,23 +286,23 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   iconbutton: {
-    padding: Padding.p_5xs,
+    padding: 8,
     height: 40,
     width: 40,
     justifyContent: "center",
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     flexDirection: "row",
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     textAlign: "center",
     color: Color.colorWhite,
   },
   header1: {
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     paddingVertical: 0,
     justifyContent: "center",
     flexDirection: "row",
@@ -334,9 +332,9 @@ const styles = StyleSheet.create({
   },
   greeting: {
     color: Color.colorDarkgray,
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   greetingwrapper: {
     marginTop: 8,
@@ -350,15 +348,15 @@ const styles = StyleSheet.create({
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     justifyContent: "center",
-    padding: Padding.p_base,
+    padding: 16,
     alignItems: "center",
     overflow: "hidden",
   },
   profilecard: {
     backgroundColor: Color.bgBrown,
-    padding: Padding.p_5xs,
+    padding: 8,
     flexDirection: "row",
     justifyContent: "space-between",
   },
@@ -381,7 +379,7 @@ const styles = StyleSheet.create({
     marginLeft: 16,
   },
   uploadwrapper: {
-    paddingHorizontal: Padding.p_5xs,
+    paddingHorizontal: 8,
     marginTop: 8,
     paddingVertical: 0,
     justifyContent: "center",
@@ -394,7 +392,7 @@ const styles = StyleSheet.create({
     backgroundColor: Color.bgBrown,
     justifyContent: "center",
     alignItems: "center",
-    padding: Padding.p_5xs,
+    padding: 8,
     overflow: "hidden",
   },
   indentifycard1: {
@@ -402,7 +400,7 @@ const styles = StyleSheet.create({
     backgroundColor: Color.bgBrown,
     justifyContent: "center",
     alignItems: "center",
-    padding: Padding.p_5xs,
+    padding: 8,
     overflow: "hidden",
   },
   certificationimageIcon: {
@@ -411,7 +409,7 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
   },
   uploadcontainer: {
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     paddingVertical: 0,
     alignSelf: "stretch",
     alignItems: "center",
@@ -434,8 +432,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
-    paddingVertical: Padding.p_5xs,
+    borderRadius: 15,
+    paddingVertical: 8,
   },
   container: {
     alignSelf: "stretch",

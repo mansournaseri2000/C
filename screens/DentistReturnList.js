@@ -29,7 +29,7 @@ const DentistReturnList = () => {
               <Image
                 style={styles.arrowLeftIcon}
                 resizeMode="contain"
-                source={require("../assets/arrowleft.png")}
+                source={require("../assets/icons/arrow-left.png")}
               />
             </Pressable>
             <View style={styles.header1}>
@@ -38,7 +38,7 @@ const DentistReturnList = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-1.png")}
+              source={require("../assets/JplignLogo.png")}
             />
           </View>
           <View style={styles.prfilecontainer}>
@@ -77,7 +77,7 @@ const DentistReturnList = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="contain"
-                  source={require("../assets/defaultimage.png")}
+                  source={require("../assets/ProfileImg.png")}
                 />
               </View>
             </View>
@@ -87,7 +87,7 @@ const DentistReturnList = () => {
               <Image
                 style={styles.arrowLeftIcon}
                 resizeMode="contain"
-                source={require("../assets/search.png")}
+                source={require("../assets/icons/search-white.png")}
               />
               <TextInput
                 style={[styles.textwrapper, styles.productSpaceBlock]}
@@ -100,7 +100,7 @@ const DentistReturnList = () => {
                 <Image
                   style={styles.userIcon}
                   resizeMode="contain"
-                  source={require("../assets/user1.png")}
+                  source={require("../assets/icons/user.png")}
                 />
                 <Text
                   style={[styles.alirezaNaserzare, styles.productSpaceBlock]}
@@ -114,7 +114,7 @@ const DentistReturnList = () => {
                 <Image
                   style={styles.userIcon}
                   resizeMode="contain"
-                  source={require("../assets/package1.png")}
+                  source={require("../assets/icons/box.png")}
                 />
                 <Text style={[styles.product, styles.productSpaceBlock]}>
                   Teeth Molding Kit comp...
@@ -127,7 +127,7 @@ const DentistReturnList = () => {
                   <Image
                     style={styles.userIcon}
                     resizeMode="contain"
-                    source={require("../assets/baggageclaim2.png")}
+                    source={require("../assets/icons/baggage-claim.png")}
                   />
                   <Text
                     style={[styles.shippingmethod, styles.productSpaceBlock]}
@@ -139,7 +139,7 @@ const DentistReturnList = () => {
                   <Image
                     style={styles.userIcon}
                     resizeMode="cover"
-                    source={require("../assets/calendarclock1.png")}
+                    source={require("../assets/icons/calendar.png")}
                   />
                   <Text
                     style={[styles.shippingmethod, styles.productSpaceBlock]}
@@ -154,7 +154,7 @@ const DentistReturnList = () => {
                 <Image
                   style={styles.userIcon}
                   resizeMode="contain"
-                  source={require("../assets/user1.png")}
+                  source={require("../assets/icons/user.png")}
                 />
                 <Text
                   style={[styles.alirezaNaserzare, styles.productSpaceBlock]}
@@ -168,7 +168,7 @@ const DentistReturnList = () => {
                 <Image
                   style={styles.userIcon}
                   resizeMode="contain"
-                  source={require("../assets/package1.png")}
+                  source={require("../assets/icons/box.png")}
                 />
                 <Text style={[styles.product, styles.productSpaceBlock]}>
                   Teeth Molding Kit comp...
@@ -181,7 +181,7 @@ const DentistReturnList = () => {
                   <Image
                     style={styles.userIcon}
                     resizeMode="contain"
-                    source={require("../assets/baggageclaim2.png")}
+                    source={require("../assets/icons/baggage-claim.png")}
                   />
                   <Text
                     style={[styles.shippingmethod, styles.productSpaceBlock]}
@@ -193,7 +193,7 @@ const DentistReturnList = () => {
                   <Image
                     style={styles.userIcon}
                     resizeMode="cover"
-                    source={require("../assets/calendarclock1.png")}
+                    source={require("../assets/icons/calendar.png")}
                   />
                   <Text
                     style={[styles.shippingmethod, styles.productSpaceBlock]}
@@ -219,27 +219,27 @@ const DentistReturnList = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube2.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info2.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -252,14 +252,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   returncardLayout: {
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
     backgroundColor: Color.bgBrown,
-    padding: Padding.p_5xs,
+    padding: 8,
     alignSelf: "stretch",
   },
   suffixtextTypo: {
     textAlign: "left",
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
     color: Color.colorWhite,
   },
   detailwrapperSpaceBlock: {
@@ -268,22 +268,22 @@ const styles = StyleSheet.create({
   },
   productTypo: {
     color: Color.colorDarkgray,
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     textAlign: "left",
   },
   searchbtnSpaceBlock: {
-    padding: Padding.p_5xs,
+    padding: 8,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     flexDirection: "row",
   },
   productSpaceBlock: {
     marginLeft: 8,
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   bottomtabSpaceBlock: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
     alignSelf: "stretch",
   },
@@ -298,21 +298,21 @@ const styles = StyleSheet.create({
   },
   iconbutton: {
     width: 40,
-    padding: Padding.p_5xs,
+    padding: 8,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     flexDirection: "row",
     height: 40,
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     textAlign: "center",
     color: Color.colorWhite,
   },
   header1: {
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     paddingVertical: 0,
     justifyContent: "center",
     flexDirection: "row",
@@ -323,14 +323,14 @@ const styles = StyleSheet.create({
     height: 40,
   },
   header: {
-    padding: Padding.p_base,
+    padding: 16,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",
     alignItems: "center",
   },
   suffixtext: {
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   suffixwrapper: {
     flexDirection: "row",
@@ -343,7 +343,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   greeting: {
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   greetingwrapper: {
     justifyContent: "center",
@@ -354,11 +354,11 @@ const styles = StyleSheet.create({
     width: 20,
   },
   uploadimage: {
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
-    padding: Padding.p_base,
+    padding: 16,
     overflow: "hidden",
   },
   profilecard: {
@@ -367,7 +367,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   prfilecontainer: {
-    padding: Padding.p_base,
+    padding: 16,
     alignSelf: "stretch",
     alignItems: "center",
   },
@@ -389,7 +389,7 @@ const styles = StyleSheet.create({
   alirezaNaserzare: {
     lineHeight: 16,
     textAlign: "left",
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
     color: Color.colorWhite,
   },
   namewrapper1: {
@@ -400,7 +400,7 @@ const styles = StyleSheet.create({
   product: {
     lineHeight: 24,
     color: Color.colorDarkgray,
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     textAlign: "left",
     flex: 1,
   },
@@ -411,7 +411,7 @@ const styles = StyleSheet.create({
   shippingmethod: {
     lineHeight: 14,
     color: Color.colorDarkgray,
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     textAlign: "left",
   },
   detailwrapper: {
@@ -423,7 +423,7 @@ const styles = StyleSheet.create({
     backgroundColor: Color.bgBrown,
   },
   cardcontainer: {
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     paddingVertical: 0,
     alignSelf: "stretch",
     alignItems: "center",
@@ -437,8 +437,8 @@ const styles = StyleSheet.create({
     display: "flex",
     width: 304,
     height: 28,
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
     textAlign: "center",
     justifyContent: "center",
     alignItems: "center",
@@ -448,8 +448,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
-    paddingVertical: Padding.p_5xs,
+    borderRadius: 15,
+    paddingVertical: 8,
   },
   container: {
     alignSelf: "stretch",

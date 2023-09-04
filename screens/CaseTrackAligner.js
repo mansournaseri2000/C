@@ -39,7 +39,7 @@ const CaseTrackAligner = () => {
             <Image
               style={styles.headerChild}
               resizeMode="contain"
-              source={require("../assets/group-15.png")}
+              source={require("../assets/JplignLogo.png")}
             />
           </View>
           <View style={styles.prfilecontainer}>
@@ -64,7 +64,7 @@ const CaseTrackAligner = () => {
                 <Image
                   style={styles.defaultimageIcon}
                   resizeMode="cover"
-                  source={require("../assets/defaultimage2.png")}
+                  source={require("../assets/ProfileImg.png")}
                 />
               </View>
             </View>
@@ -77,7 +77,7 @@ const CaseTrackAligner = () => {
                 <Image
                   style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                   resizeMode="contain"
-                  source={require("../assets/packageplus19.png")}
+                  source={require("../assets/icons/reason.png")}
                 />
               </View>
               <View style={styles.fieldinput}>
@@ -98,7 +98,7 @@ const CaseTrackAligner = () => {
                 <Image
                   style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                   resizeMode="contain"
-                  source={require("../assets/packageplus11.png")}
+                  source={require("../assets/icons/gender.png")}
                 />
               </View>
               <View style={styles.fieldinput}>
@@ -120,7 +120,7 @@ const CaseTrackAligner = () => {
                   <Image
                     style={[styles.packagePlusIcon, styles.radiobtnLayout]}
                     resizeMode="contain"
-                    source={require("../assets/packageplus16.png")}
+                    source={require("../assets/icons/film.png")}
                   />
                 </View>
                 <Text style={[styles.label2, styles.labelTypo]}>
@@ -178,27 +178,27 @@ const CaseTrackAligner = () => {
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube3.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info3.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition2.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -208,15 +208,15 @@ const CaseTrackAligner = () => {
 const styles = StyleSheet.create({
   radioBtnText: {},
   growtextbuttonSpaceBlock: {
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
   },
   buttontextTypo: {
     color: Color.gray,
     textAlign: "center",
-    fontFamily: FontFamily.bodySmall,
-    fontSize: FontSize.titleMedium_size,
+    fontFamily: "Poppins-Regular",
+    fontSize: 18,
   },
   header1SpaceBlock: {
     paddingVertical: 0,
@@ -228,14 +228,14 @@ const styles = StyleSheet.create({
   },
   nametextTypo: {
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   growtextbuttonLayout: {
     width: 40,
     justifyContent: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     alignItems: "center",
   },
   radiobtnLayout: {
@@ -245,7 +245,7 @@ const styles = StyleSheet.create({
   labelTypo: {
     color: Color.colorPrimary,
     textAlign: "left",
-    fontFamily: FontFamily.bodySmall,
+    fontFamily: "Poppins-Regular",
   },
   iconLayout: {
     width: 32,
@@ -259,19 +259,19 @@ const styles = StyleSheet.create({
     height: 40,
     width: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     alignItems: "center",
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
     textAlign: "center",
   },
   header1: {
     height: 30,
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     justifyContent: "center",
     flexDirection: "row",
   },
@@ -280,7 +280,7 @@ const styles = StyleSheet.create({
     height: 40,
   },
   header: {
-    padding: Padding.p_base,
+    padding: 16,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",
@@ -288,7 +288,7 @@ const styles = StyleSheet.create({
   },
   nametext: {
     color: Color.colorWhite,
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
   },
   namewrapper: {
     justifyContent: "center",
@@ -300,7 +300,7 @@ const styles = StyleSheet.create({
   },
   greeting: {
     color: Color.colorDarkgray,
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
   },
   greetingwrapper: {
     marginTop: 8,
@@ -320,23 +320,23 @@ const styles = StyleSheet.create({
     height: 32,
   },
   uploadimage: {
-    borderRadius: Border.br_31xl,
+    borderRadius: 50,
     backgroundColor: Color.colorLightgray,
     width: 56,
     height: 56,
     justifyContent: "center",
-    padding: Padding.p_base,
+    padding: 16,
     alignItems: "center",
     overflow: "hidden",
   },
   profilecard: {
-    padding: Padding.p_5xs,
-    borderRadius: Border.br_xs,
+    padding: 8,
+    borderRadius: 12,
     flexDirection: "row",
     justifyContent: "space-between",
   },
   prfilecontainer: {
-    padding: Padding.p_base,
+    padding: 16,
     alignSelf: "stretch",
     alignItems: "center",
   },
@@ -344,18 +344,18 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   inputiconwrapper: {
-    padding: Padding.p_5xs,
+    padding: 8,
     justifyContent: "center",
     height: 40,
     flexDirection: "row",
   },
   label: {
-    fontSize: FontSize.bodyMedium_size,
+    fontSize: 18,
     alignSelf: "stretch",
   },
   inputtext: {
-    fontSize: FontSize.bodyMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 18,
+    fontFamily: "Poppins-Regular",
     alignSelf: "stretch",
   },
   fieldinput: {
@@ -364,40 +364,40 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   inputgroup: {
-    padding: Padding.p_5xs,
-    borderRadius: Border.br_xs,
+    padding: 8,
+    borderRadius: 12,
     flexDirection: "row",
   },
   inputgroup1: {
     marginTop: 16,
-    padding: Padding.p_5xs,
-    borderRadius: Border.br_xs,
+    padding: 8,
+    borderRadius: 12,
     flexDirection: "row",
   },
   formsection: {
-    paddingHorizontal: Padding.p_base,
+    paddingHorizontal: 16,
     paddingVertical: 0,
     alignSelf: "stretch",
   },
   label2: {
     marginLeft: 8,
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
     flex: 1,
   },
   inputgroup2: {
-    padding: Padding.p_5xs,
-    borderRadius: Border.br_xs,
+    padding: 8,
+    borderRadius: 12,
     flexDirection: "row",
     alignSelf: "stretch",
   },
   videoinfotext: {
     color: Color.colorWhite,
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
     flex: 1,
   },
   videoinfowrapper: {
-    paddingHorizontal: Padding.p_5xs,
-    paddingBottom: Padding.p_5xs,
+    paddingHorizontal: 8,
+    paddingBottom: 8,
     flexDirection: "row",
     alignSelf: "stretch",
   },
@@ -406,23 +406,23 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   videocoverwrapper: {
-    padding: Padding.p_5xs,
+    padding: 8,
     alignSelf: "stretch",
     alignItems: "center",
   },
   video: {
-    borderRadius: Border.br_xs,
+    borderRadius: 12,
   },
   radiobtn: {
-    borderRadius: Border.br_81xl,
+    borderRadius: 100,
   },
   acceptancetext: {
     marginLeft: 8,
     color: Color.colorWhite,
-    fontSize: FontSize.titleMedium_size,
+    fontSize: 18,
   },
   acceptancewrapper: {
-    padding: Padding.p_5xs,
+    padding: 8,
     justifyContent: "center",
     flexDirection: "row",
     alignSelf: "stretch",
@@ -430,7 +430,7 @@ const styles = StyleSheet.create({
   },
   infocontainer: {
     justifyContent: "center",
-    padding: Padding.p_base,
+    padding: 16,
     alignSelf: "stretch",
   },
   maincontainer: {
@@ -449,8 +449,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     height: 40,
     backgroundColor: Color.colorPrimary,
-    borderRadius: Border.br_mini,
-    paddingVertical: Padding.p_5xs,
+    borderRadius: 15,
+    paddingVertical: 8,
     alignSelf: "stretch",
     alignItems: "center",
   },
@@ -467,8 +467,8 @@ const styles = StyleSheet.create({
     borderStyle: "solid",
     borderColor: "#000",
     borderTopWidth: 5,
-    paddingVertical: Padding.p_5xs,
-    paddingHorizontal: Padding.p_base,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     flexDirection: "row",
     justifyContent: "space-between",
   },

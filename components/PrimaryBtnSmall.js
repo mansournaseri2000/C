@@ -1,43 +1,41 @@
 import * as React from "react";
-import { Pressable, Text, StyleSheet } from "react-native";
+import { TouchableOpacity, Text, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { FontSize, FontFamily, Color, Border, Padding } from "../GlobalStyles";
+import { Color } from "../GlobalStyles";
 
-const PrimaryBtnSmall = ({ buttonText = "button" }) => {
+const PrimaryBtnSmall = ({ buttonText = "button", goTo, handler}) => {
   const navigation = useNavigation();
 
   return (
-    <Pressable
-      style={[styles.growtextbutton, styles.buttontextFlexBox]}
-      onPress={() => navigation.navigate("OnboardingTwo")}
+    <TouchableOpacity
+      style={[styles.growtextbutton, styles.growtextbuttonFlexBox]}
+      activeOpacity={0.8}
+      onPress={() =>goTo?  navigation.navigate("DentistRegister") : handler()}
     >
-      <Text style={[styles.buttontext, styles.buttontextFlexBox]}>
+      <Text style={styles.buttontext}>
         {buttonText}
       </Text>
-    </Pressable>
+    </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
-  buttontextFlexBox: {
-    justifyContent: "center",
-    alignItems: "center",
-  },
   buttontext: {
-    fontSize: FontSize.titleMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 16,
+    fontFamily: "Poppins-Regular",
     color: Color.gray,
     textAlign: "center",
     display: "flex",
-    width: 304,
-    height: 28,
+    justifyContent: "center",
+    alignItems: "center",
   },
   growtextbutton: {
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     backgroundColor: Color.colorPrimary,
-    width: 137,
     flexDirection: "row",
-    padding: Padding.p_5xs,
+    padding: 8,
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
 

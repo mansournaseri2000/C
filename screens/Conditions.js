@@ -19,7 +19,7 @@ const Conditions = () => {
             <Image
               style={styles.arrowLeftIcon}
               resizeMode="contain"
-              source={require("../assets/arrowleft.png")}
+              source={require("../assets/icons/arrow-left.png")}
             />
           </Pressable>
           <View style={[styles.header1, styles.q1FlexBox]}>
@@ -28,7 +28,7 @@ const Conditions = () => {
           <Image
             style={styles.jplignlogoIcon}
             resizeMode="contain"
-            source={require("../assets/group-14.png")}
+            source={require("../assets/JplignLogo.png")}
           />
         </View>
         <View style={styles.headerFlexBox}>
@@ -46,27 +46,27 @@ The presentation of products in the online shop does not constitute a legally bi
         <Image
           style={styles.iconLayout}
           resizeMode="contain"
-          source={require("../assets/messagewrapper.png")}
+          source={require("../assets/icons/message-circle.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/youtube.png")}
+          source={require("../assets/icons/youtube.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/info.png")}
+          source={require("../assets/icons/info.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/condition.png")}
+          source={require("../assets/icons/condition.png")}
         />
         <Image
           style={[styles.youtubeIcon, styles.iconLayout]}
           resizeMode="contain"
-          source={require("../assets/logout.png")}
+          source={require("../assets/icons/log-out.png")}
         />
       </View>
     </View>
@@ -75,7 +75,7 @@ The presentation of products in the online shop does not constitute a legally bi
 
 const styles = StyleSheet.create({
   headerFlexBox: {
-    padding: Padding.p_base,
+    padding: 16,
     alignSelf: "stretch",
     alignItems: "center",
   },
@@ -93,22 +93,22 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   iconbutton: {
-    borderRadius: Border.br_mini,
+    borderRadius: 15,
     backgroundColor: Color.colorPrimary,
     width: 40,
-    padding: Padding.p_5xs,
+    padding: 8,
     height: 40,
     flexDirection: "row",
   },
   headertext: {
-    fontSize: FontSize.headingMediumBold_size,
+    fontSize: 24,
     fontWeight: "700",
-    fontFamily: FontFamily.headingMediumBold,
+    fontFamily: "Poppins-Bold",
     color: Color.colorWhite,
     textAlign: "center",
   },
   header1: {
-    paddingHorizontal: Padding.p_3xs,
+    paddingHorizontal: 10,
     paddingVertical: 0,
     flexDirection: "row",
   },
@@ -121,8 +121,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   scopeTheseGeneral: {
-    fontSize: FontSize.bodyMedium_size,
-    fontFamily: FontFamily.bodySmall,
+    fontSize: 18,
+    fontFamily: "Poppins-Regular",
     color: Color.colorDarkgray,
     textAlign: "left",
     alignSelf: "stretch",
@@ -142,8 +142,8 @@ const styles = StyleSheet.create({
     borderStyle: "solid",
     borderColor: "#000",
     borderTopWidth: 5,
-    paddingHorizontal: Padding.p_base,
-    paddingVertical: Padding.p_5xs,
+    paddingHorizontal: 16,
+    paddingVertical: 8,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",
